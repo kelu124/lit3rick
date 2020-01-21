@@ -4,7 +4,7 @@ Open source ultrasound board
 
 # License
 
-This work is based on a previous TAPR project, [the echOmods project](https://github.com/kelu124/echomods/). The [un0rick project](https://github.com/kelu124/un0rick) and its boards are open hardware and software, developped with open-source elements.
+This work is based on a previous TAPR project, [the echOmods project](https://github.com/kelu124/echomods/) and the [un0rick project](https://github.com/kelu124/un0rick). The [lit3rick project](https://github.com/kelu124/lit3rick) and its boards are open hardware and software, developped with open-source elements.
 
 Copyright Kelu124 (kelu124@gmail.com) 2018 
 
