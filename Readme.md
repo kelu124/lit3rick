@@ -2,6 +2,9 @@
 
 Open source ultrasound board
 
+* v0.8: problematic prototype
+* v2: normally ok_ish board. A bit pHATter, no HV on board.
+
 # License
 
 This work is based on a previous TAPR project, [the echOmods project](https://github.com/kelu124/echomods/) and the [un0rick project](https://github.com/kelu124/un0rick). The [lit3rick project](https://github.com/kelu124/lit3rick) and its boards are open hardware and software, developped with open-source elements.
