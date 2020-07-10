@@ -112,14 +112,12 @@ if __name__ == "__main__":
     # print(list(map(hex, memContent)))
     # print(max(memContent))
     # print(min(memContent))
-    dacVal = 1000 
+    dacVal =  2000 
     hiloVal = 1 
     fpga.set_HILO(hiloVal)
     fpga.set_dac(dacVal)
-    while 1:
-        fpga.capture_signal()
-        time.sleep(1/1000.0)
-    #memContent = fpga.read_signal_through_spi()
-    #print(memContent)
-
-    #np.savetxt("piezo_hilo"+str(hiloVal)+"_"+str(dacVal)+"DAC.csv", memContent, delimiter=";")
+    fpga.capture_signal()
+    time.sleep(1/1000.0)
+    memContent = fpga.read_signal_through_spi()
+    print(memContent)
+    np.savetxt("piezo_hilo"+str(hiloVal)+"_"+str(dacVal)+"DAC.csv", memContent, delimiter=";")
