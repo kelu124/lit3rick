@@ -11,3 +11,21 @@ Still noise because.. wire = antenna.
 ## Possible to check the gain.
 
 Beware though, seems to saturate after 500 (normal as DAC output has a 0-2V range).
+
+## Notes on SNR
+
+#### Best case SNR
+
+Source:  : https://www.cypress.com/file/200121/download
+
+SNR dB = 6.02 x ENOB  + 1.76
+
+Improving SNR by
+- 4bits = 256 samples
+- 2bits = 4^2 = 16
+
+#### Costing
+
+* 10: 1,927$ -> 190$
+* 15: 2,403$ -> 160$ -> 350$
+* 20: 3,000$ -> 150$
