@@ -45,8 +45,6 @@ def registers_test():
     print(f'Registers test passed!')
 
 def test_i2c_acces_to_signal_ram(signal):
-    #signal = gen_signal()
-    #fpga.wrtie_signal_through_i2c(signal)
     print("\n- Testing i2c access to signal.. ")
     read_signal = fpga.read_signal_through_i2c()
     assert all(signal == read_signal), (f'readed signal not equal with written signal!')
@@ -54,8 +52,6 @@ def test_i2c_acces_to_signal_ram(signal):
     print(f'I2C access to signal ram test passed!')
 
 def test_spi_access_to_signal_ram(signal):
-    #signal = gen_signal()
-    #fpga.wrtie_signal_through_i2c(signal)
     print("\n- Testing SPI access to signal.. ")
     read_signal = fpga.read_signal_through_spi()
     assert all(signal == read_signal), (f'readed signal not equal with written signal!')
@@ -63,9 +59,6 @@ def test_spi_access_to_signal_ram(signal):
     print(f'SPI access to signal ram test passed!')
 
 def test_i2s_access_to_signal_ram(signal):
-    #signal = gen_signal()
-    #fpga.wrtie_signal_through_i2c(signal)
-
     signal = signal >> 4
     signal = np.uint8(signal)
     print("\n- Testing i2s access to signal (on 8bits though).. ")
@@ -93,8 +86,7 @@ def test_fft(signal):
     tmp = signal.reshape(256, -1)
     ref_fft = dft.dft_python_model(tmp)
     ref_fft = alaw.alaw_compress(ref_fft)
-    
-    #assert all(ref_fft[1:] == fpga_fft[1:]), (f'readed signal not equal with written signal!')
+
     print(fpga_fft[1:])
 
     plt.figure(figsize = (15,5))
@@ -122,8 +114,8 @@ def gen_signal():
     for i in range(len(signal)):
         # signal[i] = randint(0, 1023) & 0xFFF
         signal[i] = i & 0xFFF
-
     return signal
+
 
 def testAll():
     print("\n- Filling in the memory.. ") 
@@ -133,6 +125,7 @@ def testAll():
     test_i2s_access_to_signal_ram(signal)
     test_fft(signal)
 
+
 if __name__ == "__main__":
     i2c_bus = SMBus(1)
     spi = spidev.SpiDev()
@@ -141,18 +134,16 @@ if __name__ == "__main__":
     with noalsaerr():
         p = pyaudio.PyAudio()
     p = pyaudio.PyAudio()
+
+    # Starting an object 
     fpga = py_fpga(i2c_bus=i2c_bus, py_audio=p, spi_bus=spi)
-    
+    # Setting up the pulse 
     fpga.set_waveform(pdelay=1, PHV_time=11, PnHV_time=1, PDamp_time=100)
-
-
-
 
     print("Setting DAC")
     startVal,nPtsDAC = 250, 16
     for i in range(nPtsDAC):
         fpga.set_dac(int(startVal + (i*(455-startVal))/nPtsDAC), mem=i)
-        #fpga.set_dac(int(455), mem=i)
 
     fpga.set_dac(0, mem=0)
     fpga.set_dac(0, mem=1)

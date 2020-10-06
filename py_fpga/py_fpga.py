@@ -145,15 +145,12 @@ class py_fpga:
 
     def read_fft_through_spi(self):
         signal = bytes(0)
-        
         self.i2c_write(8, 3 << 16)
         addr = []
         for i in range(self.__fft_size + 1):
             addr += [(i >> 8) & 0xFF, i & 0xFF]
-
         result = self.__spi_bus.xfer2(addr)
         signal += bytes(result[2:])
-
         signal = np.frombuffer(signal, dtype=np.int16)
         return signal
 
