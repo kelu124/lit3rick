@@ -32,7 +32,9 @@ fpga.set_dac(dacVal)
 
 ### Running the acquisition
 
-#### Starting to get the enveloppe for 10ms
+#### Starting to get the enveloppe for 10 acquisitions
+
+Each is spaced by approx 1ms (time taken to do the FFT+filtering) + transfert through i2s (_//note to self, check again :)_.
 
 `dataI2S = fpga.read_fft_through_i2s(10)`
 
