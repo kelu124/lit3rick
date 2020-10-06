@@ -6,11 +6,13 @@ By creating the
 
 `fpga = py_fpga(i2c_bus=i2c_bus, py_audio=p, spi_bus=spi)`
 
-Choosing the timings of the board: initial delay, pHV is positive HV length, PnHV is the negative one, PDamp the time to dampen the signal. All of this is happenning during the acquisition window that is 128us long.
+Choosing the timings of the board: initial delay, pHV is positive HV length, PnHV is the negative one, PDamp the time to dampen the signal (unit being 1/64 of a microsecond _//note to self, check if that's right, and not 1/32_). All of this is happenning during the acquisition window that is 128us long.
 
 `fpga.set_waveform(pdelay=1, PHV_time=11, PnHV_time=1, PDamp_time=100)`
 
-### Setting up the DAC and gain values
+### Setting up the variable gain values
+
+The VGA can be set up by tranches of 8us, so with 16 values out of the 128us acquisition window. Values from 0 to 511.
 
 ```python
 startVal,nPtsDAC = 250, 16
@@ -20,8 +22,13 @@ for i in range(nPtsDAC):
 
 Now we setup the HILO value, and setting the gain outside of the acquisition window. 
 
-`fpga.set_HILO(hiloVal)`
-`fpga.set_dac(dacVal)`
+```python
+
+hiloVal = 1 # High or low.
+dacVal = 250 # on a range from 0 to 512
+fpga.set_HILO(hiloVal)
+fpga.set_dac(dacVal)
+```
 
 ### Running the acquisition
 
