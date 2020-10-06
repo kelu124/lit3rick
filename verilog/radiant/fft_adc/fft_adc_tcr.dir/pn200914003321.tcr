@@ -1,0 +1,29 @@
+#Start recording tcl command: 9/13/2020 20:48:59
+#Project Location: /home/andrew/projects/unoric_board/fft_adc_new/radiant/fft_adc; Project name: fft_adc
+prj_open "/home/andrew/projects/unoric_board/fft_adc_new/radiant/fft_adc/fft_adc.rdf"
+prj_set_strategy_value -strategy timing_cust lse_carry_chain_length=100
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_set_strategy_value -strategy timing_cust lse_use_carry_chain=True
+prj_run Export -impl impl_1
+prj_set_strategy_value -strategy timing_cust par_place_iterator=4
+prj_run Export -impl impl_1
+prj_set_strategy_value -strategy timing_cust par_place_iterator=10
+prj_run Export -impl impl_1
+prj_set_strategy_value -strategy timing_cust lse_carry_chain_length=0
+prj_run PAR -impl impl_1
+prj_set_strategy_value -strategy timing_cust lse_use_carry_chain=False
+prj_run Export -impl impl_1
+prj_set_strategy_value -strategy timing_cust par_place_iterator=2
+prj_set_strategy_value -strategy timing_cust lse_res_sharing=False
+prj_run Export -impl impl_1
+prj_set_strategy_value -strategy timing_cust par_save_best_result=3
+prj_run Export -impl impl_1
+prj_set_strategy_value -strategy timing_cust par_place_iterator=3
+prj_run Export -impl impl_1
+prj_set_strategy_value -strategy timing_cust par_core_number=3
+prj_set_strategy_value -strategy timing_cust par_save_best_result=5 par_place_iterator=5
+prj_set_strategy_value -strategy timing_cust par_stop_zero=True
+prj_run Export -impl impl_1
+#Stop recording: 9/14/2020 00:33:21

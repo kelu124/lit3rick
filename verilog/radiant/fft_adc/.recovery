@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RadiantProject version="4.1" title="fft_adc" device="iCE40UP5K-SG48I" performance_grade="High-Performance_1.2V" default_implementation="impl_1">
+    <Options/>
+    <Implementation title="impl_1" dir="impl_1" description="impl_1" synthesis="lse" default_strategy="timing_cust">
+        <Options def_top="i2c_wrapper">
+            <Option name="include path" value="../../src/rtl/fft;../../src/rtl/fft/mem_files;../../src/rtl/fft/ip"/>
+            <Option name="top" value="top"/>
+        </Options>
+        <Source name="../../src/rtl/i2c_slave_axil_master.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../src/rtl/i2c_slave.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../src/rtl/mcp4812.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../src/rtl/top.v" type="Verilog" type_short="Verilog">
+            <Options top_module="top"/>
+        </Source>
+        <Source name="ip_cores/pll_adc/pll_adc.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="../../src/rtl/ram_256k.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../src/rtl/spi_slave.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../src/rtl/debounce.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../src/rtl/main_fsm.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../src/rtl/sqrt.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../src/rtl/i2s_master.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../src/rtl/i2s_control.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="ip_cores/sc_fifo/sc_fifo.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="../../src/rtl/adc_receiver.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../src/rtl/alaw_coder.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../src/rtl/memory_mux.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../src/rtl/signal_filter.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../src/rtl/fft/dft_addsub.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../src/rtl/fft/dft_freq_ram.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../src/rtl/fft/dft_add.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../src/rtl/fft/dft_complex_mul.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../src/rtl/fft/dft_dline.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../src/rtl/fft/dft_core.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../src/rtl/fft/dft_complex_abs.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../src/rtl/fft/dft_mul.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../src/rtl/fft/dft_postproc.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../src/rtl/fft/dft_preproc.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../src/rtl/fft/dft_fifo.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../src/rtl/fft/dft_sqrsum.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../src/rtl/fft/dft_sqrt.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../src/rtl/fft/dft_sub.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../src/rtl/fft/dft_twiddle_rom.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../src/rtl/fft/dft.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="ebr_dp/ebr_dp.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="../../src/rtl/i2c_wrapper.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="source/impl_1.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+        <Source name="source/impl_1/impl_1.pdc" type="Physical Constraints File" type_short="PDC">
+            <Options/>
+        </Source>
+        <Source name="../../src/rtl/fft/mem_files/dft_twiddle_im_16.mem" type="Unknown Type" type_short="Unknown">
+            <Options/>
+        </Source>
+        <Source name="../../src/rtl/fft/mem_files/dft_twiddle_im_32.mem" type="Unknown Type" type_short="Unknown">
+            <Options/>
+        </Source>
+        <Source name="../../src/rtl/fft/mem_files/dft_twiddle_im_8.mem" type="Unknown Type" type_short="Unknown">
+            <Options/>
+        </Source>
+        <Source name="../../src/rtl/fft/mem_files/dft_twiddle_re_16.mem" type="Unknown Type" type_short="Unknown">
+            <Options/>
+        </Source>
+        <Source name="../../src/rtl/fft/mem_files/dft_twiddle_re_32.mem" type="Unknown Type" type_short="Unknown">
+            <Options/>
+        </Source>
+        <Source name="../../src/rtl/fft/mem_files/dft_twiddle_re_8.mem" type="Unknown Type" type_short="Unknown">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="fft_adc1.sty"/>
+    <Strategy name="cdfd" file="cdfd.sty"/>
+    <Strategy name="cts" file="cts.sty"/>
+    <Strategy name="strategy_2" file="strategy_2.sty"/>
+    <Strategy name="timing_cust" file="timing_cust.sty"/>
+    <Strategy name="timing_custom" file="timing_custom.sty"/>
+</RadiantProject>

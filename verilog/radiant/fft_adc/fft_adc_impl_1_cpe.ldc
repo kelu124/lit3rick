@@ -1,0 +1,9 @@
+###File created by Lattice CPE. Do not modify.###
+set_hierarchy_separator /
+create_clock -name {clk} -period 20.83333333 [get_nets clk]
+create_clock -name {adc_clk} -period 15.384 [get_nets ADC_DCLK]
+create_clock -name {pll_adc_inst/outglobal_o} -period 14.49275362 [get_nets pll_adc_inst/outglobal_o]
+create_clock -name {i2s_clk} -period 100 [get_nets i2s_clk]
+set_clock_groups -group [get_clocks adc_clk] -group [get_clocks clk] -physically_exclusive
+set_clock_groups -group [get_clocks clk] -group [get_clocks i2s_clk] -physically_exclusive
+set_clock_groups -group [get_clocks i2s_clk] -group [get_clocks adc_clk] -physically_exclusive

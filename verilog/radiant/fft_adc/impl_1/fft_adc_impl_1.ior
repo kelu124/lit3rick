@@ -1,0 +1,48 @@
+Lattice Timing Report -  Setup , Version Radiant Software (64-bit) 2.0.0.64.1
+
+Wed Sep 23 23:43:38 2020
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
+
+Command line:    timing -iotime -html -rpt fft_adc_impl_1.ior fft_adc_impl_1.udb -gui
+
+-----------------------------------------
+Design:          top
+Family:          iCE40UP
+Device:          iCE40UP5K
+Package:         SG48
+Performance:     High-Performance_1.2V
+-----------------------------------------
+
+I/O Timing Report
+=================
+
+Performance Grade Translation Table
+------------------------------
+ Code  |  Performance Grade   
+------------------------------
+HP_1.2V| High-Performance_1.2V
+------------------------------
+
+FPGA Input Port Results for Performance Grade: HP_1.2V
+----------------------------------------------------------
+-----------------------------------------------------
+Port Name|Setup|Grade|Edge|Hold|Grade|edge|Clock Port
+-----------------------------------------------------
+-----------------------------------------------------
+***Warning: IO ports are not constrainted.
+---------------------------------------------------------------------------------------------------------
+
+FPGA Output Port Results for Performance Grade: HP_1.2V
+----------------------------------------------------------
+--------------------------------------------------------------------------------
+Port Name|Clock To Out (MAX)|Grade|Edge|Clock To Out (MIN)|Grade|edge|Clock Port
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+***Warning: IO ports are not constrainted.
+---------------------------------------------------------------------------------------------------------
+

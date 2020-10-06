@@ -1,0 +1,703 @@
+---------------------------------------------------
+Report for cell top
+   Instance path: top
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	       4149        100.0
+                                 IOBUF	         34        100.0
+                                PFUREG	       2180        100.0
+                                   EBR	         11        100.0
+                                   DSP	          6        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                          adc_receiver	          1         0.9
+                                ebr_dp	          1         0.0
+                            ebr_dp_U22	          1         0.0
+   i2c_slave_axil_master(STRB_WIDTH=4)	          1        12.5
+               i2s_control(AUDIO_DW=8)	          1         2.5
+                    i2s_tx(AUDIO_DW=8)	          1         0.7
+                              main_fsm	          1        11.9
+                               mcp4812	          1         0.7
+                            memory_mux	          1         1.7
+                        memory_mux_U20	          1         0.8
+                               pll_adc	          1         0.0
+                              ram_256k	          1         0.0
+                           sc_fifo_U21	          1         3.8
+                         signal_filter	          1        24.2
+                             spi_slave	          1         0.4
+---------------------------------------------------
+Report for cell sc_fifo_U21
+   Instance path: top/fifo_i2s
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        157         3.8
+                                PFUREG	        131         6.0
+                                   EBR	          1         9.1
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+sc_fifo_ipgen_lscc_fifo(ADDRESS_DEPTH=256,ADDRESS_WIDTH=8,DATA_WIDTH=16,REGMODE="noreg",RESET_MODE="sync",ALMOST_FULL_ASSERTION="static-single",ALMOST_FULL_ASSERT_LVL=100,ALMOST_FULL_DEASSERT_LVL=99,ALMOST_EMPTY_ASSERT_LVL=40,ALMOST_EMPTY_DEASSERT_LVL=41,FAMILY="iCE40UP")_U18	          1         3.8
+---------------------------------------------------
+Report for cell sc_fifo_ipgen_lscc_fifo(ADDRESS_DEPTH=256,ADDRESS_WIDTH=8,DATA_WIDTH=16,REGMODE="noreg",RESET_MODE="sync",ALMOST_FULL_ASSERTION="static-single",ALMOST_FULL_ASSERT_LVL=100,ALMOST_FULL_DEASSERT_LVL=99,ALMOST_EMPTY_ASSERT_LVL=40,ALMOST_EMPTY_DEASSERT_LVL=41,FAMILY="iCE40UP")_U18
+   Instance path: top/fifo_i2s/lscc_fifo_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        157         3.8
+                                PFUREG	        131         6.0
+                                   EBR	          1         9.1
+---------------------------------------------------
+Report for cell signal_filter
+   Instance path: top/signal_filter_int
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	       1004        24.2
+                                PFUREG	       1081        49.6
+                                   EBR	          8        72.7
+                                   DSP	          6        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                            alaw_coder	          1         0.6
+                                   dft	          1        18.5
+                               sc_fifo	          1         2.8
+---------------------------------------------------
+Report for cell sc_fifo
+   Instance path: top/signal_filter_int/sc_fifo_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        117         2.8
+                                PFUREG	        130         6.0
+                                   EBR	          1         9.1
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+sc_fifo_ipgen_lscc_fifo(ADDRESS_DEPTH=256,ADDRESS_WIDTH=8,DATA_WIDTH=16,REGMODE="noreg",RESET_MODE="sync",ALMOST_FULL_ASSERTION="static-single",ALMOST_FULL_ASSERT_LVL=100,ALMOST_FULL_DEASSERT_LVL=99,ALMOST_EMPTY_ASSERT_LVL=40,ALMOST_EMPTY_DEASSERT_LVL=41,FAMILY="iCE40UP")	          1         2.8
+---------------------------------------------------
+Report for cell sc_fifo_ipgen_lscc_fifo(ADDRESS_DEPTH=256,ADDRESS_WIDTH=8,DATA_WIDTH=16,REGMODE="noreg",RESET_MODE="sync",ALMOST_FULL_ASSERTION="static-single",ALMOST_FULL_ASSERT_LVL=100,ALMOST_FULL_DEASSERT_LVL=99,ALMOST_EMPTY_ASSERT_LVL=40,ALMOST_EMPTY_DEASSERT_LVL=41,FAMILY="iCE40UP")
+   Instance path: top/signal_filter_int/sc_fifo_inst/lscc_fifo_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        117         2.8
+                                PFUREG	        130         6.0
+                                   EBR	          1         9.1
+---------------------------------------------------
+Report for cell dft
+   Instance path: top/signal_filter_int/dft_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        766        18.5
+                                PFUREG	        884        40.6
+                                   EBR	          7        63.6
+                                   DSP	          6        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                              dft_core	          1         7.1
+                    dft_fifo(ADDR_W=6)	          1         0.9
+                          dft_postproc	          1         9.4
+                           dft_preproc	          1         1.2
+---------------------------------------------------
+Report for cell dft_preproc
+   Instance path: top/signal_filter_int/dft_inst/preproc
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         49         1.2
+                                PFUREG	         16         0.7
+---------------------------------------------------
+Report for cell dft_postproc
+   Instance path: top/signal_filter_int/dft_inst/postproc
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        388         9.4
+                                PFUREG	        369        16.9
+                                   EBR	          2        18.2
+                                   DSP	          2        33.3
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+dft_add(DATA_W=18,INPUT_REG="on",OUTPUT_REG="off",PIPELINE_STAGES=2)	          1         1.2
+                       dft_complex_abs	          1         7.7
+                 dft_dline(STAGES_N=3)	          1         0.0
+---------------------------------------------------
+Report for cell dft_dline(STAGES_N=3)
+   Instance path: top/signal_filter_int/dft_inst/postproc/add_valid_dline
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          3         0.1
+---------------------------------------------------
+Report for cell dft_add(DATA_W=18,INPUT_REG="on",OUTPUT_REG="off",PIPELINE_STAGES=2)
+   Instance path: top/signal_filter_int/dft_inst/postproc/add
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         49         1.2
+                                PFUREG	         82         3.8
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+lscc_adder(D_WIDTH=18,USE_IREG="on",PIPELINES=2)	          1         1.2
+---------------------------------------------------
+Report for cell lscc_adder(D_WIDTH=18,USE_IREG="on",PIPELINES=2)
+   Instance path: top/signal_filter_int/dft_inst/postproc/add/lscc_adder
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         49         1.2
+                                PFUREG	         82         3.8
+---------------------------------------------------
+Report for cell dft_complex_abs
+   Instance path: top/signal_filter_int/dft_inst/postproc/abs
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        319         7.7
+                                PFUREG	        263        12.1
+                                   EBR	          2        18.2
+                                   DSP	          2        33.3
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                             dft_dline	          1         0.0
+                 dft_dline(STAGES_N=5)	          1         0.0
+          dft_fifo(ADDR_W=2,DATA_W=32)	          1         0.6
+                            dft_sqrsum	          1         3.2
+       dft_sqrt(ALU_PIPELINE_STAGES=1)	          1         3.8
+---------------------------------------------------
+Report for cell dft_dline
+   Instance path: top/signal_filter_int/dft_inst/postproc/abs/sqrt_valid_dline
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          1         0.0
+---------------------------------------------------
+Report for cell dft_sqrt(ALU_PIPELINE_STAGES=1)
+   Instance path: top/signal_filter_int/dft_inst/postproc/abs/sqrt
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        157         3.8
+                                PFUREG	        103         4.7
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+dft_addsub(DATA_W=18,OUTPUT_REG="off",PIPELINE_STAGES=1)	          1         1.9
+---------------------------------------------------
+Report for cell dft_addsub(DATA_W=18,OUTPUT_REG="off",PIPELINE_STAGES=1)
+   Instance path: top/signal_filter_int/dft_inst/postproc/abs/sqrt/alu
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         78         1.9
+                                PFUREG	         30         1.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+lscc_add_sub(D_WIDTH=18,USE_CNUM=0,USE_CIN=0,USE_COUT=0,USE_OREG="off",PIPELINES=1)	          1         1.9
+---------------------------------------------------
+Report for cell lscc_add_sub(D_WIDTH=18,USE_CNUM=0,USE_CIN=0,USE_COUT=0,USE_OREG="off",PIPELINES=1)
+   Instance path: top/signal_filter_int/dft_inst/postproc/abs/sqrt/alu/lscc_add_sub
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         78         1.9
+                                PFUREG	         30         1.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+lscc_adder(D_WIDTH=18,USE_CNUM=1'b0,USE_CIN=1'b0,USE_COUT=1'b0,USE_OREG=1'b0,PIPELINES=1)	          1         0.9
+lscc_subtractor(D_WIDTH=18,USE_CNUM=1'b0,USE_CIN=1'b0,USE_COUT=1'b0,USE_OREG=1'b0,PIPELINES=1)	          1         0.9
+---------------------------------------------------
+Report for cell lscc_subtractor(D_WIDTH=18,USE_CNUM=1'b0,USE_CIN=1'b0,USE_COUT=1'b0,USE_OREG=1'b0,PIPELINES=1)
+   Instance path: top/signal_filter_int/dft_inst/postproc/abs/sqrt/alu/lscc_add_sub/U_SUBTRACTOR
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         39         0.9
+                                PFUREG	          9         0.4
+---------------------------------------------------
+Report for cell lscc_adder(D_WIDTH=18,USE_CNUM=1'b0,USE_CIN=1'b0,USE_COUT=1'b0,USE_OREG=1'b0,PIPELINES=1)
+   Instance path: top/signal_filter_int/dft_inst/postproc/abs/sqrt/alu/lscc_add_sub/U_ADDER
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         38         0.9
+                                PFUREG	         20         0.9
+---------------------------------------------------
+Report for cell dft_dline(STAGES_N=5)
+   Instance path: top/signal_filter_int/dft_inst/postproc/abs/sqrsum_valid_dline
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          5         0.2
+---------------------------------------------------
+Report for cell dft_sqrsum
+   Instance path: top/signal_filter_int/dft_inst/postproc/abs/sqrsum
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        131         3.2
+                                PFUREG	        120         5.5
+                                   DSP	          2        33.3
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+            dft_add(PIPELINE_STAGES=2)	          1         2.4
+               dft_mul(INPUT_REG="on")	          1         0.4
+            dft_mul(INPUT_REG="on")_U6	          1         0.4
+---------------------------------------------------
+Report for cell dft_mul(INPUT_REG="on")
+   Instance path: top/signal_filter_int/dft_inst/postproc/abs/sqrsum/mul_re
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         16         0.4
+                                   DSP	          1        16.7
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+lscc_multiplier(A_WIDTH=16,B_WIDTH=16,PIPELINES=0,IMPL="DSP")	          1         0.4
+---------------------------------------------------
+Report for cell lscc_multiplier(A_WIDTH=16,B_WIDTH=16,PIPELINES=0,IMPL="DSP")
+   Instance path: top/signal_filter_int/dft_inst/postproc/abs/sqrsum/mul_re/lscc_multiplier
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         16         0.4
+                                   DSP	          1        16.7
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+lscc_multiplier_dsp(USE_COEFF=0,A_WIDTH=16,B_WIDTH=16,PIPELINES=0)	          1         0.4
+---------------------------------------------------
+Report for cell lscc_multiplier_dsp(USE_COEFF=0,A_WIDTH=16,B_WIDTH=16,PIPELINES=0)
+   Instance path: top/signal_filter_int/dft_inst/postproc/abs/sqrsum/mul_re/lscc_multiplier/genblk1.u_lscc_multiplier_dsp
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         16         0.4
+                                   DSP	          1        16.7
+---------------------------------------------------
+Report for cell dft_mul(INPUT_REG="on")_U6
+   Instance path: top/signal_filter_int/dft_inst/postproc/abs/sqrsum/mul_im
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         16         0.4
+                                   DSP	          1        16.7
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+lscc_multiplier(A_WIDTH=16,B_WIDTH=16,PIPELINES=0,IMPL="DSP")_U1	          1         0.4
+---------------------------------------------------
+Report for cell lscc_multiplier(A_WIDTH=16,B_WIDTH=16,PIPELINES=0,IMPL="DSP")_U1
+   Instance path: top/signal_filter_int/dft_inst/postproc/abs/sqrsum/mul_im/lscc_multiplier
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         16         0.4
+                                   DSP	          1        16.7
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+lscc_multiplier_dsp(USE_COEFF=0,A_WIDTH=16,B_WIDTH=16,PIPELINES=0)_U0	          1         0.4
+---------------------------------------------------
+Report for cell lscc_multiplier_dsp(USE_COEFF=0,A_WIDTH=16,B_WIDTH=16,PIPELINES=0)_U0
+   Instance path: top/signal_filter_int/dft_inst/postproc/abs/sqrsum/mul_im/lscc_multiplier/genblk1.u_lscc_multiplier_dsp
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         16         0.4
+                                   DSP	          1        16.7
+---------------------------------------------------
+Report for cell dft_add(PIPELINE_STAGES=2)
+   Instance path: top/signal_filter_int/dft_inst/postproc/abs/sqrsum/add
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         99         2.4
+                                PFUREG	        120         5.5
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+lscc_adder(D_WIDTH=32,USE_OREG="on",PIPELINES=2)	          1         2.4
+---------------------------------------------------
+Report for cell lscc_adder(D_WIDTH=32,USE_OREG="on",PIPELINES=2)
+   Instance path: top/signal_filter_int/dft_inst/postproc/abs/sqrsum/add/lscc_adder
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         99         2.4
+                                PFUREG	        120         5.5
+---------------------------------------------------
+Report for cell dft_fifo(ADDR_W=2,DATA_W=32)
+   Instance path: top/signal_filter_int/dft_inst/postproc/abs/fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         26         0.6
+                                PFUREG	         31         1.4
+                                   EBR	          2        18.2
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+lscc_fifo(ADDRESS_DEPTH=4,ADDRESS_WIDTH=2,DATA_WIDTH=32,REGMODE="wire",ENABLE_ALMOST_FULL_FLAG="FALSE",ENABLE_ALMOST_EMPTY_FLAG="FALSE",FAMILY="iCE40UP")	          1         0.6
+---------------------------------------------------
+Report for cell lscc_fifo(ADDRESS_DEPTH=4,ADDRESS_WIDTH=2,DATA_WIDTH=32,REGMODE="wire",ENABLE_ALMOST_FULL_FLAG="FALSE",ENABLE_ALMOST_EMPTY_FLAG="FALSE",FAMILY="iCE40UP")
+   Instance path: top/signal_filter_int/dft_inst/postproc/abs/fifo/lscc_fifo_ip
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         26         0.6
+                                PFUREG	         31         1.4
+                                   EBR	          2        18.2
+---------------------------------------------------
+Report for cell dft_fifo(ADDR_W=6)
+   Instance path: top/signal_filter_int/dft_inst/fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         36         0.9
+                                PFUREG	         72         3.3
+                                   EBR	          1         9.1
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+lscc_fifo(ADDRESS_DEPTH=64,ADDRESS_WIDTH=6,DATA_WIDTH=12,REGMODE="wire",ENABLE_ALMOST_FULL_FLAG="FALSE",ENABLE_ALMOST_EMPTY_FLAG="FALSE",FAMILY="iCE40UP")	          1         0.9
+---------------------------------------------------
+Report for cell lscc_fifo(ADDRESS_DEPTH=64,ADDRESS_WIDTH=6,DATA_WIDTH=12,REGMODE="wire",ENABLE_ALMOST_FULL_FLAG="FALSE",ENABLE_ALMOST_EMPTY_FLAG="FALSE",FAMILY="iCE40UP")
+   Instance path: top/signal_filter_int/dft_inst/fifo/lscc_fifo_ip
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         36         0.9
+                                PFUREG	         72         3.3
+                                   EBR	          1         9.1
+---------------------------------------------------
+Report for cell dft_core
+   Instance path: top/signal_filter_int/dft_inst/core
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        293         7.1
+                                PFUREG	        427        19.6
+                                   EBR	          4        36.4
+                                   DSP	          4        66.7
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+dft_add(DATA_W=16,PIPELINE_STAGES=2,PIPE_4BIT=1'b1)	          1         0.9
+    dft_complex_mul(PIPELINE_STAGES=4)	          1         4.1
+             dft_dline(STAGES_N=3)_U15	          1         0.0
+        dft_dline(STAGES_N=3,DATA_W=2)	          1         0.0
+                 dft_dline(STAGES_N=8)	          1         0.0
+                         dft_dline_U16	          1         0.0
+                          dft_freq_ram	          1         0.4
+                       dft_twiddle_rom	          1         0.0
+---------------------------------------------------
+Report for cell dft_dline(STAGES_N=3)_U15
+   Instance path: top/signal_filter_int/dft_inst/core/twrom_rd_dline
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          3         0.1
+---------------------------------------------------
+Report for cell dft_dline(STAGES_N=3,DATA_W=2)
+   Instance path: top/signal_filter_int/dft_inst/core/twrom_raddr_dline
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          6         0.3
+---------------------------------------------------
+Report for cell dft_twiddle_rom
+   Instance path: top/signal_filter_int/dft_inst/core/twrom
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          2        18.2
+---------------------------------------------------
+Report for cell dft_freq_ram
+   Instance path: top/signal_filter_int/dft_inst/core/fram
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         16         0.4
+                                PFUREG	          1         0.0
+                                   EBR	          2        18.2
+---------------------------------------------------
+Report for cell dft_dline(STAGES_N=8)
+   Instance path: top/signal_filter_int/dft_inst/core/cmul_done_dline
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          8         0.4
+---------------------------------------------------
+Report for cell dft_complex_mul(PIPELINE_STAGES=4)
+   Instance path: top/signal_filter_int/dft_inst/core/cmul
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        170         4.1
+                                PFUREG	        332        15.2
+                                   DSP	          4        66.7
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+dft_add(DATA_W=33,DATA_SIGNED="on",PIPELINE_STAGES=4)	          1         2.0
+           dft_mul(INPUT_REG="on")_U11	          1         0.0
+           dft_mul(INPUT_REG="on")_U12	          1         0.0
+           dft_mul(INPUT_REG="on")_U13	          1         0.0
+           dft_mul(INPUT_REG="on")_U14	          1         0.0
+dft_sub(DATA_W=33,DATA_SIGNED="on",PIPELINE_STAGES=4,PIPE_4BIT=1'b1)	          1         2.0
+---------------------------------------------------
+Report for cell dft_sub(DATA_W=33,DATA_SIGNED="on",PIPELINE_STAGES=4,PIPE_4BIT=1'b1)
+   Instance path: top/signal_filter_int/dft_inst/core/cmul/sub_im
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         85         2.0
+                                PFUREG	        150         6.9
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+lscc_subtractor(D_WIDTH=33,SIGNED="on",USE_OREG="on",PIPELINES=4,PIPE_4BIT=1'b1)	          1         2.0
+---------------------------------------------------
+Report for cell lscc_subtractor(D_WIDTH=33,SIGNED="on",USE_OREG="on",PIPELINES=4,PIPE_4BIT=1'b1)
+   Instance path: top/signal_filter_int/dft_inst/core/cmul/sub_im/lscc_subtractor
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         85         2.0
+                                PFUREG	        150         6.9
+---------------------------------------------------
+Report for cell dft_mul(INPUT_REG="on")_U11
+   Instance path: top/signal_filter_int/dft_inst/core/cmul/mul_re1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   DSP	          1        16.7
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+lscc_multiplier(A_WIDTH=16,B_WIDTH=16,PIPELINES=0,IMPL="DSP")_U7	          1         0.0
+---------------------------------------------------
+Report for cell lscc_multiplier(A_WIDTH=16,B_WIDTH=16,PIPELINES=0,IMPL="DSP")_U7
+   Instance path: top/signal_filter_int/dft_inst/core/cmul/mul_re1/lscc_multiplier
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   DSP	          1        16.7
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+lscc_multiplier_dsp(USE_COEFF=0,A_WIDTH=16,B_WIDTH=16,PIPELINES=0)_U2	          1         0.0
+---------------------------------------------------
+Report for cell lscc_multiplier_dsp(USE_COEFF=0,A_WIDTH=16,B_WIDTH=16,PIPELINES=0)_U2
+   Instance path: top/signal_filter_int/dft_inst/core/cmul/mul_re1/lscc_multiplier/genblk1.u_lscc_multiplier_dsp
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   DSP	          1        16.7
+---------------------------------------------------
+Report for cell dft_mul(INPUT_REG="on")_U12
+   Instance path: top/signal_filter_int/dft_inst/core/cmul/mul_re0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   DSP	          1        16.7
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+lscc_multiplier(A_WIDTH=16,B_WIDTH=16,PIPELINES=0,IMPL="DSP")_U8	          1         0.0
+---------------------------------------------------
+Report for cell lscc_multiplier(A_WIDTH=16,B_WIDTH=16,PIPELINES=0,IMPL="DSP")_U8
+   Instance path: top/signal_filter_int/dft_inst/core/cmul/mul_re0/lscc_multiplier
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   DSP	          1        16.7
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+lscc_multiplier_dsp(USE_COEFF=0,A_WIDTH=16,B_WIDTH=16,PIPELINES=0)_U3	          1         0.0
+---------------------------------------------------
+Report for cell lscc_multiplier_dsp(USE_COEFF=0,A_WIDTH=16,B_WIDTH=16,PIPELINES=0)_U3
+   Instance path: top/signal_filter_int/dft_inst/core/cmul/mul_re0/lscc_multiplier/genblk1.u_lscc_multiplier_dsp
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   DSP	          1        16.7
+---------------------------------------------------
+Report for cell dft_mul(INPUT_REG="on")_U13
+   Instance path: top/signal_filter_int/dft_inst/core/cmul/mul_im1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   DSP	          1        16.7
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+lscc_multiplier(A_WIDTH=16,B_WIDTH=16,PIPELINES=0,IMPL="DSP")_U9	          1         0.0
+---------------------------------------------------
+Report for cell lscc_multiplier(A_WIDTH=16,B_WIDTH=16,PIPELINES=0,IMPL="DSP")_U9
+   Instance path: top/signal_filter_int/dft_inst/core/cmul/mul_im1/lscc_multiplier
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   DSP	          1        16.7
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+lscc_multiplier_dsp(USE_COEFF=0,A_WIDTH=16,B_WIDTH=16,PIPELINES=0)_U4	          1         0.0
+---------------------------------------------------
+Report for cell lscc_multiplier_dsp(USE_COEFF=0,A_WIDTH=16,B_WIDTH=16,PIPELINES=0)_U4
+   Instance path: top/signal_filter_int/dft_inst/core/cmul/mul_im1/lscc_multiplier/genblk1.u_lscc_multiplier_dsp
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   DSP	          1        16.7
+---------------------------------------------------
+Report for cell dft_mul(INPUT_REG="on")_U14
+   Instance path: top/signal_filter_int/dft_inst/core/cmul/mul_im0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   DSP	          1        16.7
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+lscc_multiplier(A_WIDTH=16,B_WIDTH=16,PIPELINES=0,IMPL="DSP")_U10	          1         0.0
+---------------------------------------------------
+Report for cell lscc_multiplier(A_WIDTH=16,B_WIDTH=16,PIPELINES=0,IMPL="DSP")_U10
+   Instance path: top/signal_filter_int/dft_inst/core/cmul/mul_im0/lscc_multiplier
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   DSP	          1        16.7
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+lscc_multiplier_dsp(USE_COEFF=0,A_WIDTH=16,B_WIDTH=16,PIPELINES=0)_U5	          1         0.0
+---------------------------------------------------
+Report for cell lscc_multiplier_dsp(USE_COEFF=0,A_WIDTH=16,B_WIDTH=16,PIPELINES=0)_U5
+   Instance path: top/signal_filter_int/dft_inst/core/cmul/mul_im0/lscc_multiplier/genblk1.u_lscc_multiplier_dsp
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   DSP	          1        16.7
+---------------------------------------------------
+Report for cell dft_add(DATA_W=33,DATA_SIGNED="on",PIPELINE_STAGES=4)
+   Instance path: top/signal_filter_int/dft_inst/core/cmul/add_im
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         85         2.0
+                                PFUREG	        150         6.9
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+lscc_adder(D_WIDTH=33,SIGNED="on",USE_OREG="on",PIPELINES=4)	          1         2.0
+---------------------------------------------------
+Report for cell lscc_adder(D_WIDTH=33,SIGNED="on",USE_OREG="on",PIPELINES=4)
+   Instance path: top/signal_filter_int/dft_inst/core/cmul/add_im/lscc_adder
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         85         2.0
+                                PFUREG	        150         6.9
+---------------------------------------------------
+Report for cell dft_dline_U16
+   Instance path: top/signal_filter_int/dft_inst/core/add_valid_dline
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          1         0.0
+---------------------------------------------------
+Report for cell dft_add(DATA_W=16,PIPELINE_STAGES=2,PIPE_4BIT=1'b1)
+   Instance path: top/signal_filter_int/dft_inst/core/add
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         36         0.9
+                                PFUREG	         58         2.7
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+lscc_adder(USE_OREG="on",PIPELINES=2,PIPE_4BIT=1'b1)	          1         0.9
+---------------------------------------------------
+Report for cell lscc_adder(USE_OREG="on",PIPELINES=2,PIPE_4BIT=1'b1)
+   Instance path: top/signal_filter_int/dft_inst/core/add/lscc_adder
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         36         0.9
+                                PFUREG	         58         2.7
+---------------------------------------------------
+Report for cell alaw_coder
+   Instance path: top/signal_filter_int/alaw_coder
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         26         0.6
+                                PFUREG	         29         1.3
+---------------------------------------------------
+Report for cell adc_receiver
+   Instance path: top/adc_receiver_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         39         0.9
+                                PFUREG	         59         2.7
+---------------------------------------------------
+Report for cell spi_slave
+   Instance path: top/spi_slave_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         16         0.4
+                                PFUREG	         28         1.3
+---------------------------------------------------
+Report for cell main_fsm
+   Instance path: top/main_fsm_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        494        11.9
+                                PFUREG	        130         6.0
+---------------------------------------------------
+Report for cell ram_256k
+   Instance path: top/signal_memory
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+---------------------------------------------------
+Report for cell i2s_control(AUDIO_DW=8)
+   Instance path: top/i2s_control_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        102         2.5
+                                PFUREG	         48         2.2
+---------------------------------------------------
+Report for cell mcp4812
+   Instance path: top/mcp4812_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         31         0.7
+                                PFUREG	         32         1.5
+---------------------------------------------------
+Report for cell memory_mux
+   Instance path: top/memory_mux_signal_ram
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         70         1.7
+---------------------------------------------------
+Report for cell pll_adc
+   Instance path: top/pll_adc_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+pll_adc_ipgen_lscc_pll(DIVR="2",DIVF="64",DIVQ="4",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="48.000000")	          1         0.0
+---------------------------------------------------
+Report for cell pll_adc_ipgen_lscc_pll(DIVR="2",DIVF="64",DIVQ="4",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="48.000000")
+   Instance path: top/pll_adc_inst/lscc_pll_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+---------------------------------------------------
+Report for cell i2c_slave_axil_master(STRB_WIDTH=4)
+   Instance path: top/i2c_slave_axil_master_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        520        12.5
+                                PFUREG	        118         5.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                             i2c_slave	          1         4.7
+---------------------------------------------------
+Report for cell i2c_slave
+   Instance path: top/i2c_slave_axil_master_inst/i2c_slave_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        195         4.7
+                                PFUREG	         44         2.0
+---------------------------------------------------
+Report for cell ebr_dp_U22
+   Instance path: top/dac_memory
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	         16         0.7
+                                   EBR	          1         9.1
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+ebr_dp_ipgen_lscc_ram_dp(MEM_ID="ebr_dp",MEM_SIZE="16,256",FAMILY="iCE40UP",WADDR_DEPTH=256,WADDR_WIDTH=8,WDATA_WIDTH=16,RADDR_DEPTH=256,RADDR_WIDTH=8,RDATA_WIDTH=16,RESETMODE="async",INIT_FILE_FORMAT="hex",BYTE_ENABLE=0,BYTE_WIDTH=1)_U19	          1         0.0
+---------------------------------------------------
+Report for cell ebr_dp_ipgen_lscc_ram_dp(MEM_ID="ebr_dp",MEM_SIZE="16,256",FAMILY="iCE40UP",WADDR_DEPTH=256,WADDR_WIDTH=8,WDATA_WIDTH=16,RADDR_DEPTH=256,RADDR_WIDTH=8,RDATA_WIDTH=16,RESETMODE="async",INIT_FILE_FORMAT="hex",BYTE_ENABLE=0,BYTE_WIDTH=1)_U19
+   Instance path: top/dac_memory/lscc_ram_dp_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	         16         0.7
+                                   EBR	          1         9.1
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+ebr_dp_ipgen_lscc_ram_dp_core(MEM_ID="ebr_dp",MEM_SIZE="16,256",FAMILY="iCE40UP",DATA_WIDTH_W=32'b010000,DATA_WIDTH_R=32'b010000,RESETMODE="async",BYTE_ENABLE=1'b0,POSx=32'b0,POSy=32'b0)_U17	          1         0.0
+---------------------------------------------------
+Report for cell ebr_dp_ipgen_lscc_ram_dp_core(MEM_ID="ebr_dp",MEM_SIZE="16,256",FAMILY="iCE40UP",DATA_WIDTH_W=32'b010000,DATA_WIDTH_R=32'b010000,RESETMODE="async",BYTE_ENABLE=1'b0,POSx=32'b0,POSy=32'b0)_U17
+   Instance path: top/dac_memory/lscc_ram_dp_inst/NON_MIX.ADDR_ROUTE[0].DATA_ROUTE[0].no_init.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	         16         0.7
+                                   EBR	          1         9.1
+---------------------------------------------------
+Report for cell ebr_dp
+   Instance path: top/fft_memory
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	         16         0.7
+                                   EBR	          1         9.1
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+ebr_dp_ipgen_lscc_ram_dp(MEM_ID="ebr_dp",MEM_SIZE="16,256",FAMILY="iCE40UP",WADDR_DEPTH=256,WADDR_WIDTH=8,WDATA_WIDTH=16,RADDR_DEPTH=256,RADDR_WIDTH=8,RDATA_WIDTH=16,RESETMODE="async",INIT_FILE_FORMAT="hex",BYTE_ENABLE=0,BYTE_WIDTH=1)	          1         0.0
+---------------------------------------------------
+Report for cell ebr_dp_ipgen_lscc_ram_dp(MEM_ID="ebr_dp",MEM_SIZE="16,256",FAMILY="iCE40UP",WADDR_DEPTH=256,WADDR_WIDTH=8,WDATA_WIDTH=16,RADDR_DEPTH=256,RADDR_WIDTH=8,RDATA_WIDTH=16,RESETMODE="async",INIT_FILE_FORMAT="hex",BYTE_ENABLE=0,BYTE_WIDTH=1)
+   Instance path: top/fft_memory/lscc_ram_dp_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	         16         0.7
+                                   EBR	          1         9.1
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+ebr_dp_ipgen_lscc_ram_dp_core(MEM_ID="ebr_dp",MEM_SIZE="16,256",FAMILY="iCE40UP",DATA_WIDTH_W=32'b010000,DATA_WIDTH_R=32'b010000,RESETMODE="async",BYTE_ENABLE=1'b0,POSx=32'b0,POSy=32'b0)	          1         0.0
+---------------------------------------------------
+Report for cell ebr_dp_ipgen_lscc_ram_dp_core(MEM_ID="ebr_dp",MEM_SIZE="16,256",FAMILY="iCE40UP",DATA_WIDTH_W=32'b010000,DATA_WIDTH_R=32'b010000,RESETMODE="async",BYTE_ENABLE=1'b0,POSx=32'b0,POSy=32'b0)
+   Instance path: top/fft_memory/lscc_ram_dp_inst/NON_MIX.ADDR_ROUTE[0].DATA_ROUTE[0].no_init.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	         16         0.7
+                                   EBR	          1         9.1
+---------------------------------------------------
+Report for cell i2s_tx(AUDIO_DW=8)
+   Instance path: top/i2s_tx_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         31         0.7
+                                PFUREG	         26         1.2
+---------------------------------------------------
+Report for cell memory_mux_U20
+   Instance path: top/memory_mux_fft_ram
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         35         0.8

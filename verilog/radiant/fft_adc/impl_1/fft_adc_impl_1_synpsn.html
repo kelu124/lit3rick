@@ -1,0 +1,127 @@
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<link href="file:////opt/lscc/radiant/2.0/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="file:////opt/lscc/radiant/2.0/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
+<style type="text/css">
+#toc {
+  position: fixed;
+  right: 2px;
+  top: 2px;
+  padding: 2px 5px 2px 5px;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+}
+#toc_list {
+  display: none;
+  }
+</style>
+
+<script type="text/javascript">
+<!--
+function showTocList() {
+var a = document.getElementById("toc_list");
+a.style.display = "block";
+}
+
+function hideTocList() {
+var a = document.getElementById("toc_list");
+if (a)
+    a.style.display = "none";
+}
+
+//-->
+</script>
+
+</HEAD>
+
+<BODY>
+
+<DIV id="content" onclick="hideTocList()"><PRE>
+POSTSYN: Post Synthesis Process Radiant Software (64-bit) 2.0.0.64.1
+Command Line: postsyn -a iCE40UP -p iCE40UP5K -t SG48 -sp High-Performance_1.2V -oc Industrial -top -w -o fft_adc_impl_1_syn.udb -ldc /home/andrew/projects/unoric_board/fft_adc_new/radiant/fft_adc/impl_1/fft_adc_impl_1.ldc -gui -msgset /home/andrew/projects/unoric_board/fft_adc_new/radiant/fft_adc/promote.xml fft_adc_impl_1.vm 
+   Architecture:     iCE40UP
+   Device:           iCE40UP5K
+   Package:          SG48
+   Performance:      High-Performance_1.2V
+Reading input file 'fft_adc_impl_1.vm' ...
+Reading constraint file '/home/andrew/projects/unoric_board/fft_adc_new/radiant/fft_adc/impl_1/fft_adc_impl_1.ldc' ...
+Removing unused logic...
+INFO - Signal memory_mux_fft_ram/addr_mem_13__N_2549[7]_2 undriven or does not drive anything - clipped
+INFO - Signal memory_mux_fft_ram/addr_mem_13__N_2549[6]_2 undriven or does not drive anything - clipped
+INFO - Signal memory_mux_fft_ram/addr_mem_13__N_2549[5]_2 undriven or does not drive anything - clipped
+INFO - Signal memory_mux_fft_ram/addr_mem_13__N_2549[4]_2 undriven or does not drive anything - clipped
+INFO - Signal i2c_slave_axil_master_inst/i2c_slave_inst/state_next[4] undriven or does not drive anything - clipped
+INFO - Signal i2c_slave_axil_master_inst/i2c_slave_inst/state_next[3] undriven or does not drive anything - clipped
+INFO - Signal i2c_slave_axil_master_inst/i2c_slave_inst/state_reg[4] undriven or does not drive anything - clipped
+INFO - Signal i2c_slave_axil_master_inst/i2c_slave_inst/state_reg[3] undriven or does not drive anything - clipped
+INFO - Signal i2c_slave_axil_master_inst/i2c_slave_inst/state_reg[2]_2 undriven or does not drive anything - clipped
+INFO - Signal i2c_slave_axil_master_inst/i2c_slave_inst/state_reg[0]_2 undriven or does not drive anything - clipped
+INFO - ... More signals are undriven or does not drive anything - clipped
+INFO - Instance RPI_MISO_pad.vhi_inst is optimized away.
+Starting design annotation....
+WARNING - The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
+Writing output file 'fft_adc_impl_1_syn.udb'.
+POSTSYN finished successfully.
+Total CPU Time: 1 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 227 MB
+
+
+</PRE></DIV>
+
+<button id="back_to_top" class="radiant" onclick="scrollToTop()">&lt;</button>
+<script type="text/javascript">
+<!--
+var scrollStep = 0;
+function scrollToTop(){
+  var funScroll = function() {
+    var top = document.body.scrollTop;
+    if (top == 0) {
+      scrollStep = 0;
+      return;
+    }
+    if (scrollStep == 0)
+      scrollStep = top/20 + 1;
+    top -= scrollStep;
+    if (top < 0)
+      top = 0;
+    document.body.scrollTop = top;
+    requestAnimationFrame(funScroll);
+  };
+  funScroll();
+}
+
+window.addEventListener('scroll', function(e) {
+  var backToTop = document.getElementById('back_to_top')
+  if (document.body.scrollTop > 0) {
+    backToTop.style.display = 'block';
+  } else {	backToTop.style.display = 'none'  }});
+
+//-->
+</script>
+
+<style type="text/css">
+#back_to_top {
+  bottom:20px; right:20px;
+  width:30px; height:30px;
+  font-size: 20px;
+  padding: 2px 5px 2px 5px;
+  position:fixed;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+  display:none;
+  -webkit-transform: rotate(90deg);
+  -webkit-transform-origin:50% 50%;
+}
+#back_to_top:focus {
+  outline-width:0px;
+}
+</style>
+
+</BODY>
+

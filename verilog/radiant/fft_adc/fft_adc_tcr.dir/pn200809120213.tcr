@@ -1,0 +1,6 @@
+#Start recording tcl command: 8/9/2020 10:04:11
+#Project Location: /home/andrew/projects/unoric_board/fft_adc_new/radiant/fft_adc; Project name: fft_adc
+prj_open "/home/andrew/projects/unoric_board/fft_adc_new/radiant/fft_adc/fft_adc.rdf"
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+#Stop recording: 8/9/2020 12:02:13

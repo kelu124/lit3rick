@@ -1,0 +1,17 @@
+Copyright 2015 Lattice Semiconductor Corporation, All Rights Reserved
+Wed Sep 23 23:41:36 2020
+
+Command Line: par -w -n 1 -t 85 -s 1 -cores 1 -exp parPathBased=ON \
+	fft_adc_impl_1_map.udb fft_adc_impl_1.udb 
+
+
+Level/       Number       Worst        Timing       Worst        Timing       Run          Run
+Cost [udb]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
+----------   --------     -----        ------       -----------  -----------  ----         ------
+5_85  *      0            -6.390       679312       2.596        0            01:42        Completed
+
+* : Design saved.
+
+Total (real) run time for 1-seed: 1 mins 42 secs 
+
+par done!

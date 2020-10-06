@@ -1,0 +1,31 @@
+set device "iCE40UP5K"
+set speed "High-Performance_1.2V"
+set architecture "iCE40UP"
+set package "SG48"
+set WRAPPER_INST "lscc_fifo_inst"
+set FAMILY "iCE40UP"
+set ADDRESS_DEPTH 256
+set DATA_WIDTH 16
+set ADDRESS_WIDTH 8
+set REGMODE "noreg"
+set RESET_MODE "sync"
+set ENABLE_ALMOST_FULL_FLAG "TRUE"
+set ALMOST_FULL_ASSERTION "static-single"
+set ALMOST_FULL_ASSERT_LVL 100
+set ALMOST_FULL_DEASSERT_LVL 99
+set ENABLE_ALMOST_EMPTY_FLAG "TRUE"
+set ALMOST_EMPTY_ASSERTION "static-dual"
+set ALMOST_EMPTY_ASSERT_LVL 40
+set ALMOST_EMPTY_DEASSERT_LVL 41
+set ENABLE_DATA_COUNT "FALSE"
+set IMPLEMENTATION "EBR"
+
+
+
+#if {$FAMILY == "iCE40UP"} {
+#    create_clock -name clk_i -period 40 [get_ports clk_i] 
+#    set_false_path -from [get_ports rst_i]
+#} else {
+#    create_clock -name clk_i -period 10 [get_ports clk_i] 
+#    set_false_path -from [get_ports rst_i]
+#}

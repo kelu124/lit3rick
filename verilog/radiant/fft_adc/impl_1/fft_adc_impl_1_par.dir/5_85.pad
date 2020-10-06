@@ -1,0 +1,166 @@
+PAD Specification File
+***************************
+
+PART TYPE:        iCE40UP5K
+Performance Grade:      High-Performance_1.2V
+PACKAGE:          SG48
+Package Status:                     Preliminary    Version 1.5
+
+Wed Sep 23 23:42:40 2020
+
+Pinout by Port Name:
++-------------+----------+---------------+-------+--------------------+
+| Port Name   | Pin/Bank | Buffer Type   | Site  | Properties         |
++-------------+----------+---------------+-------+--------------------+
+| ADC_DCLK    | 44/2     | LVCMOS33_IN   | PL7B  | PULL:100K          |
+| ADC_D[0]    | 34/0     | LVCMOS33_IN   | PR14B | PULL:100K          |
+| ADC_D[10]   | 2/2      | LVCMOS33_IN   | PL9A  | PULL:100K          |
+| ADC_D[11]   | 3/2      | LVCMOS33_IN   | PL10B | PULL:100K          |
+| ADC_D[1]    | 36/0     | LVCMOS33_IN   | PR10B | PULL:100K          |
+| ADC_D[2]    | 38/0     | LVCMOS33_IN   | PR9B  | PULL:100K          |
+| ADC_D[3]    | 42/0     | LVCMOS33_IN   | PR9A  | PULL:100K          |
+| ADC_D[4]    | 43/0     | LVCMOS33_IN   | PR10A | PULL:100K          |
+| ADC_D[5]    | 4/2      | LVCMOS33_IN   | PL10A | PULL:100K          |
+| ADC_D[6]    | 45/2     | LVCMOS33_IN   | PL8B  | PULL:100K          |
+| ADC_D[7]    | 46/2     | LVCMOS33_IN   | PL6A  | PULL:100K          |
+| ADC_D[8]    | 47/2     | LVCMOS33_IN   | PL7A  | PULL:100K          |
+| ADC_D[9]    | 48/2     | LVCMOS33_IN   | PL8A  | PULL:100K          |
+| ADC_REF_CLK | 37/0     | LVCMOS33_OUT  | PR14A | DRIVE:8mA PULL:NA  |
+| CSn         | 23/0     | LVCMOS33_OUT  | PR20A | DRIVE:8mA PULL:NA  |
+| HILO        | 21/1     | LVCMOS33_OUT  | PL19B | DRIVE:8mA PULL:NA  |
+| HV_EN       | 35/0     | LVCMOS33_OUT  | PR13B | DRIVE:8mA PULL:NA  |
+| LED_B       | 41/0     | NA            | PR7A  |                    |
+| LED_G       | 40/0     | NA            | PR6A  |                    |
+| LED_R       | 39/0     | NA            | PR5A  |                    |
+| PDamp       | 18/1     | LVCMOS33_OUT  | PL23B | DRIVE:8mA PULL:NA  |
+| PHV         | 20/1     | LVCMOS33_OUT  | PL20B | DRIVE:8mA PULL:NA  |
+| PnHV        | 19/1     | LVCMOS33_OUT  | PL22B | DRIVE:8mA PULL:NA  |
+| RPI_CSn     | 32/0     | LVCMOS33_IN   | PR17A | PULL:100K          |
+| RPI_MISO    | 17/1     | LVCMOS33_OUT  | PL24B | DRIVE:8mA PULL:NA  |
+| RPI_MOSI    | 14/1     | LVCMOS33_IN   | PL24A | PULL:100K          |
+| RPI_SCLK    | 15/1     | LVCMOS33_IN   | PL25A | PULL:100K          |
+| SCK         | 11/1     | LVCMOS33_OUT  | PL18A | DRIVE:8mA PULL:NA  |
+| SDI         | 10/1     | LVCMOS33_OUT  | PL17A | DRIVE:8mA PULL:NA  |
+| i2c_scl     | 9/1      | LVCMOS33_BIDI | PL16A | DRIVE:8mA PULL:NA  |
+| i2c_sda     | 6/1      | LVCMOS33_BIDI | PL14B | DRIVE:8mA PULL:NA  |
+| i2s_clk     | 26/0     | LVCMOS33_IN   | PR19A | PULL:100K          |
+| i2s_data    | 28/0     | LVCMOS33_OUT  | PR18A | DRIVE:8mA PULL:NA  |
+| i2s_lrclk   | 27/0     | LVCMOS33_OUT  | PR19B | DRIVE:8mA PULL:NA  |
++-------------+----------+---------------+-------+--------------------+
+
+Vccio by Bank:
++------+-------+
+| Bank | Vccio |
++------+-------+
+| 0    | 3.3V  |
+| 1    | 3.3V  |
+| 2    | 3.3V  |
++------+-------+
+
+Pinout by Pin Number:
++----------+---------------------+------------+---------------+-------+------------------+
+| Pin/Bank | Pin Info            | Constraint | Buffer Type   | Site  | Dual Function    |
++----------+---------------------+------------+---------------+-------+------------------+
+| 2/2      | ADC_D[10]           | LOCATED    | LVCMOS33_IN   | PL9A  |                  |
+| 3/2      | ADC_D[11]           | LOCATED    | LVCMOS33_IN   | PL10B |                  |
+| 4/2      | ADC_D[5]            | LOCATED    | LVCMOS33_IN   | PL10A |                  |
+| 6/1      | i2c_sda             | LOCATED    | LVCMOS33_BIDI | PL14B |                  |
+| 9/1      | i2c_scl             | LOCATED    | LVCMOS33_BIDI | PL16A |                  |
+| 10/1     | SDI                 | LOCATED    | LVCMOS33_OUT  | PL17A |                  |
+| 11/1     | SCK                 | LOCATED    | LVCMOS33_OUT  | PL18A |                  |
+| 12/1     |     unused, PULL:UP |            |               | PL19A |                  |
+| 13/1     |     unused, PULL:UP |            |               | PL20A |                  |
+| 14/1     | RPI_MOSI            | LOCATED    | LVCMOS33_IN   | PL24A | SPI_SO           |
+| 15/1     | RPI_SCLK            | LOCATED    | LVCMOS33_IN   | PL25A | SPISCK           |
+| 16/1     |     unused, PULL:UP |            |               | PL25B | SPI_SS           |
+| 17/1     | RPI_MISO            | LOCATED    | LVCMOS33_OUT  | PL24B | SPI_SI           |
+| 18/1     | PDamp               | LOCATED    | LVCMOS33_OUT  | PL23B |                  |
+| 19/1     | PnHV                | LOCATED    | LVCMOS33_OUT  | PL22B |                  |
+| 20/1     | PHV                 | LOCATED    | LVCMOS33_OUT  | PL20B | PCLKT1_0         |
+| 21/1     | HILO                | LOCATED    | LVCMOS33_OUT  | PL19B |                  |
+| 23/0     | CSn                 | LOCATED    | LVCMOS33_OUT  | PR20A |                  |
+| 25/0     |     unused, PULL:UP |            |               | PR20B |                  |
+| 26/0     | i2s_clk             | LOCATED    | LVCMOS33_IN   | PR19A |                  |
+| 27/0     | i2s_lrclk           | LOCATED    | LVCMOS33_OUT  | PR19B |                  |
+| 28/0     | i2s_data            | LOCATED    | LVCMOS33_OUT  | PR18A |                  |
+| 31/0     |     unused, PULL:UP |            |               | PR17B |                  |
+| 32/0     | RPI_CSn             | LOCATED    | LVCMOS33_IN   | PR17A |                  |
+| 34/0     | ADC_D[0]            | LOCATED    | LVCMOS33_IN   | PR14B |                  |
+| 35/0     | HV_EN               | LOCATED    | LVCMOS33_OUT  | PR13B | GPLL_IN/PCLKT0_1 |
+| 36/0     | ADC_D[1]            | LOCATED    | LVCMOS33_IN   | PR10B |                  |
+| 37/0     | ADC_REF_CLK         | LOCATED    | LVCMOS33_OUT  | PR14A | PCLKT0_0         |
+| 38/0     | ADC_D[2]            | LOCATED    | LVCMOS33_IN   | PR9B  |                  |
+| 39/0     | LED_R               | LOCATED    | NA            | PR5A  | RGB0             |
+| 40/0     | LED_G               | LOCATED    | NA            | PR6A  | RGB1             |
+| 41/0     | LED_B               | LOCATED    | NA            | PR7A  | RGB2             |
+| 42/0     | ADC_D[3]            | LOCATED    | LVCMOS33_IN   | PR9A  |                  |
+| 43/0     | ADC_D[4]            | LOCATED    | LVCMOS33_IN   | PR10A |                  |
+| 44/2     | ADC_DCLK            | LOCATED    | LVCMOS33_IN   | PL7B  | PCLKT2_0         |
+| 45/2     | ADC_D[6]            | LOCATED    | LVCMOS33_IN   | PL8B  |                  |
+| 46/2     | ADC_D[7]            | LOCATED    | LVCMOS33_IN   | PL6A  |                  |
+| 47/2     | ADC_D[8]            | LOCATED    | LVCMOS33_IN   | PL7A  |                  |
+| 48/2     | ADC_D[9]            | LOCATED    | LVCMOS33_IN   | PL8A  |                  |
+| PL6B/2   |     unused, PULL:UP |            |               | PL6B  |                  |
+| PL9B/2   |     unused, PULL:UP |            |               | PL9B  |                  |
+| PL13A/1  |     unused, PULL:UP |            |               | PL13A |                  |
+| PL13B/1  |     unused, PULL:UP |            |               | PL13B | PCLKT1_2         |
+| PL14A/1  |     unused, PULL:UP |            |               | PL14A | PCLKT1_1         |
+| PL15A/1  |     unused, PULL:UP |            |               | PL15A |                  |
+| PL15B/1  |     unused, PULL:UP |            |               | PL15B |                  |
+| PL16B/1  |     unused, PULL:UP |            |               | PL16B |                  |
+| PL17B/1  |     unused, PULL:UP |            |               | PL17B |                  |
+| PL18B/1  |     unused, PULL:UP |            |               | PL18B |                  |
+| PL21A/1  |     unused, PULL:UP |            |               | PL21A |                  |
+| PL21B/1  |     unused, PULL:UP |            |               | PL21B |                  |
+| PL22A/1  |     unused, PULL:UP |            |               | PL22A |                  |
+| PL23A/1  |     unused, PULL:UP |            |               | PL23A |                  |
+| PR13A/0  |     unused, PULL:UP |            |               | PR13A |                  |
+| PR18B/0  |     unused, PULL:UP |            |               | PR18B |                  |
+| PR22A/0  |     unused, PULL:UP |            |               | PR22A |                  |
++----------+---------------------+------------+---------------+-------+------------------+
+
+
+Locate Constraints for each Pin: 
+
+ldc_set_location -site {44} [ get_ports {ADC_DCLK} ]
+ldc_set_location -site {34} [ get_ports {ADC_D[0]} ]
+ldc_set_location -site {2} [ get_ports {ADC_D[10]} ]
+ldc_set_location -site {3} [ get_ports {ADC_D[11]} ]
+ldc_set_location -site {36} [ get_ports {ADC_D[1]} ]
+ldc_set_location -site {38} [ get_ports {ADC_D[2]} ]
+ldc_set_location -site {42} [ get_ports {ADC_D[3]} ]
+ldc_set_location -site {43} [ get_ports {ADC_D[4]} ]
+ldc_set_location -site {4} [ get_ports {ADC_D[5]} ]
+ldc_set_location -site {45} [ get_ports {ADC_D[6]} ]
+ldc_set_location -site {46} [ get_ports {ADC_D[7]} ]
+ldc_set_location -site {47} [ get_ports {ADC_D[8]} ]
+ldc_set_location -site {48} [ get_ports {ADC_D[9]} ]
+ldc_set_location -site {37} [ get_ports {ADC_REF_CLK} ]
+ldc_set_location -site {23} [ get_ports {CSn} ]
+ldc_set_location -site {21} [ get_ports {HILO} ]
+ldc_set_location -site {35} [ get_ports {HV_EN} ]
+ldc_set_location -site {41} [ get_ports {LED_B} ]
+ldc_set_location -site {40} [ get_ports {LED_G} ]
+ldc_set_location -site {39} [ get_ports {LED_R} ]
+ldc_set_location -site {18} [ get_ports {PDamp} ]
+ldc_set_location -site {20} [ get_ports {PHV} ]
+ldc_set_location -site {19} [ get_ports {PnHV} ]
+ldc_set_location -site {32} [ get_ports {RPI_CSn} ]
+ldc_set_location -site {17} [ get_ports {RPI_MISO} ]
+ldc_set_location -site {14} [ get_ports {RPI_MOSI} ]
+ldc_set_location -site {15} [ get_ports {RPI_SCLK} ]
+ldc_set_location -site {11} [ get_ports {SCK} ]
+ldc_set_location -site {10} [ get_ports {SDI} ]
+ldc_set_location -site {9} [ get_ports {i2c_scl} ]
+ldc_set_location -site {6} [ get_ports {i2c_sda} ]
+ldc_set_location -site {26} [ get_ports {i2s_clk} ]
+ldc_set_location -site {28} [ get_ports {i2s_data} ]
+ldc_set_location -site {27} [ get_ports {i2s_lrclk} ]
+
+
+
+
+
+Copyright 2015 Lattice Semiconductor Corporation, All Rights Reserved
+Wed Sep 23 23:42:40 2020
+

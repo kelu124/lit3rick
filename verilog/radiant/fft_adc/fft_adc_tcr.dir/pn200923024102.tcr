@@ -1,0 +1,50 @@
+#Start recording tcl command: 9/21/2020 08:02:13
+#Project Location: /home/andrew/projects/unoric_board/fft_adc_new/radiant/fft_adc; Project name: fft_adc
+prj_open "/home/andrew/projects/unoric_board/fft_adc_new/radiant/fft_adc/fft_adc.rdf"
+source ./source/scripts/best_timings.tcl
+puts [join ${all_runs} \n]
+source ./source/scripts/best_timings.tcl
+puts $best_str
+prj_set_strategy_value -strategy timing_cust par_place_iterator_start_pt=85
+prj_run Export -impl impl_1
+prj_add_source "/home/andrew/projects/unoric_board/fft_adc_new/src/rtl/i2c_wrapper.v"
+prj_run PAR -impl impl_1
+prj_set_strategy_value -strategy timing_cust par_place_iterator_start_pt=1
+prj_run PAR -impl impl_1
+source ./source/scripts/best_timings.tcl
+puts $best_str
+prj_set_strategy_value -strategy timing_cust par_place_iterator_start_pt=22
+prj_run Export -impl impl_1
+prj_set_strategy_value -strategy timing_cust partrce_endpoint_number=60 partrce_paths_per_clock=60
+prj_run PAR -impl impl_1
+prj_set_strategy_value -strategy timing_cust lse_use_carry_chain=True
+prj_run PAR -impl impl_1
+prj_set_strategy_value -strategy timing_cust lse_use_carry_chain=False
+prj_run PAR -impl impl_1
+get_cells *mul*
+get_cells signal_filter
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_set_strategy_value -strategy timing_cust par_place_iterator_start_pt=85
+prj_run Export -impl impl_1
+source ./source/scripts/best_timings.tcl
+prj_set_strategy_value -strategy timing_cust par_place_iterator_start_pt=85
+prj_run PAR -impl impl_1
+prj_set_strategy_value -strategy timing_cust par_save_best_result=3 par_place_iterator=3
+prj_run PAR -impl impl_1
+prj_set_strategy_value -strategy timing_cust par_save_best_result=1 par_core_number=1 par_place_iterator=1
+prj_set_strategy_value -strategy timing_cust lse_res_sharing=True
+prj_run PAR -impl impl_1
+prj_set_strategy_value -strategy timing_cust lse_remove_dup_regs=False lse_res_sharing=False
+prj_run PAR -impl impl_1
+prj_set_strategy_value -strategy timing_cust lse_rwcheck_on_ram=False lse_remove_dup_regs=True
+prj_run Export -impl impl_1
+prj_set_strategy_value -strategy timing_cust lse_rwcheck_on_ram=True lse_fix_gated_clocks=False
+prj_run Export -impl impl_1
+prj_set_strategy_value -strategy timing_cust lse_fix_gated_clocks=True lse_opt_goal=Balanced
+prj_run Export -impl impl_1
+prj_set_strategy_value -strategy timing_cust lse_opt_goal=Area
+prj_run Export -impl impl_1
+prj_set_strategy_value -strategy timing_cust lse_opt_goal=Timing
+prj_run PAR -impl impl_1
+#Stop recording: 9/23/2020 02:41:02

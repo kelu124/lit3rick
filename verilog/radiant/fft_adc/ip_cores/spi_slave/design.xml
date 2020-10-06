@@ -1,0 +1,334 @@
+<?xml version="1.0" ?>
+<ipxact:design xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:lsccip="http://www.latticesemi.com/XMLSchema/Radiant/ip">
+    <ipxact:vendor>latticesemi.com</ipxact:vendor>
+    <ipxact:library>module</ipxact:library>
+    <ipxact:name>spi_slave</ipxact:name>
+    <ipxact:version>1.0.0</ipxact:version>
+    <ipxact:componentInstances>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>lscc_spi_i2c_inst</ipxact:instanceName>
+            <ipxact:componentRef library="module" name="spi_i2c" vendor="latticesemi.com" version="1.0.0">
+                <ipxact:configurableElementValues>
+                    <ipxact:configurableElementValue referenceId="i2c_left_enable">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="i2c_right_enable">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="spi_left_enable">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="spi_right_enable">True</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="sys_clock_freq">48.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="FREQUENCY_PIN_SBCLKI">48.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="i2c_left_general_call_enable">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="i2c_left_wakeup_enable">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="i2c_left_desired_frequency">100</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="I2C_LEFT_CLK_PRESCALE">119</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="I2C_LEFT_CLK_DIVIDER">480</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="i2c_left_actual_frequency">100.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="i2c_left_addressing_width">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="I2C_LEFT_ADDRESSING_PRE">11111</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="I2C_LEFT_SLAVE_INIT_ADDR">0b1111101</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="i2c_left_arbitration_lost">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="i2c_left_tx_rx_ready">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="i2c_left_overrun_or_nack">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="i2c_left_general_call">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="I2C_LEFT_SDA_INPUT_DELAYED">True</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="I2C_LEFT_SDA_OUTPUT_DELAYED">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="I2C_LEFT_INIT_VALUE_0">128</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="I2C_LEFT_INIT_VALUE_1">31</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="I2C_LEFT_INIT_VALUE_2">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="i2c_right_general_call_enable">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="i2c_right_wakeup_enable">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="i2c_right_desired_frequency">100</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="I2C_RIGHT_CLK_PRESCALE">119</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="I2C_RIGHT_CLK_DIVIDER">480</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="i2c_right_actual_frequency">100.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="i2c_right_addressing_width">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="I2C_RIGHT_ADDRESSING_PRE">11111</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="I2C_RIGHT_SLAVE_INIT_ADDR">0b1111110</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="i2c_right_arbitration_lost">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="i2c_right_tx_rx_ready">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="i2c_right_overrun_or_nack">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="i2c_right_general_call">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="I2C_RIGHT_SDA_INPUT_DELAYED">True</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="I2C_RIGHT_SDA_OUTPUT_DELAYED">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="I2C_RIGHT_INIT_VALUE_5">128</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="I2C_RIGHT_INIT_VALUE_6">31</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="I2C_RIGHT_INIT_VALUE_7">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="spi_left_enable_slave_interface">True</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="spi_left_enable_master_interface">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="spi_left_desired_frequency">48.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="SPI_LEFT_CLK_DIVIDER">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="SPI_LEFT_CLK_PRESCALE">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="spi_left_actual_frequency">48.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="SPI_LEFT_MASTER_CHIP_SELECTS">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="spi_left_tx_ready">True</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="spi_left_rx_ready">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="spi_left_tx_overrun">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="spi_left_rx_overrun">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="SPI_LEFT_WAKEUP_ENABLE">True</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="spi_left_lsb_first">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="spi_left_phase_adjust">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="spi_left_inverted_clock">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="spi_left_slave_handshake_mode">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="SPI_LEFT_INIT_VALUE_10">8</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="SPI_LEFT_INIT_VALUE_13">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="spi_right_enable_slave_interface">True</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="spi_right_enable_master_interface">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="spi_right_desired_frequency">48.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="SPI_RIGHT_CLK_DIVIDER">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="SPI_RIGHT_CLK_PRESCALE">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="spi_right_actual_frequency">48.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="SPI_RIGHT_MASTER_CHIP_SELECTS">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="spi_right_tx_ready">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="spi_right_rx_ready">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="spi_right_tx_overrun">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="spi_right_rx_overrun">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="SPI_RIGHT_WAKEUP_ENABLE">True</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="spi_right_lsb_first">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="spi_right_phase_adjust">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="spi_right_inverted_clock">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="spi_right_slave_handshake_mode">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="SPI_RIGHT_INIT_VALUE_15">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="SPI_RIGHT_INIT_VALUE_18">0</ipxact:configurableElementValue>
+                </ipxact:configurableElementValues>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+    </ipxact:componentInstances>
+    <ipxact:adHocConnections>
+        <ipxact:adHocConnection>
+            <ipxact:name>spi_slave.i2c2_scl_io</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="spi_slave" portRef="i2c2_scl_io"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>spi_slave.i2c2_sda_io</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="spi_slave" portRef="i2c2_sda_io"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>spi_slave.i2c1_scl_io</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="spi_slave" portRef="i2c1_scl_io"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>spi_slave.i2c1_sda_io</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="spi_slave" portRef="i2c1_sda_io"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>spi_slave.spi2_miso_io</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="spi_slave" portRef="spi2_miso_io"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>spi_slave.spi2_mosi_io</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="spi_slave" portRef="spi2_mosi_io"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>spi_slave.spi2_sck_io</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="spi_slave" portRef="spi2_sck_io"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>spi_slave.spi2_scs_n_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="spi_slave" portRef="spi2_scs_n_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>spi_slave.spi2_mcs_n_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="spi_slave" portRef="spi2_mcs_n_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>spi_slave.spi1_miso_io</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="spi_slave" portRef="spi1_miso_io"/>
+                <ipxact:externalPortReference portRef="spi1_miso_io"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>spi_slave.spi1_mosi_io</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="spi_slave" portRef="spi1_mosi_io"/>
+                <ipxact:externalPortReference portRef="spi1_mosi_io"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>spi_slave.spi1_sck_io</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="spi_slave" portRef="spi1_sck_io"/>
+                <ipxact:externalPortReference portRef="spi1_sck_io"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>spi_slave.spi1_scs_n_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="spi_slave" portRef="spi1_scs_n_i"/>
+                <ipxact:externalPortReference portRef="spi1_scs_n_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>spi_slave.spi1_mcs_n_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="spi_slave" portRef="spi1_mcs_n_o"/>
+                <ipxact:externalPortReference portRef="spi1_mcs_n_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>spi_slave.rst_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="spi_slave" portRef="rst_i"/>
+                <ipxact:externalPortReference portRef="rst_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>spi_slave.ipload_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="spi_slave" portRef="ipload_i"/>
+                <ipxact:externalPortReference portRef="ipload_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>spi_slave.ipdone_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="spi_slave" portRef="ipdone_o"/>
+                <ipxact:externalPortReference portRef="ipdone_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>spi_slave.sb_clk_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="spi_slave" portRef="sb_clk_i"/>
+                <ipxact:externalPortReference portRef="sb_clk_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>spi_slave.sb_wr_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="spi_slave" portRef="sb_wr_i"/>
+                <ipxact:externalPortReference portRef="sb_wr_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>spi_slave.sb_stb_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="spi_slave" portRef="sb_stb_i"/>
+                <ipxact:externalPortReference portRef="sb_stb_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>spi_slave.sb_adr_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="spi_slave" portRef="sb_adr_i"/>
+                <ipxact:externalPortReference portRef="sb_adr_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>7</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>spi_slave.sb_dat_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="spi_slave" portRef="sb_dat_i"/>
+                <ipxact:externalPortReference portRef="sb_dat_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>7</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>spi_slave.sb_dat_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="spi_slave" portRef="sb_dat_o"/>
+                <ipxact:externalPortReference portRef="sb_dat_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>7</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>spi_slave.sb_ack_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="spi_slave" portRef="sb_ack_o"/>
+                <ipxact:externalPortReference portRef="sb_ack_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>spi_slave.i2c_pirq_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="spi_slave" portRef="i2c_pirq_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>spi_slave.i2c_pwkup_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="spi_slave" portRef="i2c_pwkup_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>spi_slave.spi_pirq_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="spi_slave" portRef="spi_pirq_o"/>
+                <ipxact:externalPortReference portRef="spi_pirq_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>spi_slave.spi_pwkup_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="spi_slave" portRef="spi_pwkup_o"/>
+                <ipxact:externalPortReference portRef="spi_pwkup_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+    </ipxact:adHocConnections>
+</ipxact:design>

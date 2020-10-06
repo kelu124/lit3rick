@@ -1,0 +1,25 @@
+###File created by Lattice CPE. Do not modify.###
+#if {$FAMILY == "iCE40UP"} { originating in instance fifo_i2s was updated to #if {$FAMILY == "iCE40UP"} { and kept.
+
+#    create_clock -name clk_i -period 40 [get_ports clk_i] originating in instance fifo_i2s was updated to #    create_clock -name clk_i -period 40 [get_ports clk_i] and kept.
+
+#    set_false_path -from [get_ports rst_i] originating in instance fifo_i2s was updated to #    set_false_path -from [get_ports rst_i] and kept.
+
+#} else { originating in instance fifo_i2s was updated to #} else { and kept.
+
+#    create_clock -name clk_i -period 10 [get_ports clk_i] originating in instance fifo_i2s was updated to #    create_clock -name clk_i -period 10 [get_ports clk_i] and kept.
+
+#} originating in instance fifo_i2s was updated to #} and kept.
+
+#if {$FAMILY == "iCE40UP"} { originating in instance sc_fifo_inst was updated to #if {$FAMILY == "iCE40UP"} { and kept.
+
+#    create_clock -name clk_i -period 40 [get_ports clk_i] originating in instance sc_fifo_inst was updated to #    create_clock -name clk_i -period 40 [get_ports clk_i] and kept.
+
+#    set_false_path -from [get_ports rst_i] originating in instance sc_fifo_inst was updated to #    set_false_path -from [get_ports rst_i] and kept.
+
+#} else { originating in instance sc_fifo_inst was updated to #} else { and kept.
+
+#    create_clock -name clk_i -period 10 [get_ports clk_i] originating in instance sc_fifo_inst was updated to #    create_clock -name clk_i -period 10 [get_ports clk_i] and kept.
+
+#} originating in instance sc_fifo_inst was updated to #} and kept.
+

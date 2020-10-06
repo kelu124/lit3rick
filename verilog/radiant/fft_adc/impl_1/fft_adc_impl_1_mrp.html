@@ -1,0 +1,886 @@
+<HTML>
+<HEAD>
+<TITLE>Map Report</TITLE>
+<link href="file:////opt/lscc/radiant/2.0/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="file:////opt/lscc/radiant/2.0/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
+<style type="text/css">
+#toc {
+  position: fixed;
+  right: 2px;
+  top: 2px;
+  padding: 2px 5px 2px 5px;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+}
+#toc_list {
+  display: none;
+  }
+</style>
+
+<script type="text/javascript">
+<!--
+function showTocList() {
+var a = document.getElementById("toc_list");
+a.style.display = "block";
+}
+
+function hideTocList() {
+var a = document.getElementById("toc_list");
+if (a)
+    a.style.display = "none";
+}
+
+//-->
+</script>
+
+</HEAD>
+
+<BODY>
+
+<DIV id="content" onclick="hideTocList()"><PRE>
+<A name="Mrp"></A>        Lattice Mapping Report File for Design Module 'fft_adc_impl_1'
+
+Target Vendor:        LATTICE
+Target Device:        iCE40UP5KSG48
+Target Performance:   High-Performance_1.2V
+
+Mapper:    version Radiant Software (64-bit) 2.0.0.64.1
+Mapped on: Wed Sep 23 23:41:31 2020
+
+
+<A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
+
+Command line:   map fft_adc_impl_1_syn.udb /home/andrew/projects/unoric_board/ff
+     t_adc_new/radiant/fft_adc/source/impl_1/impl_1.pdc -o
+     fft_adc_impl_1_map.udb -mp fft_adc_impl_1.mrp -hierrpt -gui
+
+<A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
+   Number of slice registers: 2180 out of  5280 (41%)
+   Number of I/O registers:      0 out of   117 (0%)
+   Number of LUT4s:           4149 out of  5280 (79%)
+      Number of logic LUT4s:             2858
+      Number of inserted feedthru LUT4s: 1036
+      Number of replicated LUT4s:        255
+      Number of ripple logic:              0 (0 LUT4s)
+   Number of IO sites used:   34 out of 39 (87%)
+      Number of IO sites used for general PIOs: 31
+      Number of IO sites used for I3Cs: 0 out of 2 (0%)
+      Number of IO sites used for PIOs+I3Cs: 31 out of 36 (86%)
+      (note: If I3C is not used, its site can be used as general PIO)
+      Number of IO sites used for OD+RGB IO buffers: 3 out of 3 (100%)
+   Number of DSPs:             6 out of 8 (75%)
+   Number of I2Cs:             0 out of 2 (0%)
+   Number of High Speed OSCs:  1 out of 1 (100%)
+   Number of Low Speed OSCs:   0 out of 1 (0%)
+   Number of RGB PWM:          0 out of 1 (0%)
+   Number of RGB Drivers:      1 out of 1 (100%)
+   Number of SCL FILTERs:      0 out of 2 (0%)
+   Number of SRAMs:            1 out of 4 (25%)
+   Number of WARMBOOTs:        0 out of 1 (0%)
+   Number of SPIs:             0 out of 2 (0%)
+   Number of EBRs:             11 out of 30 (36%)
+   Number of PLLs:             1 out of 1 (100%)
+   Number of Clocks:  5
+      Net ADC_DCLK_c: 2147 loads, 2147 rising, 0 falling (Driver: Port ADC_DCLK)
+      Net clk: 9 loads, 9 rising, 0 falling (Driver: Pin
+     hi_clock_gen_inst/CLKHF)
+      Net RPI_SCLK_c_derived_20: 20 loads, 20 rising, 0 falling (Driver: Pin
+     i2025_2_lut_rep_1424/OUT)
+      Net treg_7__N_941: 8 loads, 8 rising, 0 falling (Driver: Pin
+     i29_1_lut_2_lut/OUT)
+      Net i2s_clk_c: 26 loads, 26 rising, 0 falling (Driver: Port i2s_clk)
+   Number of Clock Enables:  67
+      Net VCC_net: 39 loads, 0 SLICEs
+      Net n7789: 24 loads, 24 SLICEs
+      Net n44421: 31 loads, 31 SLICEs
+      Net rd_fifo_en_w: 1 loads, 0 SLICEs
+      Net wr_fifo_en_w: 1 loads, 0 SLICEs
+      Net n19081: 31 loads, 31 SLICEs
+      Net n19113: 32 loads, 32 SLICEs
+      Net n19145: 31 loads, 31 SLICEs
+
+      Net n18909: 16 loads, 16 SLICEs
+      Net n18893: 16 loads, 16 SLICEs
+      Net n20305: 16 loads, 16 SLICEs
+      Net n19874: 32 loads, 32 SLICEs
+      Net signal_filter_int.n4698: 8 loads, 8 SLICEs
+      Net signal_filter_int.n4696: 14 loads, 14 SLICEs
+      Net signal_filter_int.n20588: 5 loads, 5 SLICEs
+      Net signal_filter_int.n4721: 5 loads, 5 SLICEs
+      Net signal_filter_int.cmul_done: 4 loads, 2 SLICEs
+      Net signal_filter_int.n23298: 5 loads, 5 SLICEs
+      Net signal_filter_int.sc_fifo_inst.lscc_fifo_inst.rd_fifo_en_w: 1 loads, 0
+     SLICEs
+      Net signal_filter_int.sc_fifo_inst.lscc_fifo_inst.wr_fifo_en_w: 1 loads, 0
+     SLICEs
+      Net signal_filter_int.dft_inst.preproc.n44744: 13 loads, 13 SLICEs
+      Net signal_filter_int.dft_inst.n44742: 7 loads, 7 SLICEs
+      Net signal_filter_int.dft_inst.wr_fifo_en_w: 1 loads, 0 SLICEs
+      Net signal_filter_int.dft_inst.postproc.add_valid: 2 loads, 2 SLICEs
+      Net signal_filter_int.dft_inst.postproc.n20708: 18 loads, 18 SLICEs
+      Net signal_filter_int.dft_inst.postproc.abs.n40607: 1 loads, 1 SLICEs
+      Net signal_filter_int.dft_inst.postproc.abs.sqrt.n20896: 65 loads, 65
+     SLICEs
+      Net signal_filter_int.dft_inst.postproc.abs.sqrt.n44872: 3 loads, 3 SLICEs
+      Net signal_filter_int.dft_inst.postproc.abs.sqrt.n44534: 1 loads, 1 SLICEs
+      Net signal_filter_int.dft_inst.postproc.abs.fifo.lscc_fifo_ip.n44738: 3
+     loads, 3 SLICEs
+      Net signal_filter_int.dft_inst.postproc.abs.fifo.lscc_fifo_ip.n44739: 3
+     loads, 3 SLICEs
+      Net
+     signal_filter_int.dft_inst.postproc.abs.fifo.lscc_fifo_ip.rd_fifo_en_w: 2
+     loads, 0 SLICEs
+      Net
+     signal_filter_int.dft_inst.postproc.abs.fifo.lscc_fifo_ip.wr_fifo_en_w: 2
+     loads, 0 SLICEs
+      Net signal_filter_int.dft_inst.n44740: 7 loads, 7 SLICEs
+      Net signal_filter_int.dft_inst.rd_fifo_en_w: 1 loads, 0 SLICEs
+      Net signal_filter_int.dft_inst.core.fram_rd: 2 loads, 0 SLICEs
+      Net signal_filter_int.alaw_coder.n20669: 3 loads, 3 SLICEs
+      Net signal_filter_int.alaw_coder.pre_valid_out: 8 loads, 8 SLICEs
+      Net signal_filter_int.alaw_coder.n20663: 15 loads, 15 SLICEs
+      Net n44761: 62 loads, 62 SLICEs
+      Net n25400: 16 loads, 16 SLICEs
+      Net n19731: 32 loads, 32 SLICEs
+      Net n44849: 14 loads, 14 SLICEs
+      Net reset_cnt_7__N_505: 6 loads, 6 SLICEs
+      Net dac_mem_wr: 1 loads, 0 SLICEs
+      Net n44827: 32 loads, 32 SLICEs
+      Net n11409: 14 loads, 14 SLICEs
+      Net n19641: 15 loads, 15 SLICEs
+      Net n19686: 15 loads, 15 SLICEs
+      Net n19740: 15 loads, 15 SLICEs
+      Net n44842: 19 loads, 19 SLICEs
+      Net spi_slave_inst.n44662: 8 loads, 8 SLICEs
+      Net n4666: 16 loads, 16 SLICEs
+      Net fft_mem_wr_z: 1 loads, 0 SLICEs
+      Net n20271: 8 loads, 8 SLICEs
+      Net n20353: 14 loads, 14 SLICEs
+
+      Net n20547: 32 loads, 32 SLICEs
+      Net n20577: 16 loads, 16 SLICEs
+      Net n44567: 4 loads, 4 SLICEs
+      Net we_signal: 1 loads, 0 SLICEs
+      Net i2s_control_inst.data_we: 16 loads, 16 SLICEs
+      Net i2s_control_inst.n21189: 15 loads, 15 SLICEs
+      Net i2s_control_inst.n44698: 3 loads, 3 SLICEs
+      Net i2s_control_inst.n4694: 8 loads, 8 SLICEs
+      Net i2c_slave_axil_master_inst.i2c_slave_inst.n20194: 16 loads, 16 SLICEs
+      Net i2c_slave_axil_master_inst.i2c_slave_inst.n20583: 4 loads, 4 SLICEs
+      Net i2s_tx_inst.left_7__N_2175: 16 loads, 16 SLICEs
+   Number of LSRs:  15
+      Net m_axil_rdata_31__N_57: 971 loads, 958 SLICEs
+      Net to_i2s_left_7__N_385: 27 loads, 27 SLICEs
+      Net n21133: 8 loads, 8 SLICEs
+      Net signal_filter_int.n44814: 8 loads, 8 SLICEs
+      Net maxfan_replicated_net_517: 484 loads, 473 SLICEs
+      Net signal_filter_int.n44836: 6 loads, 6 SLICEs
+      Net n21160: 1 loads, 1 SLICEs
+      Net n4742: 16 loads, 16 SLICEs
+      Net n23322: 8 loads, 8 SLICEs
+      Net n21172: 4 loads, 4 SLICEs
+      Net n40964: 1 loads, 1 SLICEs
+      Net i2s_control_inst.start_int: 1 loads, 1 SLICEs
+      Net i2s_control_inst.pack_cnt_3__N_2252: 4 loads, 4 SLICEs
+      Net i2c_slave_axil_master_inst.i2c_slave_inst.n4762: 2 loads, 2 SLICEs
+      Net i2s_tx_inst.n2: 8 loads, 8 SLICEs
+   Top 10 highest fanout non-clock nets:
+      Net m_axil_rdata_31__N_57: 1040 loads
+      Net maxfan_replicated_net_517: 566 loads
+      Net to_i2s_left_7__N_385: 154 loads
+      Net m_axil_awaddr[2]: 102 loads
+      Net m_axil_awaddr[4]: 99 loads
+      Net signal_filter_int.dft_inst.postproc.abs.sqrt.n20896: 65 loads
+      Net n44761: 63 loads
+      Net signal_filter_int.dft_inst.postproc.abs.sqrt.calc_step: 59 loads
+      Net signal_filter_int.dft_inst.postproc.abs.sqrt.calc_busy: 57 loads
+      Net state_reg[1]: 57 loads
+
+
+
+
+   Number of warnings:  5
+   Number of errors:    0
+
+   Number of errors:    0
+
+
+
+<A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
+
+WARNING - map: Top module port 'BUT_USER' does not connect to anything.
+WARNING - map: Top module port 'BUT_TRIG' does not connect to anything.
+WARNING - map: Top module port 'BUT_USER' does not connect to anything.
+WARNING - map: Top module port 'BUT_TRIG' does not connect to anything.
+WARNING - map: The clock port [i2s_clk] is assigned to a non clock dedicated pin
+     [26], which might affect the clock performance. Use dedicated clock
+     resources for the port.
+
+
+
+
+
+<A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
+
++---------------------+-----------+-----------+-------+-------+-----------+
+| IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
+|                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
++---------------------+-----------+-----------+-------+-------+-----------+
+| i2c_scl             | BIDIR     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| i2c_sda             | BIDIR     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| LED_R               | OUTPUT    | NA        |       |       | RGB       |
++---------------------+-----------+-----------+-------+-------+-----------+
+| LED_G               | OUTPUT    | NA        |       |       | RGB       |
++---------------------+-----------+-----------+-------+-------+-----------+
+| LED_B               | OUTPUT    | NA        |       |       | RGB       |
++---------------------+-----------+-----------+-------+-------+-----------+
+| RPI_MISO            | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| ADC_REF_CLK         | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| HV_EN               | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| HILO                | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| PDamp               | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| PnHV                | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| PHV                 | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| i2s_lrclk           | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| i2s_data            | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| CSn                 | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| SCK                 | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| SDI                 | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| ADC_DCLK            | INPUT     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| ADC_D[11]           | INPUT     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| ADC_D[10]           | INPUT     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| ADC_D[9]            | INPUT     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| ADC_D[8]            | INPUT     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| ADC_D[7]            | INPUT     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| ADC_D[6]            | INPUT     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| ADC_D[5]            | INPUT     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| ADC_D[4]            | INPUT     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+
+| ADC_D[3]            | INPUT     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| ADC_D[2]            | INPUT     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| ADC_D[1]            | INPUT     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| ADC_D[0]            | INPUT     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| RPI_MOSI            | INPUT     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| RPI_SCLK            | INPUT     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| RPI_CSn             | INPUT     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| i2s_clk             | INPUT     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+
+
+
+<A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
+
+Signal n44975 was merged into signal wr_addr_r_8__N_2295_adj_5543[2]
+Signal n44973 was merged into signal wr_addr_r_8__N_2295_adj_5543[3]
+Signal n44971 was merged into signal wr_addr_r_8__N_2295_adj_5543[4]
+Signal n44969 was merged into signal wr_addr_r_8__N_2295_adj_5543[5]
+Signal n44967 was merged into signal wr_addr_r_8__N_2295_adj_5543[6]
+Signal n44965 was merged into signal wr_addr_r_8__N_2295_adj_5543[7]
+Signal n44963 was merged into signal wr_addr_r_8__N_2295_adj_5543[8]
+Signal n44959 was merged into signal full_ext_r_N_2479
+Signal n45027 was merged into signal rd_addr_p1_r_8__N_2347_adj_5546[2]
+Signal n45025 was merged into signal rd_addr_p1_r_8__N_2347_adj_5546[3]
+Signal n45023 was merged into signal rd_addr_p1_r_8__N_2347_adj_5546[4]
+Signal n45021 was merged into signal rd_addr_p1_r_8__N_2347_adj_5546[5]
+Signal n45019 was merged into signal rd_addr_p1_r_8__N_2347_adj_5546[6]
+Signal n45017 was merged into signal rd_addr_p1_r_8__N_2347_adj_5546[7]
+Signal n45015 was merged into signal rd_addr_p1_r_8__N_2347_adj_5546[8]
+Signal n45013 was merged into signal rd_addr_r_8__N_2338_adj_5545[0]
+Signal n45011 was merged into signal rd_addr_r_8__N_2338_adj_5545[1]
+Signal n45009 was merged into signal rd_addr_r_8__N_2338_adj_5545[2]
+Signal n45007 was merged into signal rd_addr_r_8__N_2338_adj_5545[3]
+Signal n45005 was merged into signal rd_addr_r_8__N_2338_adj_5545[4]
+Signal n45003 was merged into signal rd_addr_r_8__N_2338_adj_5545[5]
+Signal n45001 was merged into signal rd_addr_r_8__N_2338_adj_5545[6]
+Signal n44999 was merged into signal rd_addr_r_8__N_2338_adj_5545[7]
+Signal n44997 was merged into signal rd_addr_r_8__N_2338_adj_5545[8]
+Signal n44993 was merged into signal wr_addr_p1_r_8__N_2304_adj_5544[2]
+Signal n44991 was merged into signal wr_addr_p1_r_8__N_2304_adj_5544[3]
+Signal n44989 was merged into signal wr_addr_p1_r_8__N_2304_adj_5544[4]
+Signal n44987 was merged into signal wr_addr_p1_r_8__N_2304_adj_5544[5]
+Signal n44985 was merged into signal wr_addr_p1_r_8__N_2304_adj_5544[6]
+Signal n44983 was merged into signal wr_addr_p1_r_8__N_2304_adj_5544[7]
+Signal n44981 was merged into signal wr_addr_p1_r_8__N_2304_adj_5544[8]
+Signal n44979 was merged into signal wr_addr_r_8__N_2295_adj_5543[0]
+Signal n44977 was merged into signal wr_addr_r_8__N_2295_adj_5543[1]
+Signal n44881 was merged into signal reset_N_341[0]
+Signal signal_filter_int.dft_inst.n45053 was merged into signal
+     signal_filter_int/dft_inst/core/rd_addr_nxt_p1_w[0]
+Signal signal_filter_int.dft_inst.fifo.lscc_fifo_ip.n45057 was merged into
+
+     signal signal_filter_int/dft_inst/fifo/lscc_fifo_ip/empty_nxt_w
+Signal signal_filter_int.dft_inst.fifo.lscc_fifo_ip.n45055 was merged into
+     signal signal_filter_int/dft_inst/fifo/lscc_fifo_ip/full_nxt_w
+Signal signal_filter_int.dft_inst.fifo.lscc_fifo_ip.n45051 was merged into
+     signal signal_filter_int/dft_inst/fifo/lscc_fifo_ip/rd_addr_nxt_p1_w[1]
+Signal signal_filter_int.dft_inst.fifo.lscc_fifo_ip.n45049 was merged into
+     signal signal_filter_int/dft_inst/fifo/lscc_fifo_ip/rd_addr_nxt_p1_w[3]
+Signal signal_filter_int.dft_inst.fifo.lscc_fifo_ip.n45047 was merged into
+     signal signal_filter_int/dft_inst/fifo/lscc_fifo_ip/rd_addr_nxt_p1_w[4]
+Signal signal_filter_int.dft_inst.fifo.lscc_fifo_ip.n45045 was merged into
+     signal signal_filter_int/dft_inst/fifo/lscc_fifo_ip/rd_addr_nxt_p1_w[5]
+Signal signal_filter_int.dft_inst.fifo.lscc_fifo_ip.n45043 was merged into
+     signal signal_filter_int/dft_inst/fifo/lscc_fifo_ip/rd_addr_nxt_p1_w[6]
+Signal signal_filter_int.dft_inst.fifo.lscc_fifo_ip.n45039 was merged into
+     signal signal_filter_int/dft_inst/fifo/lscc_fifo_ip/wr_addr_nxt_p1_w[1]
+Signal signal_filter_int.dft_inst.fifo.lscc_fifo_ip.n45037 was merged into
+     signal signal_filter_int/dft_inst/fifo/lscc_fifo_ip/wr_addr_nxt_p1_w[3]
+Signal signal_filter_int.dft_inst.fifo.lscc_fifo_ip.n45035 was merged into
+     signal signal_filter_int/dft_inst/fifo/lscc_fifo_ip/wr_addr_nxt_p1_w[4]
+Signal signal_filter_int.dft_inst.fifo.lscc_fifo_ip.n45033 was merged into
+     signal signal_filter_int/dft_inst/fifo/lscc_fifo_ip/wr_addr_nxt_p1_w[5]
+Signal signal_filter_int.dft_inst.fifo.lscc_fifo_ip.n45031 was merged into
+     signal signal_filter_int/dft_inst/fifo/lscc_fifo_ip/wr_addr_nxt_p1_w[6]
+Signal signal_filter_int.dft_inst.postproc.abs.fifo.lscc_fifo_ip.n44885 was
+     merged into signal
+     signal_filter_int/dft_inst/postproc/abs/fifo/lscc_fifo_ip/n44654
+Signal signal_filter_int.dft_inst.postproc.abs.fifo.lscc_fifo_ip.n44883 was
+     merged into signal
+     signal_filter_int/dft_inst/postproc/abs/fifo/lscc_fifo_ip/n44655
+Signal signal_filter_int.dft_inst.postproc.abs.fifo.lscc_fifo_ip.n45073 was
+     merged into signal
+     signal_filter_int/dft_inst/postproc/abs/fifo/lscc_fifo_ip/empty_nxt_w
+Signal signal_filter_int.dft_inst.postproc.abs.fifo.lscc_fifo_ip.n45071 was
+     merged into signal
+     signal_filter_int/dft_inst/postproc/abs/fifo/lscc_fifo_ip/full_nxt_w
+Signal signal_filter_int.dft_inst.postproc.abs.fifo.lscc_fifo_ip.n45069 was
+     merged into signal signal_filter_int/dft_inst/postproc/abs/fifo/lscc_fifo_i
+     p/rd_addr_nxt_p1_w[0]
+Signal signal_filter_int.dft_inst.postproc.abs.fifo.lscc_fifo_ip.n45067 was
+     merged into signal signal_filter_int/dft_inst/postproc/abs/fifo/lscc_fifo_i
+     p/rd_addr_nxt_p1_w[1]
+Signal signal_filter_int.dft_inst.postproc.abs.fifo.lscc_fifo_ip.n45065 was
+     merged into signal signal_filter_int/dft_inst/postproc/abs/fifo/lscc_fifo_i
+     p/rd_addr_nxt_p1_w[2]
+Signal signal_filter_int.dft_inst.postproc.abs.fifo.lscc_fifo_ip.n45063 was
+     merged into signal signal_filter_int/dft_inst/postproc/abs/fifo/lscc_fifo_i
+     p/wr_addr_nxt_p1_w[0]
+Signal signal_filter_int.dft_inst.postproc.abs.fifo.lscc_fifo_ip.n45061 was
+     merged into signal signal_filter_int/dft_inst/postproc/abs/fifo/lscc_fifo_i
+     p/wr_addr_nxt_p1_w[1]
+Signal signal_filter_int.dft_inst.postproc.abs.fifo.lscc_fifo_ip.n45059 was
+     merged into signal signal_filter_int/dft_inst/postproc/abs/fifo/lscc_fifo_i
+     p/wr_addr_nxt_p1_w[2]
+Signal signal_filter_int.dft_inst.n45041 was merged into signal
+     signal_filter_int/dft_inst/preproc/wr_addr_nxt_p1_w[0]
+Signal signal_filter_int.sc_fifo_inst.lscc_fifo_inst.n44961 was merged into
+     signal signal_filter_int/sc_fifo_inst/lscc_fifo_inst/empty_ext_r_N_2481
+
+Signal signal_filter_int.sc_fifo_inst.lscc_fifo_inst.n45029 was merged into
+     signal
+     signal_filter_int/sc_fifo_inst/lscc_fifo_inst/rd_addr_p1_r_8__N_2347[0]
+Signal signal_filter_int.sc_fifo_inst.lscc_fifo_inst.n44995 was merged into
+     signal
+     signal_filter_int/sc_fifo_inst/lscc_fifo_inst/wr_addr_p1_r_8__N_2304[0]
+Signal fifo_i2s.lscc_fifo_inst.n44943 was merged into signal
+     fifo_i2s/lscc_fifo_inst/rd_addr_p1_r_8__N_2347[8]
+Signal fifo_i2s.lscc_fifo_inst.n44941 was merged into signal
+     fifo_i2s/lscc_fifo_inst/rd_addr_r_8__N_2338[0]
+Signal fifo_i2s.lscc_fifo_inst.n44955 was merged into signal
+     fifo_i2s/lscc_fifo_inst/rd_addr_p1_r_8__N_2347[2]
+Signal fifo_i2s.lscc_fifo_inst.n44939 was merged into signal
+     fifo_i2s/lscc_fifo_inst/rd_addr_r_8__N_2338[1]
+Signal fifo_i2s.lscc_fifo_inst.n44937 was merged into signal
+     fifo_i2s/lscc_fifo_inst/rd_addr_r_8__N_2338[2]
+Signal fifo_i2s.lscc_fifo_inst.n44935 was merged into signal
+     fifo_i2s/lscc_fifo_inst/rd_addr_r_8__N_2338[3]
+Signal fifo_i2s.lscc_fifo_inst.n44933 was merged into signal
+     fifo_i2s/lscc_fifo_inst/rd_addr_r_8__N_2338[4]
+Signal fifo_i2s.lscc_fifo_inst.n44931 was merged into signal
+     fifo_i2s/lscc_fifo_inst/rd_addr_r_8__N_2338[5]
+Signal fifo_i2s.lscc_fifo_inst.n44929 was merged into signal
+     fifo_i2s/lscc_fifo_inst/rd_addr_r_8__N_2338[6]
+Signal fifo_i2s.lscc_fifo_inst.n44927 was merged into signal
+     fifo_i2s/lscc_fifo_inst/rd_addr_r_8__N_2338[7]
+Signal fifo_i2s.lscc_fifo_inst.n44925 was merged into signal
+     fifo_i2s/lscc_fifo_inst/rd_addr_r_8__N_2338[8]
+Signal fifo_i2s.lscc_fifo_inst.n44923 was merged into signal
+     fifo_i2s/lscc_fifo_inst/wr_addr_p1_r_8__N_2304[0]
+Signal fifo_i2s.lscc_fifo_inst.n44921 was merged into signal
+     fifo_i2s/lscc_fifo_inst/wr_addr_p1_r_8__N_2304[2]
+Signal fifo_i2s.lscc_fifo_inst.n44919 was merged into signal
+     fifo_i2s/lscc_fifo_inst/wr_addr_p1_r_8__N_2304[3]
+Signal fifo_i2s.lscc_fifo_inst.n44917 was merged into signal
+     fifo_i2s/lscc_fifo_inst/wr_addr_p1_r_8__N_2304[4]
+Signal fifo_i2s.lscc_fifo_inst.n44915 was merged into signal
+     fifo_i2s/lscc_fifo_inst/wr_addr_p1_r_8__N_2304[5]
+Signal fifo_i2s.lscc_fifo_inst.n44913 was merged into signal
+     fifo_i2s/lscc_fifo_inst/wr_addr_p1_r_8__N_2304[6]
+Signal fifo_i2s.lscc_fifo_inst.n44911 was merged into signal
+     fifo_i2s/lscc_fifo_inst/wr_addr_p1_r_8__N_2304[7]
+Signal fifo_i2s.lscc_fifo_inst.n44909 was merged into signal
+     fifo_i2s/lscc_fifo_inst/wr_addr_p1_r_8__N_2304[8]
+Signal fifo_i2s.lscc_fifo_inst.n44907 was merged into signal
+     fifo_i2s/lscc_fifo_inst/wr_addr_r_8__N_2295[0]
+Signal fifo_i2s.lscc_fifo_inst.n44905 was merged into signal
+     fifo_i2s/lscc_fifo_inst/wr_addr_r_8__N_2295[1]
+Signal fifo_i2s.lscc_fifo_inst.n44903 was merged into signal
+     fifo_i2s/lscc_fifo_inst/wr_addr_r_8__N_2295[2]
+Signal fifo_i2s.lscc_fifo_inst.n44945 was merged into signal
+     fifo_i2s/lscc_fifo_inst/rd_addr_p1_r_8__N_2347[7]
+Signal fifo_i2s.lscc_fifo_inst.n44953 was merged into signal
+     fifo_i2s/lscc_fifo_inst/rd_addr_p1_r_8__N_2347[3]
+Signal fifo_i2s.lscc_fifo_inst.n44901 was merged into signal
+     fifo_i2s/lscc_fifo_inst/wr_addr_r_8__N_2295[3]
+Signal fifo_i2s.lscc_fifo_inst.n44899 was merged into signal
+
+     fifo_i2s/lscc_fifo_inst/wr_addr_r_8__N_2295[4]
+Signal fifo_i2s.lscc_fifo_inst.n44951 was merged into signal
+     fifo_i2s/lscc_fifo_inst/rd_addr_p1_r_8__N_2347[4]
+Signal fifo_i2s.lscc_fifo_inst.n44897 was merged into signal
+     fifo_i2s/lscc_fifo_inst/wr_addr_r_8__N_2295[5]
+Signal fifo_i2s.lscc_fifo_inst.n44895 was merged into signal
+     fifo_i2s/lscc_fifo_inst/wr_addr_r_8__N_2295[6]
+Signal fifo_i2s.lscc_fifo_inst.n44893 was merged into signal
+     fifo_i2s/lscc_fifo_inst/wr_addr_r_8__N_2295[7]
+Signal fifo_i2s.lscc_fifo_inst.n44891 was merged into signal
+     fifo_i2s/lscc_fifo_inst/wr_addr_r_8__N_2295[8]
+Signal fifo_i2s.lscc_fifo_inst.n44889 was merged into signal
+     fifo_i2s/lscc_fifo_inst/empty_ext_r_N_2481
+Signal fifo_i2s.lscc_fifo_inst.n44887 was merged into signal
+     fifo_i2s/lscc_fifo_inst/full_ext_r_N_2479
+Signal fifo_i2s.lscc_fifo_inst.n44957 was merged into signal
+     fifo_i2s/lscc_fifo_inst/rd_addr_p1_r_8__N_2347[0]
+Signal fifo_i2s.lscc_fifo_inst.n44949 was merged into signal
+     fifo_i2s/lscc_fifo_inst/rd_addr_p1_r_8__N_2347[5]
+Signal fifo_i2s.lscc_fifo_inst.n44947 was merged into signal
+     fifo_i2s/lscc_fifo_inst/rd_addr_p1_r_8__N_2347[6]
+Signal GND_net undriven or does not drive anything - clipped.
+Block i18667_2_lut_4_lut_4_lut_lut_buf_48 was optimized away.
+Block i18668_2_lut_4_lut_4_lut_lut_buf_47 was optimized away.
+Block i18669_2_lut_4_lut_4_lut_lut_buf_46 was optimized away.
+Block i18670_2_lut_4_lut_4_lut_lut_buf_45 was optimized away.
+Block i18671_2_lut_4_lut_4_lut_lut_buf_44 was optimized away.
+Block i18672_2_lut_4_lut_4_lut_lut_buf_43 was optimized away.
+Block i18673_2_lut_4_lut_4_lut_lut_buf_42 was optimized away.
+Block i18333_4_lut_4_lut_lut_buf_40 was optimized away.
+Block i18690_3_lut_4_lut_4_lut_lut_buf_74 was optimized away.
+Block i18691_3_lut_4_lut_4_lut_lut_buf_73 was optimized away.
+Block i18692_3_lut_4_lut_4_lut_lut_buf_72 was optimized away.
+Block i18693_3_lut_4_lut_4_lut_lut_buf_71 was optimized away.
+Block i18694_3_lut_4_lut_4_lut_lut_buf_70 was optimized away.
+Block i18695_3_lut_4_lut_4_lut_lut_buf_69 was optimized away.
+Block i18696_4_lut_4_lut_lut_buf_68 was optimized away.
+Block i18337_2_lut_4_lut_4_lut_lut_buf_67 was optimized away.
+Block i18681_2_lut_4_lut_4_lut_lut_buf_66 was optimized away.
+Block i18682_2_lut_4_lut_4_lut_lut_buf_65 was optimized away.
+Block i18683_2_lut_4_lut_4_lut_lut_buf_64 was optimized away.
+Block i18684_2_lut_4_lut_4_lut_lut_buf_63 was optimized away.
+Block i18685_2_lut_4_lut_4_lut_lut_buf_62 was optimized away.
+Block i18686_2_lut_4_lut_4_lut_lut_buf_61 was optimized away.
+Block i18687_2_lut_4_lut_4_lut_lut_buf_60 was optimized away.
+Block i18688_2_lut_4_lut_4_lut_lut_buf_59 was optimized away.
+Block i18675_3_lut_4_lut_4_lut_lut_buf_57 was optimized away.
+Block i18676_3_lut_4_lut_4_lut_lut_buf_56 was optimized away.
+Block i18677_3_lut_4_lut_4_lut_lut_buf_55 was optimized away.
+Block i18678_3_lut_4_lut_4_lut_lut_buf_54 was optimized away.
+Block i18679_3_lut_4_lut_4_lut_lut_buf_53 was optimized away.
+Block i18680_3_lut_4_lut_4_lut_lut_buf_52 was optimized away.
+Block i18336_4_lut_4_lut_lut_buf_51 was optimized away.
+Block i18332_2_lut_4_lut_4_lut_lut_buf_50 was optimized away.
+Block i18666_2_lut_4_lut_4_lut_lut_buf_49 was optimized away.
+Block i4_4_lut_lut_buf_1 was optimized away.
+Block signal_filter_int.dft_inst.core.i25231_1_lut_3_lut_4_lut_lut_buf_87 was
+
+     optimized away.
+Block signal_filter_int.dft_inst.fifo.lscc_fifo_ip.empty_nxt_w_I_0_4_lut_lut_buf
+     _89 was optimized away.
+Block signal_filter_int.dft_inst.fifo.lscc_fifo_ip.full_nxt_w_I_0_4_lut_lut_buf_
+     88 was optimized away.
+Block signal_filter_int.dft_inst.fifo.lscc_fifo_ip.i25233_2_lut_4_lut_lut_buf_86
+     was optimized away.
+Block signal_filter_int.dft_inst.fifo.lscc_fifo_ip.i25247_2_lut_3_lut_4_lut_lut_
+     buf_85 was optimized away.
+Block signal_filter_int.dft_inst.fifo.lscc_fifo_ip.i25254_2_lut_3_lut_4_lut_lut_
+     buf_84 was optimized away.
+Block signal_filter_int.dft_inst.fifo.lscc_fifo_ip.i25261_2_lut_3_lut_4_lut_lut_
+     buf_83 was optimized away.
+Block signal_filter_int.dft_inst.fifo.lscc_fifo_ip.i25268_4_lut_lut_buf_82 was
+     optimized away.
+Block signal_filter_int.dft_inst.fifo.lscc_fifo_ip.i25183_2_lut_4_lut_lut_buf_80
+     was optimized away.
+Block signal_filter_int.dft_inst.fifo.lscc_fifo_ip.i25197_2_lut_3_lut_4_lut_lut_
+     buf_79 was optimized away.
+Block signal_filter_int.dft_inst.fifo.lscc_fifo_ip.i25204_2_lut_3_lut_4_lut_lut_
+     buf_78 was optimized away.
+Block signal_filter_int.dft_inst.fifo.lscc_fifo_ip.i25211_2_lut_3_lut_4_lut_lut_
+     buf_77 was optimized away.
+Block signal_filter_int.dft_inst.fifo.lscc_fifo_ip.i25218_4_lut_lut_buf_76 was
+     optimized away.
+Block signal_filter_int.dft_inst.postproc.abs.fifo.lscc_fifo_ip.rd_addr_r_2__I_0
+     _i1_3_lut_rep_1337_4_lut_lut_buf_3 was optimized away.
+Block signal_filter_int.dft_inst.postproc.abs.fifo.lscc_fifo_ip.wr_addr_r_2__I_0
+     _i2_3_lut_rep_1338_4_lut_lut_buf_2 was optimized away.
+Block signal_filter_int.dft_inst.postproc.abs.fifo.lscc_fifo_ip.empty_nxt_w_I_0_
+     4_lut_lut_buf_97 was optimized away.
+Block signal_filter_int.dft_inst.postproc.abs.fifo.lscc_fifo_ip.full_nxt_w_I_0_4
+     _lut_lut_buf_96 was optimized away.
+Block signal_filter_int.dft_inst.postproc.abs.fifo.lscc_fifo_ip.i1625_1_lut_3_lu
+     t_4_lut_lut_buf_95 was optimized away.
+Block signal_filter_int.dft_inst.postproc.abs.fifo.lscc_fifo_ip.i1627_2_lut_4_lu
+     t_lut_buf_94 was optimized away.
+Block signal_filter_int.dft_inst.postproc.abs.fifo.lscc_fifo_ip.i1634_4_lut_lut_
+     buf_93 was optimized away.
+Block signal_filter_int.dft_inst.postproc.abs.fifo.lscc_fifo_ip.i1603_1_lut_3_lu
+     t_4_lut_lut_buf_92 was optimized away.
+Block signal_filter_int.dft_inst.postproc.abs.fifo.lscc_fifo_ip.i1605_2_lut_4_lu
+     t_lut_buf_91 was optimized away.
+Block signal_filter_int.dft_inst.postproc.abs.fifo.lscc_fifo_ip.i1612_4_lut_lut_
+     buf_90 was optimized away.
+Block signal_filter_int.dft_inst.preproc.i25181_1_lut_3_lut_4_lut_lut_buf_81 was
+     optimized away.
+Block signal_filter_int.sc_fifo_inst.lscc_fifo_inst.i1_4_lut_lut_buf_41 was
+     optimized away.
+Block signal_filter_int.sc_fifo_inst.lscc_fifo_inst.i18338_2_lut_4_lut_lut_buf_7
+     5 was optimized away.
+Block signal_filter_int.sc_fifo_inst.lscc_fifo_inst.i18335_2_lut_4_lut_lut_buf_5
+     8 was optimized away.
+Block fifo_i2s.lscc_fifo_inst.i18654_4_lut_lut_buf_32 was optimized away.
+Block fifo_i2s.lscc_fifo_inst.i18321_2_lut_4_lut_lut_buf_31 was optimized away.
+Block fifo_i2s.lscc_fifo_inst.i18648_3_lut_4_lut_lut_buf_38 was optimized away.
+Block fifo_i2s.lscc_fifo_inst.i18639_2_lut_4_lut_lut_buf_30 was optimized away.
+
+Block fifo_i2s.lscc_fifo_inst.i18640_2_lut_4_lut_lut_buf_29 was optimized away.
+Block fifo_i2s.lscc_fifo_inst.i18641_2_lut_4_lut_lut_buf_28 was optimized away.
+Block fifo_i2s.lscc_fifo_inst.i18642_2_lut_4_lut_lut_buf_27 was optimized away.
+Block fifo_i2s.lscc_fifo_inst.i18643_2_lut_4_lut_lut_buf_26 was optimized away.
+Block fifo_i2s.lscc_fifo_inst.i18644_2_lut_4_lut_lut_buf_25 was optimized away.
+Block fifo_i2s.lscc_fifo_inst.i18645_2_lut_4_lut_lut_buf_24 was optimized away.
+Block fifo_i2s.lscc_fifo_inst.i18646_2_lut_4_lut_lut_buf_23 was optimized away.
+Block fifo_i2s.lscc_fifo_inst.i18319_2_lut_4_lut_lut_buf_22 was optimized away.
+Block fifo_i2s.lscc_fifo_inst.i18633_3_lut_4_lut_lut_buf_21 was optimized away.
+Block fifo_i2s.lscc_fifo_inst.i18634_3_lut_4_lut_lut_buf_20 was optimized away.
+Block fifo_i2s.lscc_fifo_inst.i18635_3_lut_4_lut_lut_buf_19 was optimized away.
+Block fifo_i2s.lscc_fifo_inst.i18636_3_lut_4_lut_lut_buf_18 was optimized away.
+Block fifo_i2s.lscc_fifo_inst.i18637_3_lut_4_lut_lut_buf_17 was optimized away.
+Block fifo_i2s.lscc_fifo_inst.i18638_3_lut_4_lut_lut_buf_16 was optimized away.
+Block fifo_i2s.lscc_fifo_inst.i18320_4_lut_lut_buf_15 was optimized away.
+Block fifo_i2s.lscc_fifo_inst.i18316_2_lut_4_lut_lut_buf_14 was optimized away.
+Block fifo_i2s.lscc_fifo_inst.i18624_2_lut_4_lut_lut_buf_13 was optimized away.
+Block fifo_i2s.lscc_fifo_inst.i18625_2_lut_4_lut_lut_buf_12 was optimized away.
+Block fifo_i2s.lscc_fifo_inst.i18653_3_lut_4_lut_lut_buf_33 was optimized away.
+Block fifo_i2s.lscc_fifo_inst.i18649_3_lut_4_lut_lut_buf_37 was optimized away.
+Block fifo_i2s.lscc_fifo_inst.i18626_2_lut_4_lut_lut_buf_11 was optimized away.
+Block fifo_i2s.lscc_fifo_inst.i18627_2_lut_4_lut_lut_buf_10 was optimized away.
+Block fifo_i2s.lscc_fifo_inst.i18650_3_lut_4_lut_lut_buf_36 was optimized away.
+Block fifo_i2s.lscc_fifo_inst.i18628_2_lut_4_lut_lut_buf_9 was optimized away.
+Block fifo_i2s.lscc_fifo_inst.i18629_2_lut_4_lut_lut_buf_8 was optimized away.
+Block fifo_i2s.lscc_fifo_inst.i18630_2_lut_4_lut_lut_buf_7 was optimized away.
+Block fifo_i2s.lscc_fifo_inst.i18631_2_lut_4_lut_lut_buf_6 was optimized away.
+Block fifo_i2s.lscc_fifo_inst.i1_4_lut_lut_buf_5 was optimized away.
+Block fifo_i2s.lscc_fifo_inst.i18317_4_lut_lut_buf_4 was optimized away.
+Block fifo_i2s.lscc_fifo_inst.i18322_2_lut_4_lut_lut_buf_39 was optimized away.
+Block fifo_i2s.lscc_fifo_inst.i18651_3_lut_4_lut_lut_buf_35 was optimized away.
+Block fifo_i2s.lscc_fifo_inst.i18652_3_lut_4_lut_lut_buf_34 was optimized away.
+Block i1 was optimized away.
+
+
+
+<A name="mrp_pll"></A><B><U><big>PLL/DLL Summary</big></U></B>
+---------------
+
+PLL 1:                                 Pin/Node Value
+  PLL Instance Name:
+       pll_adc_inst.lscc_pll_inst.u_PLL_B
+  PLL Type:                                     PLL_B
+  Input Reference Clock:               NODE     clk
+  Output Clock(CoreA):                 PIN      ADC_REF_CLK_c
+  Output Clock(GlobalA):                        NONE
+  Output Clock(CoreB):                          NONE
+  Output Clock(GlobalB):                        NONE
+  Feedback input:                      NODE
+       pll_adc_inst.lscc_pll_inst.feedback_w
+  Internal Feedback output:            NODE
+       pll_adc_inst.lscc_pll_inst.feedback_w
+  BYPASS signal:                                GND
+  LATCH signal:                                 GND
+  Lock Signal:                                  NONE
+  Input Clock Frequency (MHz):                  NA
+  Reference Divider:                            0
+  Feedback Divider:                             0
+  VCO Divider:                                  1
+
+  ENABLE_ICEGATE_PORTA:                         0
+  ENABLE_ICEGATE_PORTB:                         0
+  PLLOUT_SELECT_PORTA:                          SHIFTREG_0deg
+  PLLOUT_SELECT_PORTB:                          SHIFTREG_0deg
+  SHIFTREG_DIV_MODE:                            0
+  DELAY_ADJUSTMENT_MODE_RELATIVE:               FIXED
+  FDA_RELATIVE:                                 0
+  FEEDBACK_PATH:                                SIMPLE
+  DELAY_ADJUSTMENT_MODE_FEEDBACK:               FIXED
+  FDA_FEEDBACK:                                 0
+  FILTER_RANGE:                                 0
+  EXTERNAL_DIVIDE_FACTOR:                       NONE
+  TEST Mode:                                    0
+
+OSC Summary
+-----------
+
+OSC 1:                                 Pin/Node Value
+  OSC Instance Name:                            hi_clock_gen_inst
+  OSC Type:                                     HSOSC_CORE
+  Power UP:                            NODE     VCC_net
+  Enable Signal:                       NODE     VCC_net
+  OSC Output:                          NODE     clk
+  DIV Setting:                                  00
+
+
+
+<A name="mrp_asic"></A><B><U><big>ASIC Components</big></U></B>
+---------------
+
+Instance Name: fifo_i2s.lscc_fifo_inst.mem_EBR.mem_20
+         Type: EBR
+Instance Name: signal_filter_int.sc_fifo_inst.lscc_fifo_inst.mem_EBR.mem0
+         Type: EBR
+Instance Name: signal_filter_int.dft_inst.postproc.abs.sqrsum.mul_re.lscc_multip
+     lier.genblk1.u_lscc_multiplier_dsp.result_o
+         Type: DSP
+Instance Name: signal_filter_int.dft_inst.postproc.abs.sqrsum.mul_im.lscc_multip
+     lier.genblk1.u_lscc_multiplier_dsp.result_o
+         Type: DSP
+Instance Name:
+     signal_filter_int.dft_inst.postproc.abs.fifo.lscc_fifo_ip.mem_EBR.mem1
+         Type: EBR
+Instance Name:
+     signal_filter_int.dft_inst.postproc.abs.fifo.lscc_fifo_ip.mem_EBR.mem0
+         Type: EBR
+Instance Name: signal_filter_int.dft_inst.fifo.lscc_fifo_ip.mem_EBR.mem0
+         Type: EBR
+Instance Name: signal_filter_int.dft_inst.core.twrom.mem_re
+         Type: EBR
+Instance Name: signal_filter_int.dft_inst.core.twrom.mem_im
+         Type: EBR
+Instance Name: signal_filter_int.dft_inst.core.fram.mem_re_mem_im_merged0
+         Type: EBR
+Instance Name: signal_filter_int.dft_inst.core.fram.mem_re_mem_im_merged1
+         Type: EBR
+Instance Name: signal_filter_int.dft_inst.core.cmul.mul_re1.lscc_multiplier.genb
+     lk1.u_lscc_multiplier_dsp.result_o
+         Type: DSP
+
+Instance Name: signal_filter_int.dft_inst.core.cmul.mul_re0.lscc_multiplier.genb
+     lk1.u_lscc_multiplier_dsp.result_o_res5
+         Type: DSP
+Instance Name: signal_filter_int.dft_inst.core.cmul.mul_im1.lscc_multiplier.genb
+     lk1.u_lscc_multiplier_dsp.result_o_res7
+         Type: DSP
+Instance Name: signal_filter_int.dft_inst.core.cmul.mul_im0.lscc_multiplier.genb
+     lk1.u_lscc_multiplier_dsp.result_o_res6
+         Type: DSP
+Instance Name: hi_clock_gen_inst
+         Type: HFOSC
+Instance Name: RGB_driver_RGB_CORE_inst
+         Type: RGBA_DRV
+Instance Name: signal_memory.SP256K_inst
+         Type: SRAM
+Instance Name: pll_adc_inst.lscc_pll_inst.u_PLL_B
+         Type: PLL
+Instance Name: dac_memory.lscc_ram_dp_inst.NON_MIX.ADDR_ROUTE[0].DATA_ROUTE[0].n
+     o_init.u_mem0.ICE_MEM.u_mem0
+         Type: EBR
+Instance Name: fft_memory.lscc_ram_dp_inst.NON_MIX.ADDR_ROUTE[0].DATA_ROUTE[0].n
+     o_init.u_mem0.ICE_MEM.u_mem0
+         Type: EBR
+
+
+
+<A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
+-------------------------
+
+   Total CPU Time: 2 secs
+   Total REAL Time: 2 secs
+   Peak Memory Usage: 268 MB
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995
+     AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent
+     Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems
+     All rights reserved.
+Copyright (c) 2002-2019 Lattice Semiconductor
+     Corporation,  All rights reserved.
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></DIV>
+
+<DIV id="toc" class="radiant"><span onmousemove="showTocList()">Contents</span>
+<UL id="toc_list">
+<LI><A href=#mrp_di>Design Information</A></LI>
+<LI><A href=#mrp_ds>Design Summary</A></LI>
+<LI><A href=#mrp_dwe>Design Errors/Warnings</A></LI>
+<LI><A href=#mrp_ioa>IO (PIO) Attributes</A></LI>
+<LI><A href=#mrp_rm>Removed logic</A></LI>
+<LI><A href=#mrp_pll>PLL/DLL Summary</A></LI>
+<LI><A href=#mrp_asic>ASIC Components</A></LI>
+<LI><A href=#mrp_runtime>Run Time and Memory Usage</A></LI>
+</UL>
+</DIV>
+
+<button id="back_to_top" class="radiant" onclick="scrollToTop()">&lt;</button>
+<script type="text/javascript">
+<!--
+var scrollStep = 0;
+function scrollToTop(){
+  var funScroll = function() {
+    var top = document.body.scrollTop;
+    if (top == 0) {
+      scrollStep = 0;
+      return;
+    }
+    if (scrollStep == 0)
+      scrollStep = top/20 + 1;
+    top -= scrollStep;
+    if (top < 0)
+      top = 0;
+    document.body.scrollTop = top;
+    requestAnimationFrame(funScroll);
+  };
+  funScroll();
+}
+
+window.addEventListener('scroll', function(e) {
+  var backToTop = document.getElementById('back_to_top')
+  if (document.body.scrollTop > 0) {
+    backToTop.style.display = 'block';
+  } else {	backToTop.style.display = 'none'  }});
+
+//-->
+</script>
+
+<style type="text/css">
+#back_to_top {
+  bottom:20px; right:20px;
+  width:30px; height:30px;
+  font-size: 20px;
+  padding: 2px 5px 2px 5px;
+  position:fixed;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+  display:none;
+  -webkit-transform: rotate(90deg);
+  -webkit-transform-origin:50% 50%;
+}
+#back_to_top:focus {
+  outline-width:0px;
+}
+</style>
+
+</BODY>
+

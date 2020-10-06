@@ -1,0 +1,14 @@
+###File created by Lattice CPE. Do not modify.###
+set_hierarchy_separator /
+#if {$FAMILY == "iCE40UP"} {
+#    create_clock -name clk_i -period 40 [get_ports clk_i]
+#    set_false_path -from [get_ports rst_i]
+#} else {
+#    create_clock -name clk_i -period 10 [get_ports clk_i]
+#}
+#if {$FAMILY == "iCE40UP"} {
+#    create_clock -name clk_i -period 40 [get_ports clk_i]
+#    set_false_path -from [get_ports rst_i]
+#} else {
+#    create_clock -name clk_i -period 10 [get_ports clk_i]
+#}

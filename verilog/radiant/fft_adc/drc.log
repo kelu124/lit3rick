@@ -1,0 +1,21 @@
+DRC: Design Rule Check Radiant Software (64-bit) 2.0.0.64.1
+Wed Sep 16 01:37:17 2020
+
+WARNING - Top module port 'BUT_USER' does not connect to anything.
+WARNING - Top module port 'BUT_TRIG' does not connect to anything.
+WARNING - The clock port [ADC_D[11]] is assigned to a non clock dedicated pin [3], which might affect the clock performance. Use dedicated clock resources for the port.
+WARNING - The clock port [ADC_D[10]] is assigned to a non clock dedicated pin [2], which might affect the clock performance. Use dedicated clock resources for the port.
+WARNING - The clock port [ADC_D[9]] is assigned to a non clock dedicated pin [48], which might affect the clock performance. Use dedicated clock resources for the port.
+WARNING - The clock port [ADC_D[8]] is assigned to a non clock dedicated pin [47], which might affect the clock performance. Use dedicated clock resources for the port.
+WARNING - The clock port [ADC_D[7]] is assigned to a non clock dedicated pin [46], which might affect the clock performance. Use dedicated clock resources for the port.
+WARNING - The clock port [ADC_D[6]] is assigned to a non clock dedicated pin [45], which might affect the clock performance. Use dedicated clock resources for the port.
+WARNING - The clock port [ADC_D[5]] is assigned to a non clock dedicated pin [4], which might affect the clock performance. Use dedicated clock resources for the port.
+WARNING - The clock port [ADC_D[4]] is assigned to a non clock dedicated pin [43], which might affect the clock performance. Use dedicated clock resources for the port.
+WARNING - The clock port [ADC_D[3]] is assigned to a non clock dedicated pin [42], which might affect the clock performance. Use dedicated clock resources for the port.
+WARNING - The clock port [ADC_D[2]] is assigned to a non clock dedicated pin [38], which might affect the clock performance. Use dedicated clock resources for the port.
+WARNING - The clock port [ADC_D[1]] is assigned to a non clock dedicated pin [36], which might affect the clock performance. Use dedicated clock resources for the port.
+WARNING - The clock port [ADC_D[0]] is assigned to a non clock dedicated pin [34], which might affect the clock performance. Use dedicated clock resources for the port.
+WARNING - The clock port [RPI_MOSI] is assigned to a non clock dedicated pin [14], which might affect the clock performance. Use dedicated clock resources for the port.
+WARNING - The clock port [RPI_SCLK] is assigned to a non clock dedicated pin [15], which might affect the clock performance. Use dedicated clock resources for the port.
+WARNING - The clock port [RPI_CSn] is assigned to a non clock dedicated pin [32], which might affect the clock performance. Use dedicated clock resources for the port.
+WARNING - The clock port [i2s_clk] is assigned to a non clock dedicated pin [26], which might affect the clock performance. Use dedicated clock resources for the port.

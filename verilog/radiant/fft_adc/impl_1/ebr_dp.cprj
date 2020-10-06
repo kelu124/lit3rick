@@ -1,0 +1,7 @@
+-ver "/opt/lscc/radiant/2.0/ip/pmi/pmi_iCE40UP.v"
+-lib pmi -vhd "/opt/lscc/radiant/2.0/ip/pmi/pmi_iCE40UP.vhd"
+-ver "/home/andrew/projects/unoric_board/fft_adc_new/radiant/fft_adc/ebr_dp/rtl/ebr_dp.v"
+-sdc  "/home/andrew/projects/unoric_board/fft_adc_new/radiant/fft_adc/ebr_dp/constraints/ebr_dp.ldc"
+-path "/home/andrew/projects/unoric_board/fft_adc_new/src/rtl/fft" "/home/andrew/projects/unoric_board/fft_adc_new/src/rtl/fft/mem_files" "/home/andrew/projects/unoric_board/fft_adc_new/src/rtl/fft/ip" "/home/andrew/projects/unoric_board/fft_adc_new/radiant/fft_adc/ebr_dp"
+-top ebr_dp
+-a "iCE40UP"

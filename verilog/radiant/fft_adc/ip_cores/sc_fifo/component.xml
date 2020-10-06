@@ -1,0 +1,158 @@
+<?xml version="1.0" ?>
+<ipxact:component xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:lsccip="http://www.latticesemi.com/XMLSchema/Radiant/ip">
+    <ipxact:vendor>latticesemi.com</ipxact:vendor>
+    <ipxact:library>module</ipxact:library>
+    <ipxact:name>sc_fifo</ipxact:name>
+    <ipxact:version>1.0.0</ipxact:version>
+    <ipxact:model>
+        <ipxact:instantiations>
+            <ipxact:designInstantiation>
+                <ipxact:name>sc_fifo_design</ipxact:name>
+                <ipxact:designRef library="module" name="sc_fifo" vendor="latticesemi.com" version="1.0.0"/>
+            </ipxact:designInstantiation>
+        </ipxact:instantiations>
+        <ipxact:ports>
+            <ipxact:port>
+                <ipxact:name>clk_i</ipxact:name>
+                <ipxact:displayName>clk_i</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>rst_i</ipxact:name>
+                <ipxact:displayName>rst_i</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>wr_en_i</ipxact:name>
+                <ipxact:displayName>wr_en_i</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>rd_en_i</ipxact:name>
+                <ipxact:displayName>rd_en_i</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>wr_data_i</ipxact:name>
+                <ipxact:displayName>wr_data_i</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                    <ipxact:vectors>
+                        <ipxact:vector>
+                            <ipxact:left>15</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:vector>
+                    </ipxact:vectors>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>full_o</ipxact:name>
+                <ipxact:displayName>full_o</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>out</ipxact:direction>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>empty_o</ipxact:name>
+                <ipxact:displayName>empty_o</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>out</ipxact:direction>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>almost_full_o</ipxact:name>
+                <ipxact:displayName>almost_full_o</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>out</ipxact:direction>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>almost_empty_o</ipxact:name>
+                <ipxact:displayName>almost_empty_o</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>out</ipxact:direction>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>rd_data_o</ipxact:name>
+                <ipxact:displayName>rd_data_o</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>out</ipxact:direction>
+                    <ipxact:vectors>
+                        <ipxact:vector>
+                            <ipxact:left>15</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:vector>
+                    </ipxact:vectors>
+                </ipxact:wire>
+            </ipxact:port>
+        </ipxact:ports>
+    </ipxact:model>
+    <ipxact:fileSets>
+        <ipxact:fileSet>
+            <ipxact:name>ipx_file_list</ipxact:name>
+            <ipxact:file>
+                <ipxact:name>design.xml</ipxact:name>
+                <ipxact:fileType user="IP-XACT_design">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>rtl/sc_fifo_bb.v</ipxact:name>
+                <ipxact:fileType user="black_box_verilog">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>testbench/dut_params.v</ipxact:name>
+                <ipxact:fileType user="dependency_file">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>misc/sc_fifo_tmpl.vhd</ipxact:name>
+                <ipxact:fileType user="template_vhdl">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>testbench/dut_inst.v</ipxact:name>
+                <ipxact:fileType user="dependency_file">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>misc/sc_fifo_tmpl.v</ipxact:name>
+                <ipxact:fileType user="template_verilog">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>constraints/sc_fifo.ldc</ipxact:name>
+                <ipxact:fileType user="timing_constraints">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>sc_fifo.cfg</ipxact:name>
+                <ipxact:fileType user="cfg">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>rtl/sc_fifo.v</ipxact:name>
+                <ipxact:fileType user="top_level_verilog">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>testbench/tb_top.v</ipxact:name>
+                <ipxact:fileType user="testbench_verilog">user</ipxact:fileType>
+            </ipxact:file>
+        </ipxact:fileSet>
+    </ipxact:fileSets>
+    <ipxact:vendorExtensions>
+        <lsccip:moduleRef lsccip:library="module" lsccip:name="fifo" lsccip:vendor="latticesemi.com" lsccip:version="1.0.0"/>
+        <lsccip:deviceInfo>
+            <lsccip:device>iCE40UP5K</lsccip:device>
+            <lsccip:performanceGrade>High-Performance_1.2V</lsccip:performanceGrade>
+            <lsccip:architecture>iCE40UP</lsccip:architecture>
+            <lsccip:package>SG48</lsccip:package>
+        </lsccip:deviceInfo>
+        <lsccip:generationInfo>
+            <lsccip:fileVersion>20180929</lsccip:fileVersion>
+            <lsccip:createdTimestamp>2020 08 10 23:32:30</lsccip:createdTimestamp>
+            <lsccip:radiantBuild>Radiant Software (64-bit) 2.0.0.64.1</lsccip:radiantBuild>
+        </lsccip:generationInfo>
+    </ipxact:vendorExtensions>
+</ipxact:component>

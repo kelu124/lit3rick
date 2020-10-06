@@ -1,0 +1,88 @@
+-a "iCE40UP"
+-p iCE40UP5K
+-t SG48
+-sp "High-Performance_1.2V"
+
+-optimization_goal Timing
+-bram_utilization 100
+-ramstyle Auto
+-romstyle auto
+-dsp_utilization 100
+-use_dsp 1
+-use_carry_chain 0
+-carry_chain_length 0
+
+-resource_sharing 0
+-propagate_constants 1
+-remove_duplicate_regs 1
+
+-max_fanout 1000
+-fsm_encoding_style Binary
+-twr_paths 3
+-fix_gated_clocks 1
+-loop_limit 1950
+
+-decode_unreachable_states
+-RWCheckOnRam 1
+
+
+-use_io_reg auto
+
+
+-sethld
+
+
+-use_io_insertion 1
+-resolve_mixed_drivers  1
+-sdc "fft_adc_impl_1_cpe.ldc"
+-path "/home/andrew/projects/unoric_board/fft_adc_new/radiant/fft_adc/ebr_dp"
+-path "/home/andrew/projects/unoric_board/fft_adc_new/radiant/fft_adc/ip_cores/pll_adc"
+-path "/home/andrew/projects/unoric_board/fft_adc_new/radiant/fft_adc/ip_cores/sc_fifo"
+-path "/opt/lscc/radiant/2.0/ispfpga/ice40tp/data" "/home/andrew/projects/unoric_board/fft_adc_new/radiant/fft_adc/impl_1" "/home/andrew/projects/unoric_board/fft_adc_new/radiant/fft_adc"
+-ver "/opt/lscc/radiant/2.0/ip/pmi/pmi_iCE40UP.v"
+-lib pmi -vhd "/opt/lscc/radiant/2.0/ip/pmi/pmi_iCE40UP.vhd"
+-ver "/home/andrew/projects/unoric_board/fft_adc_new/src/rtl/i2c_slave_axil_master.v"
+"/home/andrew/projects/unoric_board/fft_adc_new/src/rtl/i2c_slave.v"
+"/home/andrew/projects/unoric_board/fft_adc_new/src/rtl/mcp4812.v"
+"/home/andrew/projects/unoric_board/fft_adc_new/src/rtl/top.v"
+"/home/andrew/projects/unoric_board/fft_adc_new/radiant/fft_adc/ip_cores/pll_adc/rtl/pll_adc.v"
+"/home/andrew/projects/unoric_board/fft_adc_new/src/rtl/ram_256k.v"
+"/home/andrew/projects/unoric_board/fft_adc_new/src/rtl/spi_slave.v"
+"/home/andrew/projects/unoric_board/fft_adc_new/src/rtl/debounce.v"
+"/home/andrew/projects/unoric_board/fft_adc_new/src/rtl/main_fsm.v"
+"/home/andrew/projects/unoric_board/fft_adc_new/src/rtl/sqrt.v"
+"/home/andrew/projects/unoric_board/fft_adc_new/src/rtl/i2s_master.v"
+"/home/andrew/projects/unoric_board/fft_adc_new/src/rtl/i2s_control.v"
+"/home/andrew/projects/unoric_board/fft_adc_new/radiant/fft_adc/ip_cores/sc_fifo/rtl/sc_fifo.v"
+"/home/andrew/projects/unoric_board/fft_adc_new/src/rtl/adc_receiver.v"
+"/home/andrew/projects/unoric_board/fft_adc_new/src/rtl/alaw_coder.v"
+"/home/andrew/projects/unoric_board/fft_adc_new/src/rtl/memory_mux.v"
+"/home/andrew/projects/unoric_board/fft_adc_new/src/rtl/signal_filter.v"
+"/home/andrew/projects/unoric_board/fft_adc_new/src/rtl/fft/dft_addsub.v"
+"/home/andrew/projects/unoric_board/fft_adc_new/src/rtl/fft/dft_freq_ram.v"
+"/home/andrew/projects/unoric_board/fft_adc_new/src/rtl/fft/dft_add.v"
+"/home/andrew/projects/unoric_board/fft_adc_new/src/rtl/fft/dft_complex_mul.v"
+"/home/andrew/projects/unoric_board/fft_adc_new/src/rtl/fft/dft_dline.v"
+"/home/andrew/projects/unoric_board/fft_adc_new/src/rtl/fft/dft_core.v"
+"/home/andrew/projects/unoric_board/fft_adc_new/src/rtl/fft/dft_complex_abs.v"
+"/home/andrew/projects/unoric_board/fft_adc_new/src/rtl/fft/dft_mul.v"
+"/home/andrew/projects/unoric_board/fft_adc_new/src/rtl/fft/dft_postproc.v"
+"/home/andrew/projects/unoric_board/fft_adc_new/src/rtl/fft/dft_preproc.v"
+"/home/andrew/projects/unoric_board/fft_adc_new/src/rtl/fft/dft_fifo.v"
+"/home/andrew/projects/unoric_board/fft_adc_new/src/rtl/fft/dft_sqrsum.v"
+"/home/andrew/projects/unoric_board/fft_adc_new/src/rtl/fft/dft_sqrt.v"
+"/home/andrew/projects/unoric_board/fft_adc_new/src/rtl/fft/dft_sub.v"
+"/home/andrew/projects/unoric_board/fft_adc_new/src/rtl/fft/dft_twiddle_rom.v"
+"/home/andrew/projects/unoric_board/fft_adc_new/src/rtl/fft/dft.v"
+"/home/andrew/projects/unoric_board/fft_adc_new/radiant/fft_adc/ebr_dp/rtl/ebr_dp.v"
+"/home/andrew/projects/unoric_board/fft_adc_new/src/rtl/i2c_wrapper.v"
+
+
+-path "/home/andrew/projects/unoric_board/fft_adc_new/src/rtl/fft"
+"/home/andrew/projects/unoric_board/fft_adc_new/src/rtl/fft/mem_files"
+"/home/andrew/projects/unoric_board/fft_adc_new/src/rtl/fft/ip"
+"/home/andrew/projects/unoric_board/fft_adc_new/radiant/fft_adc"
+-top top
+-udb "fft_adc_impl_1_rtl.udb"
+-output_hdl "fft_adc_impl_1.vm"
+
