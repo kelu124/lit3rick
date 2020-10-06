@@ -11,7 +11,7 @@ NiceImage @todo --intro and doc =)
 * [The python tools](/py_fpga/): to facilitate the acquisitions.
 * [The cursed gateware](/verilog): for the current gateware linked to the python library.
 
-## Some Images
+## Some images, unipolar pulse at Vpulse = 5V
 
 ### Python setup
 
