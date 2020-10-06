@@ -43,7 +43,7 @@ dataFFT = fpga.read_fft_through_spi()
 
 ## Images
 
-### Content of the dataI2S
+### Content of the dataI2S
 
 ![](/images/i2s.png)
 
