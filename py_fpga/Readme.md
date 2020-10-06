@@ -27,18 +27,36 @@ Now we setup the HILO value, and setting the gain outside of the acquisition win
 
 #### Starting to get the enveloppe for 10ms
 
-`data = fpga.read_fft_through_i2s(10)`
+`dataI2S = fpga.read_fft_through_i2s(10)`
 
 #### Let's get the raw data for the last line in the previous acquisition?
 
-`data = fpga.read_signal_through_spi()`
+`dataSPI = fpga.read_signal_through_spi()`
 
 ### Want to get computed value of the filter extraction through SPI ?
 
 ```python
 fpga.calc_fft() 
 time.sleep(3/1000.0) # normally takes ~800us to compute 8192pts
-fpga_fft = fpga.read_fft_through_spi()
+dataFFT = fpga.read_fft_through_spi()
 ```
+
+## Images
+
+### Content of the dataI2S
+
+![](/images/i2s.png)
+
+### Content of the dataSPI
+
+![](/images/raw_ref.png)
+
+### Content of the dataFFT
+
+![](/images/fpga_fft.png)
+
+
+
+
 
 Let me know if there's something else to add.
