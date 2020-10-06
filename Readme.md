@@ -1,10 +1,10 @@
 # Readme
 
-## Presentation of the hardware
+## Presentation of the hardware
 NiceImage @todo --intro and doc =)
 
 
-## Content
+## Content
 
 * [Hardware files](/hardware/). Stemming from the forkable [upverter design](https://upverter.com/design/kelu124/lit3rick/).
 * [Utilities to program the up5k](/program/): no FTDI, all through the RPi header, using its SPI bus to program either the board flash, or the fpga directy.
