@@ -1,8 +1,12 @@
 # Benchmarking with the un0rick board
 
-## Comparing un0rick and  acquisitions at a glance
+## Comparing un0rick and  acquisitions at a glance (high voltage used)
 
-![](/sample_acqs/compare_maxgain_90V.jpg)
+![](/sample_acqs/compare_maxgain_b_90V.jpg)
+
+## Same, with onboard 5V supply
+
+![](/sample_acqs/compare_maxgain.jpg)
 
 ## Checking the level of noise in each board, at max gain (no transducer plugged).
 
