@@ -12,7 +12,7 @@ the up5k board is a bit better =)
 
 ## Is there any difference between positive and negative pulses?
 
-![](/sample_acqs/_pos_neg.jpg)
+![](/sample_acqs/lit3rick_pos_neg.jpg)
 
 ## Can we play with the width of pulses if we want to alternate positive and negative pulses?
 
