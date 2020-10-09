@@ -1,5 +1,11 @@
 # Benchmarking with the un0rick board
 
+## Acquisitions on the lit3rick, medium gain, using onboard enveloppe detection
+
+![](/sample_acqs/lit3rick_i2s/lit3_i2s.jpg)
+
+![](/sample_acqs/lit3rick_i2s/lit3_i2s_detailed.jpg)
+
 ## Comparing un0rick and  acquisitions at a glance (high voltage used)
 
 ![](/sample_acqs/compare_maxgain_b_90V.jpg)
