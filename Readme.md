@@ -76,7 +76,7 @@ dataFFT = fpga.read_fft_through_spi()
 
 # Benchmarking
 
-## Benchmarking against the un0rick board 
+## Benchmarking against the un0rick board 
 
 ![](/sample_acqs/compare_maxgain_b_90V.jpg)
 
