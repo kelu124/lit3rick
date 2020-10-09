@@ -1,10 +1,17 @@
-# Readme
+# the up5k lit3rick open hardware ultrasound pulse echo board
 
 ## Presentation of the hardware
-NiceImage @todo --intro and doc =)
 
+![](/images/top.jpg)
 
-## Content
+* Lattice: up5k. Onboard RAM for 64k points saves.
+* Onboard flash : W25X10CLSNIG
+* Pulser : HV7361GA-G: adaptable to +-100V pulses. Onboard is 5V pulse.
+* AD8331 for gain
+* ADC: AD9629BCPZ-65: 12bits, reaching 64Msps here
+* DAC: MCP4812-E/MS for 8us gain segments
+
+# Content
 
 * [Hardware files](/hardware/). Stemming from the forkable [upverter design](https://upverter.com/design/kelu124/lit3rick/).
 * [Utilities to program the up5k](/program/): no FTDI, all through the RPi header, using its SPI bus to program either the board flash, or the fpga directy.
@@ -60,6 +67,22 @@ dataFFT = fpga.read_fft_through_spi()
 ### Content of the dataFFT
 
 ![](/images/fpga_fft.png)
+
+### Efficiency of enveloppe extraction and compression
+
+![](/sample_acqs/lit3rick_i2s/lit3_i2s.jpg)
+
+![](/sample_acqs/lit3rick_i2s/lit3_i2s_detailed.jpg)
+
+# Benchmarking
+
+## Benchmarking against the un0rick board 
+
+![](/sample_acqs/compare_maxgain_b_90V.jpg)
+
+## Checking the level of noise in each board, at max gain (no transducer plugged).
+
+![](/sample_acqs/compare_noise.jpg)
 
 # License
 
