@@ -14,6 +14,7 @@ import matplotlib.pyplot as plt
 from ctypes import *
 from contextlib import contextmanager
 import pyaudio
+from datetime import datetime
 
 ERROR_HANDLER_FUNC = CFUNCTYPE(None, c_char_p, c_int, c_char_p, c_int, c_char_p)
 
@@ -31,6 +32,9 @@ def noalsaerr():
 
 
 if __name__ == "__main__":
+
+    now = datetime.now()
+
     i2c_bus = SMBus(1)
     spi = spidev.SpiDev()
     spi.open(0,0)
@@ -54,7 +58,7 @@ if __name__ == "__main__":
     fpga.set_dac(450, mem=2)
 
     hiloVal = 1
-    dacVal = 100
+    dacVal = 450
     fpga.set_HILO(hiloVal)
     fpga.set_dac(dacVal) 
     # Capturing the signal
@@ -63,8 +67,10 @@ if __name__ == "__main__":
     print("Acq done, reading through spi")
     # Reading the signal
     data = fpga.read_signal_through_spi()
+    t = [x/64.0 for x in len(data)]
     fig = plt.figure(figsize=(15,5))
-    fig = plt.plot(data[0:64*50] # 64msps * 50us
+    fig = plt.plot(t[0:64*50],data[0:64*50]) # 64msps * 50us
+    plt.title("Gain set at "+str(dacVal)+ " - "+now.strftime("%m/%d/%Y, %H:%M:%S"))
     plt.savefig("raw_ref.png")   
 
     print("Starting FFT calc")
