@@ -46,12 +46,12 @@ if __name__ == "__main__":
     # Starting an object 
     fpga = py_fpga(i2c_bus=i2c_bus, py_audio=p, spi_bus=spi)
     # Setting up the pulse - PHV time for duration of positivepulse
-    fpga.set_waveform(pdelay=1, PHV_time=11, PnHV_time=1, PDamp_time=100)
+    fpga.set_waveform(pdelay=1, PHV_time=20, PnHV_time=0, PDamp_time=20)
 
     print("Setting DAC")
     startVal,nPtsDAC = 450, 16
     for i in range(nPtsDAC):
-        fpga.set_dac(int(startVal + (i*(455-startVal))/nPtsDAC), mem=i)
+        fpga.set_dac(int(startVal + (i*(511-startVal))/nPtsDAC), mem=i)
 
     fpga.set_dac(450, mem=0)
     fpga.set_dac(450, mem=1)
@@ -63,7 +63,7 @@ if __name__ == "__main__":
     fpga.set_dac(dacVal) 
     # Capturing the signal
     fpga.capture_signal()
-    data = fpga.read_fft_through_i2s(10)  
+    #data = fpga.read_fft_through_i2s(10)  
     print("Acq done, reading through spi")
     # Reading the signal
     data = fpga.read_signal_through_spi()
@@ -71,7 +71,12 @@ if __name__ == "__main__":
     fig = plt.figure(figsize=(15,5))
     fig = plt.plot( t[0:64*50],data[0:64*50] ) # 64msps * 50us
     plt.title("Gain set at "+str(dacVal)+ " - "+now.strftime("%m/%d/%Y, %H:%M:%S"))
-    plt.savefig("ndt_raw.png")   
+    plt.savefig("ndt_raw_detail.png")   
+
+    fig = plt.figure(figsize=(15,5))
+    fig = plt.plot( t,data ) # 64msps * 50us
+    plt.title("Gain set at "+str(dacVal)+ " - "+now.strftime("%m/%d/%Y, %H:%M:%S"))
+    plt.savefig("ndt_raw_all.png")   
 
     fig = plt.figure(figsize=(15,5))
     L = len(data)
