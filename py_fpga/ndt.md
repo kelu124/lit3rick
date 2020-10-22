@@ -7,7 +7,7 @@ https://raw.githubusercontent.com/kelu124/lit3rick/master/py_fpga/ndt.py
 python3 ndt.py
 ```
 
-## Initiating the object
+## Initiating the object
 
 ```python
     # Starting an object 
