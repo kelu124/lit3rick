@@ -46,14 +46,14 @@ if __name__ == "__main__":
     # Starting an object 
     fpga = py_fpga(i2c_bus=i2c_bus, py_audio=p, spi_bus=spi)
     # Setting up the pulse - PHV time for duration of positivepulse
-    fpga.set_waveform(pdelay=1, PHV_time=20, PnHV_time=0, PDamp_time=20)
+    fpga.set_waveform(pdelay=1, PHV_time=30, PnHV_time=30, PDamp_time=5)
 
     print("Setting DAC")
     startVal,nPtsDAC = 450, 16
     for i in range(nPtsDAC):
         fpga.set_dac(int(startVal + (i*(511-startVal))/nPtsDAC), mem=i)
 
-    fpga.set_dac(450, mem=0)
+    fpga.set_dac(200, mem=0)
     fpga.set_dac(450, mem=1)
     fpga.set_dac(450, mem=2)
 
@@ -62,8 +62,7 @@ if __name__ == "__main__":
     fpga.set_HILO(hiloVal)
     fpga.set_dac(dacVal) 
     # Capturing the signal
-    fpga.capture_signal()
-    #data = fpga.read_fft_through_i2s(10)  
+    fpga.capture_signal() 
     print("Acq done, reading through spi")
     # Reading the signal
     data = fpga.read_signal_through_spi()
@@ -83,7 +82,7 @@ if __name__ == "__main__":
     LL = int(len(data)/2)
     f = [x*64.0/L for x in range(L)]
     FFT = np.abs(np.fft.fft(data))
-    plt.plot(f[10:LL],FFT[10:LL])
+    plt.plot(f[20:LL],FFT[20:LL])
     plt.title("FFT "+str(dacVal)+ " - "+now.strftime("%m/%d/%Y, %H:%M:%S"))
     plt.savefig("ndt_fft.png")   
 
