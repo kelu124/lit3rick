@@ -67,17 +67,25 @@ if __name__ == "__main__":
     print("Acq done, reading through spi")
     # Reading the signal
     data = fpga.read_signal_through_spi()
-    t = [x/64.0 for x in len(data)]
+    t = [x/64.0 for x in range(len(data))]
     fig = plt.figure(figsize=(15,5))
-    fig = plt.plot(t[0:64*50],data[0:64*50]) # 64msps * 50us
+    fig = plt.plot( t[0:64*50],data[0:64*50] ) # 64msps * 50us
     plt.title("Gain set at "+str(dacVal)+ " - "+now.strftime("%m/%d/%Y, %H:%M:%S"))
-    plt.savefig("raw_ref.png")   
+    plt.savefig("ndt_raw.png")   
+
+    fig = plt.figure(figsize=(15,5))
+    L = len(data)
+    LL = int(len(data)/2)
+    f = [x*64.0/L for x in range(L)]
+    FFT = np.abs(np.fft.fft(data))
+    plt.plot(f[10:LL],FFT[10:LL])
+    plt.title("FFT "+str(dacVal)+ " - "+now.strftime("%m/%d/%Y, %H:%M:%S"))
+    plt.savefig("ndt_fft.png")   
 
     print("Starting FFT calc")
     fpga.calc_fft()                        # onboard filtering calculation
     time.sleep(3/1000.0)                   # let's wait, usally takes 800ms
     fpga_fft = fpga.read_fft_through_spi() # reading filtered signal
-    print("FFT obtained")
     fig = plt.figure(figsize=(15,5))
     fig = plt.plot(fpga_fft)
-    plt.savefig("fpga_fft.png")   
+    plt.savefig("ndt_filtered.png")   
