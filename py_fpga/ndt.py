@@ -46,19 +46,19 @@ if __name__ == "__main__":
     # Starting an object 
     fpga = py_fpga(i2c_bus=i2c_bus, py_audio=p, spi_bus=spi)
     # Setting up the pulse - PHV time for duration of positivepulse
-    fpga.set_waveform(pdelay=1, PHV_time=30, PnHV_time=30, PDamp_time=5)
+    fpga.set_waveform(pdelay=1, PHV_time=15, PnHV_time=7, PDamp_time=7)
 
     print("Setting DAC")
     startVal,nPtsDAC = 450, 16
     for i in range(nPtsDAC):
-        fpga.set_dac(int(startVal + (i*(511-startVal))/nPtsDAC), mem=i)
+        fpga.set_dac(int(startVal + (i*(455-startVal))/nPtsDAC), mem=i)
 
-    fpga.set_dac(200, mem=0)
+    fpga.set_dac(100, mem=0)
     fpga.set_dac(450, mem=1)
     fpga.set_dac(450, mem=2)
 
     hiloVal = 1
-    dacVal = 450
+    dacVal = 100
     fpga.set_HILO(hiloVal)
     fpga.set_dac(dacVal) 
     # Capturing the signal
