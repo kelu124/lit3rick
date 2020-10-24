@@ -1,3 +1,5 @@
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/G2G81MT0G)
+
 # the up5k lit3rick open hardware ultrasound pulse echo board
 
 ## Presentation of the hardware
