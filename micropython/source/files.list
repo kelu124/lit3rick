@@ -1,0 +1,9 @@
+font_rom.v
+picosoc.v
+spimemio.v
+lcd_pll.v
+simpleuart.v
+text_rom.v
+up_spram.v
+z_picorv32.v
+top.v

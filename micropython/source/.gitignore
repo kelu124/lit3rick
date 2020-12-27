@@ -1,0 +1,6 @@
+*.bin
+*.elf
+__pycache__
+*.json
+*.rpt
+*.asc
