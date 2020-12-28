@@ -15,6 +15,13 @@
 #define reg_uart_clkdiv (*(volatile uint32_t*)0x02000004)
 #define reg_uart_data (*(volatile uint32_t*)0x02000008)
 
+// Linked to
+// wire        simpleuart_reg_div_sel = mem_valid && (mem_addr == 32'h 0200_0004);
+// wire [31:0] simpleuart_reg_div_do;
+// 
+// wire        simpleuart_reg_dat_sel = mem_valid && (mem_addr == 32'h 0200_0008);
+// wire [31:0] simpleuart_reg_dat_do;
+
 // Receive single character
 char mp_hal_stdin_rx_chr(void) {
 	int32_t c = -1;
@@ -91,11 +98,11 @@ int main(int argc, char **argv) {
 	reg_uart_clkdiv = 1250;
     led_init();
     lcd_clear();
-    reg_io[0] = 1 << 4;
+    reg_io[0] = 1 << 4 + 2 + 1; // trying for LED on gpio 0, 1, 2.
     delay_ms(500);
     reg_io[0] = 0;
     delay_ms(500);
-    reg_io[0] = 1 << 4;
+    reg_io[0] = 1 << 4 + 1;
     delay_ms(500);
     reg_io[0] = 0;
     delay_ms(500);

@@ -71,7 +71,7 @@ always @(posedge clk) begin
     if (!resetn) begin
         fpga_ok_cnt <= 0;
         fpga_ok <= 0;
-    end else if (fpga_ok_cnt == 11999999) begin
+    end else if (fpga_ok_cnt == 11999999) begin // 12MHz clock,
         fpga_ok_cnt <= 0;
         fpga_ok <= ~fpga_ok;
     end else
