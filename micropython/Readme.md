@@ -1,4 +1,15 @@
-# Install
+# What?
+
+A small core to play with micropython on the lit3rick
+
+## Credits
+
+* [Miodrag Milanović](https://github.com/mmicko/fpga101-workshop/tree/master/tutorials/12-RiscV) for his awesome work on the fpga101 workshop (one of my first time playing with a lattice =) ).
+* [Claire Wolf](https://github.com/cliffordwolf/picorv32) - for the picorv32 but most of all for all that goes with it =)
+* Bogdan - thanks mate!
+
+
+## Install
 
 Execute
 
