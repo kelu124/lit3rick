@@ -145,12 +145,15 @@ class py_fpga:
 
     def read_fft_through_spi(self):
         signal = bytes(0)
+        
         self.i2c_write(8, 3 << 16)
         addr = []
         for i in range(self.__fft_size + 1):
             addr += [(i >> 8) & 0xFF, i & 0xFF]
+
         result = self.__spi_bus.xfer2(addr)
         signal += bytes(result[2:])
+
         signal = np.frombuffer(signal, dtype=np.int16)
         return signal
 
@@ -165,10 +168,10 @@ class py_fpga:
         j = 0
         i = 0
         data = np.zeros(len(tmp)//2)
-        while i + 512 < len(tmp):
+        while i + 512 < len(tmp) and j + 256 < len(data):
             data[j : j + 256] = tmp[i + 256 : i + 512]
             j += 256
-            i += 512
+            i += 510
         return data[:count*256]
 
     def __read_signal_through_i2s(self):
@@ -237,16 +240,18 @@ class py_fpga:
                         frames_per_buffer=self.__CHUNK, 
                         input_device_index=1)
 
-        print("* recording")
+        # print("* recording")
 
         frames = []
 
+        # for i in range(0, int(self.__RATE * self.__CHANNELS / self.__CHUNK * self.__RECORD_SECONDS)):
+        # print(f"rate = {self.__RATE}, channels = {self.__CHANNELS}, chunk = {self.__CHUNK}, time = {ms}")
         for i in range(0, int(math.ceil(self.__RATE * self.__CHANNELS / self.__CHUNK * ms / 1000))):
             data = stream.read(self.__CHUNK)
             # print(data)
             frames.append(list(data))
 
-        #print("* done recording")
+        # print("* done recording")
 
         stream.stop_stream()
         stream.close()
