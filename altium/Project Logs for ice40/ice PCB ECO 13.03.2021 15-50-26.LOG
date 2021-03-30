@@ -1,0 +1,4 @@
+Change Component Footprint: Designator=K3 Old Footprint=2PIN_VER New Footprint=JUMPER2
+Change Component Footprint: Designator=K4 Old Footprint=2PIN_VER New Footprint=JUMPER2
+Change Component Comment : Designator=K3 Old Comment=2PIN_VER New Comment=1x2PLS
+Change Component Comment : Designator=K4 Old Comment=2PIN_VER New Comment=1x2PLS

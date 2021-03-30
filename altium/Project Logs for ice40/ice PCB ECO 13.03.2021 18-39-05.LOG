@@ -1,0 +1,14 @@
+Added Component: Designator=U1(X2SON)
+Added Component: Designator=U2(X2SON)
+Added Pin To Net: NetName=+1V8 Pin=U1-1
+Added Pin To Net: NetName=GND Pin=U1-2
+Added Pin To Net: NetName=+3V3 Pin=U1-3
+Added Pin To Net: NetName=+3V3 Pin=U1-4
+Added Pin To Net: NetName=GND Pin=U1-5
+Added Pin To Net: NetName=+1V2 Pin=U2-1
+Added Pin To Net: NetName=GND Pin=U2-2
+Added Pin To Net: NetName=+3V3 Pin=U2-3
+Added Pin To Net: NetName=+3V3 Pin=U2-4
+Added Pin To Net: NetName=GND Pin=U2-5
+Added Member To Class: ClassName=ice40 Member=Component U1 TLV707xx
+Added Member To Class: ClassName=ice40 Member=Component U2 TLV707xx
