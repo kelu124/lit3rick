@@ -11,6 +11,12 @@
 * ADC: 10bits, reaching 64Msps here
 * DAC: MCP4812-E/MS for 8us gain segments
 
+# Pics
+
+![](/ice_bot.png)
+
+![](/ice_top.png)
+
 # License
 
 This work is based on two previous TAPR projects, [the echOmods project](https://github.com/kelu124/echomods/), and the [un0rick project](https://github.com/kelu124/un0rick) - its boards are open hardware and software, developped with open-source elements as much as possible.
