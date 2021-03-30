@@ -1,6 +1,0 @@
-picosoc.v
-spimemio.v
-simpleuart.v
-up_spram.v
-z_picorv32.v
-top.v

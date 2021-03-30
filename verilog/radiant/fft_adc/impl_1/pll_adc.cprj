@@ -1,6 +1,0 @@
--ver "/opt/lscc/radiant/2.0/ip/pmi/pmi_iCE40UP.v"
--lib pmi -vhd "/opt/lscc/radiant/2.0/ip/pmi/pmi_iCE40UP.vhd"
--ver "/home/andrew/projects/unoric_board/fft_adc_new/radiant/fft_adc/ip_cores/pll_adc/rtl/pll_adc.v"
--path "/home/andrew/projects/unoric_board/fft_adc_new/src/rtl/fft" "/home/andrew/projects/unoric_board/fft_adc_new/src/rtl/fft/mem_files" "/home/andrew/projects/unoric_board/fft_adc_new/src/rtl/fft/ip" "/home/andrew/projects/unoric_board/fft_adc_new/radiant/fft_adc/ip_cores/pll_adc"
--top pll_adc
--a "iCE40UP"

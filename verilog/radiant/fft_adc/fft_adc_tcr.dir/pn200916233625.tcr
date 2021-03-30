@@ -1,8 +1,0 @@
-#Start recording tcl command: 9/16/2020 10:07:21
-#Project Location: /home/andrew/projects/unoric_board/fft_adc_new/radiant/fft_adc; Project name: fft_adc
-prj_open "/home/andrew/projects/unoric_board/fft_adc_new/radiant/fft_adc/fft_adc.rdf"
-prj_run PAR -impl impl_1
-prj_run PAR -impl impl_1
-prj_run PAR -impl impl_1
-prj_run PAR -impl impl_1
-#Stop recording: 9/16/2020 23:36:25
