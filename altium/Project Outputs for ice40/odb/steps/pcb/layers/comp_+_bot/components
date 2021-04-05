@@ -1,0 +1,688 @@
+UNITS=MM
+#
+#Component attribute names
+#
+@0 .comp_mount_type
+@1 .comp_height
+
+# CMP 0
+CMP 18 25.97500012 11.15000056 270 N SP2 SolderPad_D1mm_round ;0=1,1=0.0000
+PRP Value 'DAC_GAIN'
+TOP 0 25.97500012 11.15000056 270 N 66 0 SP2-1
+#
+# CMP 1
+CMP 1 3.30000102 18.52132186 270 N Y1 ASFL1-25.000MHZ-L-T ;0=1,1=1.2000
+PRP Arrow_Part_Number 'ASFL1-25.000MHZ-L-T'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/asfl1-25.000mhz-l-t/abracon'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/1/ASFL1-25.000MHZ-L-T.pdf'
+PRP Height '1.3mm'
+PRP Manufacturer_Name 'ABRACON'
+PRP Manufacturer_Part_Number 'ASFL1-25.000MHZ-L-T'
+PRP Mouser_Part_Number '815-ASFL1-25-L-T'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/ABRACON/ASFL1-25000MHZ-L-T?qs=jv7ULIbIBgOiRkeuuil%252BKg%3D%3D'
+TOP 0 2.20000068 17.25132186 270 N 0 0 Y1-1
+TOP 1 2.20000068 19.79132186 270 N 94 45 Y1-2
+TOP 2 4.40000136 19.79132186 270 N 1 0 Y1-3
+TOP 3 4.40000136 17.25132186 270 N 88 18 Y1-4
+#
+# CMP 2
+CMP 23 7.42500166 8.5749892 270 N U1 TLV70718PDQNR ;0=1,1=0.4000
+TOP 0 7.7499972 8.09998888 90 N 90 2 U1-1
+TOP 1 7.10000358 8.09998888 90 N 94 51 U1-2
+TOP 2 7.10000358 9.0499946 90 N 88 23 U1-3
+TOP 3 7.74999974 9.04999968 90 N 88 22 U1-4
+TOP 4 7.42500166 8.5749892 315 N 94 52 U1-5
+#
+# CMP 3
+CMP 13 5.29999956 22.19257436 180 N R25 10 ;0=1,1=0.3500
+PRP Author 'CERN DEM JLC'
+PRP Case '1206'
+PRP Component_Type 'Standard'
+PRP CreateDate '12/3/2007'
+PRP HelpURL '\\cern.ch\dfs\Applications\Altium\Datasheets\R1206_NIC_NRC.pdf'
+PRP LatestRevisionDate '3/13/2008'
+PRP Manufacturer 'GENERIC'
+PRP Manufacturer1_ComponentHeight '0.65mm'
+PRP Manufacturer1_Example 'NIC COMPONENT'
+PRP Manufacturer1_Part_Number 'NRC12F4701TRF'
+PRP Manufacturer_Part_Number 'R1206_4K7_1%_0.25W_100PPM'
+PRP Mounted 'Yes'
+PRP Part_Description 'General Purpose Thick Film Chip Resistor'
+PRP Part_Number 'R1206_4K7_1%_0.25W_100PPM'
+PRP Pin_Count '2'
+PRP Power '0.25W'
+PRP SMD 'Yes'
+PRP Socket 'No'
+PRP Status 'Preferred'
+PRP Table 'Resistors SMD'
+PRP TC '±100ppm/°C'
+PRP Tolerance '±1%'
+PRP Value '4k7'
+TOP 0 4.77506792 22.19251086 0 N 79 1 R25-1
+TOP 1 5.8250328 22.19251086 0 N 1 1 R25-2
+#
+# CMP 4
+CMP 12 2.675001 22.19999878 0 N C57 cap0402 ;0=1,1=0.3500
+PRP LatestRevisionDate '17-Jul-2002'
+PRP LatestRevisionNote 'Re-released for DXP Platform.'
+PRP PackageDescription 'Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing'
+PRP PackageReference 'RAD-0.3'
+PRP Published '8-Jun-2000'
+PRP Publisher 'Altium Limited'
+PRP Value '6p8'
+TOP 0 3.19993264 22.20006228 180 N 79 0 C57-1
+TOP 1 2.14996776 22.20006228 180 N 94 46 C57-2
+#
+# CMP 5
+CMP 12 5.22506448 14.35006782 90 N C56 cap0402 ;0=1,1=0.3500
+PRP LatestRevisionDate '17-Jul-2002'
+PRP LatestRevisionNote 'Re-released for DXP Platform.'
+PRP PackageDescription 'Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing'
+PRP PackageReference 'RAD-0.3'
+PRP Published '8-Jun-2000'
+PRP Publisher 'Altium Limited'
+PRP Value '100n'
+TOP 0 5.22500098 14.87499946 90 N 88 0 C56-1
+TOP 1 5.22500098 13.82503458 90 N 94 17 C56-2
+#
+# CMP 6
+CMP 14 53.10000048 21.89999938 180 N R10 1k ;0=1,1=0.4500
+PRP Author 'CERN DEM JLC'
+PRP Case '1206'
+PRP Component_Type 'Standard'
+PRP CreateDate '12/3/2007'
+PRP HelpURL '\\cern.ch\dfs\Applications\Altium\Datasheets\R1206_NIC_NRC.pdf'
+PRP LatestRevisionDate '3/13/2008'
+PRP Manufacturer 'GENERIC'
+PRP Manufacturer1_ComponentHeight '0.65mm'
+PRP Manufacturer1_Example 'NIC COMPONENT'
+PRP Manufacturer1_Part_Number 'NRC12F4701TRF'
+PRP Manufacturer_Part_Number 'R1206_4K7_1%_0.25W_100PPM'
+PRP Mounted 'Yes'
+PRP Part_Description 'General Purpose Thick Film Chip Resistor'
+PRP Part_Number 'R1206_4K7_1%_0.25W_100PPM'
+PRP Pin_Count '2'
+PRP Power '0.25W'
+PRP SMD 'Yes'
+PRP Socket 'No'
+PRP Status 'Preferred'
+PRP Table 'Resistors SMD'
+PRP TC '±100ppm/°C'
+PRP Tolerance '±1%'
+PRP Value '4k7'
+TOP 0 52.22505176 21.89993588 0 N 16 0 R10-1
+TOP 1 53.9750508 21.89993588 0 N 88 20 R10-2
+#
+# CMP 7
+CMP 14 47.39999918 19.77499982 180 N R9 1k ;0=1,1=0.4500
+PRP Author 'CERN DEM JLC'
+PRP Case '1206'
+PRP Component_Type 'Standard'
+PRP CreateDate '12/3/2007'
+PRP HelpURL '\\cern.ch\dfs\Applications\Altium\Datasheets\R1206_NIC_NRC.pdf'
+PRP LatestRevisionDate '3/13/2008'
+PRP Manufacturer 'GENERIC'
+PRP Manufacturer1_ComponentHeight '0.65mm'
+PRP Manufacturer1_Example 'NIC COMPONENT'
+PRP Manufacturer1_Part_Number 'NRC12F4701TRF'
+PRP Manufacturer_Part_Number 'R1206_4K7_1%_0.25W_100PPM'
+PRP Mounted 'Yes'
+PRP Part_Description 'General Purpose Thick Film Chip Resistor'
+PRP Part_Number 'R1206_4K7_1%_0.25W_100PPM'
+PRP Pin_Count '2'
+PRP Power '0.25W'
+PRP SMD 'Yes'
+PRP Socket 'No'
+PRP Status 'Preferred'
+PRP Table 'Resistors SMD'
+PRP TC '±100ppm/°C'
+PRP Tolerance '±1%'
+PRP Value '4k7'
+TOP 0 46.52505046 19.77493632 0 N 56 0 R9-1
+TOP 1 48.2750495 19.77493632 0 N 88 1 R9-2
+#
+# CMP 8
+CMP 14 47.39999918 21.8750007 180 N R8 1k ;0=1,1=0.4500
+PRP Author 'CERN DEM JLC'
+PRP Case '1206'
+PRP Component_Type 'Standard'
+PRP CreateDate '12/3/2007'
+PRP HelpURL '\\cern.ch\dfs\Applications\Altium\Datasheets\R1206_NIC_NRC.pdf'
+PRP LatestRevisionDate '3/13/2008'
+PRP Manufacturer 'GENERIC'
+PRP Manufacturer1_ComponentHeight '0.65mm'
+PRP Manufacturer1_Example 'NIC COMPONENT'
+PRP Manufacturer1_Part_Number 'NRC12F4701TRF'
+PRP Manufacturer_Part_Number 'R1206_4K7_1%_0.25W_100PPM'
+PRP Mounted 'Yes'
+PRP Part_Description 'General Purpose Thick Film Chip Resistor'
+PRP Part_Number 'R1206_4K7_1%_0.25W_100PPM'
+PRP Pin_Count '2'
+PRP Power '0.25W'
+PRP SMD 'Yes'
+PRP Socket 'No'
+PRP Status 'Preferred'
+PRP Table 'Resistors SMD'
+PRP TC '±100ppm/°C'
+PRP Tolerance '±1%'
+PRP Value '4k7'
+TOP 0 46.52505046 21.8749372 0 N 54 0 R8-1
+TOP 1 48.2750495 21.8749372 0 N 88 2 R8-2
+#
+# CMP 9
+CMP 14 53.10000048 20.25000014 180 N R4 1k ;0=1,1=0.4500
+PRP Author 'CERN DEM JLC'
+PRP Case '1206'
+PRP Component_Type 'Standard'
+PRP CreateDate '12/3/2007'
+PRP HelpURL '\\cern.ch\dfs\Applications\Altium\Datasheets\R1206_NIC_NRC.pdf'
+PRP LatestRevisionDate '3/13/2008'
+PRP Manufacturer 'GENERIC'
+PRP Manufacturer1_ComponentHeight '0.65mm'
+PRP Manufacturer1_Example 'NIC COMPONENT'
+PRP Manufacturer1_Part_Number 'NRC12F4701TRF'
+PRP Manufacturer_Part_Number 'R1206_4K7_1%_0.25W_100PPM'
+PRP Mounted 'Yes'
+PRP Part_Description 'General Purpose Thick Film Chip Resistor'
+PRP Part_Number 'R1206_4K7_1%_0.25W_100PPM'
+PRP Pin_Count '2'
+PRP Power '0.25W'
+PRP SMD 'Yes'
+PRP Socket 'No'
+PRP Status 'Preferred'
+PRP Table 'Resistors SMD'
+PRP TC '±100ppm/°C'
+PRP Tolerance '±1%'
+PRP Value '4k7'
+TOP 0 52.22505176 20.24993664 0 N 61 0 R4-1
+TOP 1 53.9750508 20.24993664 0 N 88 3 R4-2
+#
+# CMP 10
+CMP 13 26.09993764 14.57493148 270 N R12 4k7 ;0=1,1=0.3500
+PRP Author 'CERN DEM JLC'
+PRP Case '1206'
+PRP Component_Type 'Standard'
+PRP CreateDate '12/3/2007'
+PRP HelpURL '\\cern.ch\dfs\Applications\Altium\Datasheets\R1206_NIC_NRC.pdf'
+PRP LatestRevisionDate '3/13/2008'
+PRP Manufacturer 'GENERIC'
+PRP Manufacturer1_ComponentHeight '0.65mm'
+PRP Manufacturer1_Example 'NIC COMPONENT'
+PRP Manufacturer1_Part_Number 'NRC12F4701TRF'
+PRP Manufacturer_Part_Number 'R1206_4K7_1%_0.25W_100PPM'
+PRP Mounted 'Yes'
+PRP Part_Description 'General Purpose Thick Film Chip Resistor'
+PRP Part_Number 'R1206_4K7_1%_0.25W_100PPM'
+PRP Pin_Count '2'
+PRP Power '0.25W'
+PRP SMD 'Yes'
+PRP Socket 'No'
+PRP Status 'Preferred'
+PRP Table 'Resistors SMD'
+PRP TC '±100ppm/°C'
+PRP Tolerance '±1%'
+PRP Value '4k7'
+TOP 0 26.10000114 14.04999984 270 N 88 4 R12-1
+TOP 1 26.10000114 15.09996472 270 N 7 0 R12-2
+#
+# CMP 11
+CMP 13 21.8250008 14.72499976 270 N R11 4k7 ;0=1,1=0.3500
+PRP Author 'CERN DEM JLC'
+PRP Case '1206'
+PRP Component_Type 'Standard'
+PRP CreateDate '12/3/2007'
+PRP HelpURL '\\cern.ch\dfs\Applications\Altium\Datasheets\R1206_NIC_NRC.pdf'
+PRP LatestRevisionDate '3/13/2008'
+PRP Manufacturer 'GENERIC'
+PRP Manufacturer1_ComponentHeight '0.65mm'
+PRP Manufacturer1_Example 'NIC COMPONENT'
+PRP Manufacturer1_Part_Number 'NRC12F4701TRF'
+PRP Manufacturer_Part_Number 'R1206_4K7_1%_0.25W_100PPM'
+PRP Mounted 'Yes'
+PRP Part_Description 'General Purpose Thick Film Chip Resistor'
+PRP Part_Number 'R1206_4K7_1%_0.25W_100PPM'
+PRP Pin_Count '2'
+PRP Power '0.25W'
+PRP SMD 'Yes'
+PRP Socket 'No'
+PRP Status 'Preferred'
+PRP Table 'Resistors SMD'
+PRP TC '±100ppm/°C'
+PRP Tolerance '±1%'
+PRP Value '4k7'
+TOP 0 21.8250643 14.20006812 270 N 88 5 R11-1
+TOP 1 21.8250643 15.250033 270 N 6 0 R11-2
+#
+# CMP 12
+CMP 13 32.69993714 21.97493192 270 N R3 10k ;0=1,1=0.3500
+PRP Author 'CERN DEM JLC'
+PRP Case '1206'
+PRP Component_Type 'Standard'
+PRP CreateDate '12/3/2007'
+PRP HelpURL '\\cern.ch\dfs\Applications\Altium\Datasheets\R1206_NIC_NRC.pdf'
+PRP LatestRevisionDate '3/13/2008'
+PRP Manufacturer 'GENERIC'
+PRP Manufacturer1_ComponentHeight '0.65mm'
+PRP Manufacturer1_Example 'NIC COMPONENT'
+PRP Manufacturer1_Part_Number 'NRC12F4701TRF'
+PRP Manufacturer_Part_Number 'R1206_4K7_1%_0.25W_100PPM'
+PRP Mounted 'Yes'
+PRP Part_Description 'General Purpose Thick Film Chip Resistor'
+PRP Part_Number 'R1206_4K7_1%_0.25W_100PPM'
+PRP Pin_Count '2'
+PRP Power '0.25W'
+PRP SMD 'Yes'
+PRP Socket 'No'
+PRP Status 'Preferred'
+PRP Table 'Resistors SMD'
+PRP TC '±100ppm/°C'
+PRP Tolerance '±1%'
+PRP Value '4k7'
+TOP 0 32.70000064 21.45000028 270 N 88 6 R3-1
+TOP 1 32.70000064 22.49996516 270 N 8 0 R3-2
+#
+# CMP 13
+CMP 11 29.59999922 10.19999992 180 N L6 75R@100MHz ;0=1,1=1.2000
+PRP Author 'S. Jafar'
+PRP Case '0805'
+PRP Component_Type 'Standard'
+PRP ComponentHeight '1.05mm'
+PRP CreateDate '12/21/2015'
+PRP LatestRevisionDate '12/21/2015'
+PRP Manufacturer 'MURATA'
+PRP Manufacturer_Part_Number 'BLM21BB750SN1D'
+PRP Mounted 'Yes'
+PRP Part_Description 'SMD EMIFIL Suppression Chip Ferrite Bead'
+PRP Part_Number 'IND0805_MURATA_BLM21BB750SN1D'
+PRP Pin_Count '2'
+PRP Power '700mA'
+PRP Resistance '0.16R'
+PRP SMD 'Yes'
+PRP Socket 'No'
+PRP Status 'None'
+PRP Table 'Inductors SMD'
+PRP Tolerance '±25%'
+PRP Value '75R@100MHz'
+TOP 0 28.69999848 10.19999992 90 N 95 1 L6-1
+TOP 1 30.49999996 10.19999992 90 N 84 2 L6-2
+#
+# CMP 14
+CMP 11 29.47500074 18.97499888 0 N L5 75R@100MHz ;0=1,1=1.2000
+PRP Author 'S. Jafar'
+PRP Case '0805'
+PRP Component_Type 'Standard'
+PRP ComponentHeight '1.05mm'
+PRP CreateDate '12/21/2015'
+PRP LatestRevisionDate '12/21/2015'
+PRP Manufacturer 'MURATA'
+PRP Manufacturer_Part_Number 'BLM21BB750SN1D'
+PRP Mounted 'Yes'
+PRP Part_Description 'SMD EMIFIL Suppression Chip Ferrite Bead'
+PRP Part_Number 'IND0805_MURATA_BLM21BB750SN1D'
+PRP Pin_Count '2'
+PRP Power '700mA'
+PRP Resistance '0.16R'
+PRP SMD 'Yes'
+PRP Socket 'No'
+PRP Status 'None'
+PRP Table 'Inductors SMD'
+PRP Tolerance '±25%'
+PRP Value '75R@100MHz'
+TOP 0 30.37500148 18.97499888 270 N 83 0 L5-1
+TOP 1 28.575 18.97499888 270 N 95 0 L5-2
+#
+# CMP 15
+CMP 11 9.0750009 6.47500102 0 N L4 75R@100MHz ;0=1,1=1.2000
+PRP Author 'S. Jafar'
+PRP Case '0805'
+PRP Component_Type 'Standard'
+PRP ComponentHeight '1.05mm'
+PRP CreateDate '12/21/2015'
+PRP LatestRevisionDate '12/21/2015'
+PRP Manufacturer 'MURATA'
+PRP Manufacturer_Part_Number 'BLM21BB750SN1D'
+PRP Mounted 'Yes'
+PRP Part_Description 'SMD EMIFIL Suppression Chip Ferrite Bead'
+PRP Part_Number 'IND0805_MURATA_BLM21BB750SN1D'
+PRP Pin_Count '2'
+PRP Power '700mA'
+PRP Resistance '0.16R'
+PRP SMD 'Yes'
+PRP Socket 'No'
+PRP Status 'None'
+PRP Table 'Inductors SMD'
+PRP Tolerance '±25%'
+PRP Value '75R@100MHz'
+TOP 0 9.97500164 6.47500102 270 N 91 0 L4-1
+TOP 1 8.17500016 6.47500102 270 N 90 0 L4-2
+#
+# CMP 16
+CMP 22 23.96200186 14.62499996 0 N IC3 TMP112AIDRLR ;0=1,1=1.2000
+PRP Arrow_Part_Number 'TMP112AIDRLR'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/tmp112aidrlr/texas-instruments'
+PRP Datasheet_Link 'http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftmp112'
+PRP Height '0.6mm'
+PRP Manufacturer_Name 'Texas Instruments'
+PRP Manufacturer_Part_Number 'TMP112AIDRLR'
+PRP Mouser_Part_Number '595-TMP112AIDRLR'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TMP112AIDRLR/?qs=62Z1lCHpKYghtK4%2FJn2ysA%3D%3D'
+TOP 0 24.8000012 15.12499896 180 N 7 1 IC3-1
+TOP 1 24.8000012 14.62499996 180 N 94 50 IC3-2
+TOP 2 24.8000012 14.12500096 180 N 0 1 IC3-3
+TOP 3 23.12400252 14.12500096 180 N 94 49 IC3-4
+TOP 4 23.12400252 14.62499996 180 N 88 21 IC3-5
+TOP 5 23.12400252 15.12499896 180 N 6 1 IC3-6
+#
+# CMP 17
+CMP 5 19.70000124 21.00000118 180 N D1 CDBU0520 ;0=1,1=1.2000
+PRP Arrow_Part_Number 'CDBU0520'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cdbu0520/comchip-technology'
+PRP Datasheet_Link 'http://www.comchiptech.com/admin/files/product/CDBU0520-HF-RevA797161.pdf'
+PRP Height '0.85mm'
+PRP Manufacturer_Name 'Comchip Technology'
+PRP Manufacturer_Part_Number 'CDBU0520'
+PRP Mouser_Part_Number '750-CDBU0520'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/Comchip-Technology/CDBU0520/?qs=QrYNfmA0esYvGSGDalbccA%3D%3D'
+TOP 0 18.8500004 21.00000118 90 N 89 1 D1-1
+TOP 1 20.55000208 21.00000118 90 N 88 19 D1-2
+#
+# CMP 18
+CMP 16 44.7499994 8.14999894 180 N C55 cap1206 ;0=1,1=1.2000
+PRP LatestRevisionDate '17-Jul-2002'
+PRP LatestRevisionNote 'Re-released for DXP Platform.'
+PRP PackageDescription 'Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing'
+PRP PackageReference 'RAD-0.3'
+PRP Published '8-Jun-2000'
+PRP Publisher 'Altium Limited'
+PRP Value '0.1x200V'
+TOP 0 44.7499994 8.14999894 0 N 86 1 C55-1
+TOP 1 47.7979994 8.14999894 0 N 94 48 C55-2
+#
+# CMP 19
+CMP 15 45.8699997 10.87499984 180 N C54 cap0805 ;0=1,1=1.2000
+PRP LatestRevisionDate '17-Jul-2002'
+PRP LatestRevisionNote 'Re-released for DXP Platform.'
+PRP PackageDescription 'Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing'
+PRP PackageReference 'RAD-0.3'
+PRP Published '8-Jun-2000'
+PRP Publisher 'Altium Limited'
+PRP Value '0.1x200V'
+TOP 0 45.8699997 10.87499984 0 N 86 0 C54-1
+TOP 1 47.7749997 10.87499984 0 N 94 47 C54-2
+#
+# CMP 20
+CMP 12 33.77493626 9.6999679 270 N C53 cap0402 ;0=1,1=0.3500
+PRP LatestRevisionDate '17-Jul-2002'
+PRP LatestRevisionNote 'Re-released for DXP Platform.'
+PRP PackageDescription 'Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing'
+PRP PackageReference 'RAD-0.3'
+PRP Published '8-Jun-2000'
+PRP Publisher 'Altium Limited'
+PRP Value '1n'
+TOP 0 33.77499976 9.17503626 270 N 94 20 C53-1
+TOP 1 33.77499976 10.22500114 270 N 84 0 C53-2
+#
+# CMP 21
+CMP 12 32.42493642 9.6999679 270 N C52 cap0402 ;0=1,1=0.3500
+PRP LatestRevisionDate '17-Jul-2002'
+PRP LatestRevisionNote 'Re-released for DXP Platform.'
+PRP PackageDescription 'Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing'
+PRP PackageReference 'RAD-0.3'
+PRP Published '8-Jun-2000'
+PRP Publisher 'Altium Limited'
+PRP Value '100n'
+TOP 0 32.42499992 9.17503626 270 N 94 21 C52-1
+TOP 1 32.42499992 10.22500114 270 N 84 1 C52-2
+#
+# CMP 22
+CMP 12 32.55000094 17.67499894 0 N C51 cap0402 ;0=1,1=0.3500
+PRP LatestRevisionDate '17-Jul-2002'
+PRP LatestRevisionNote 'Re-released for DXP Platform.'
+PRP PackageDescription 'Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing'
+PRP PackageReference 'RAD-0.3'
+PRP Published '8-Jun-2000'
+PRP Publisher 'Altium Limited'
+PRP Value '1n'
+TOP 0 33.07493258 17.67506244 180 N 94 22 C51-1
+TOP 1 32.0249677 17.67506244 180 N 83 1 C51-2
+#
+# CMP 23
+CMP 12 32.55000094 18.97499888 0 N C50 cap0402 ;0=1,1=0.3500
+PRP LatestRevisionDate '17-Jul-2002'
+PRP LatestRevisionNote 'Re-released for DXP Platform.'
+PRP PackageDescription 'Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing'
+PRP PackageReference 'RAD-0.3'
+PRP Published '8-Jun-2000'
+PRP Publisher 'Altium Limited'
+PRP Value '100n'
+TOP 0 33.07493258 18.97506238 180 N 94 23 C50-1
+TOP 1 32.0249677 18.97506238 180 N 83 2 C50-2
+#
+# CMP 24
+CMP 16 39.22700054 8.14999894 180 N C45 cap1206 ;0=1,1=1.2000
+PRP LatestRevisionDate '17-Jul-2002'
+PRP LatestRevisionNote 'Re-released for DXP Platform.'
+PRP PackageDescription 'Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing'
+PRP PackageReference 'RAD-0.3'
+PRP Published '8-Jun-2000'
+PRP Publisher 'Altium Limited'
+PRP Value '0.1x200V'
+TOP 0 39.22700054 8.14999894 0 N 94 24 C45-1
+TOP 1 42.27500054 8.14999894 0 N 87 0 C45-2
+#
+# CMP 25
+CMP 15 39.67001972 10.90000106 180 N C44 cap0805 ;0=1,1=1.2000
+PRP LatestRevisionDate '17-Jul-2002'
+PRP LatestRevisionNote 'Re-released for DXP Platform.'
+PRP PackageDescription 'Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing'
+PRP PackageReference 'RAD-0.3'
+PRP Published '8-Jun-2000'
+PRP Publisher 'Altium Limited'
+PRP Value '0.1x200V'
+TOP 0 39.67001972 10.90000106 0 N 94 25 C44-1
+TOP 1 41.57501972 10.90000106 0 N 87 1 C44-2
+#
+# CMP 26
+CMP 12 15.24999998 9.72499706 270 N C43 cap0402 ;0=1,1=0.3500
+PRP LatestRevisionDate '17-Jul-2002'
+PRP LatestRevisionNote 'Re-released for DXP Platform.'
+PRP PackageDescription 'Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing'
+PRP PackageReference 'RAD-0.3'
+PRP Published '8-Jun-2000'
+PRP Publisher 'Altium Limited'
+PRP Value '10u'
+TOP 0 15.25006348 9.20006542 270 N 94 26 C43-1
+TOP 1 15.25006348 10.2500303 270 N 88 7 C43-2
+#
+# CMP 27
+CMP 12 13.90000014 9.6999933 270 N C42 cap0402 ;0=1,1=0.3500
+PRP LatestRevisionDate '17-Jul-2002'
+PRP LatestRevisionNote 'Re-released for DXP Platform.'
+PRP PackageDescription 'Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing'
+PRP PackageReference 'RAD-0.3'
+PRP Published '8-Jun-2000'
+PRP Publisher 'Altium Limited'
+PRP Value '100n'
+TOP 0 13.90006364 9.17506166 270 N 94 27 C42-1
+TOP 1 13.90006364 10.22502654 270 N 88 8 C42-2
+#
+# CMP 28
+CMP 12 11.35000016 4.22500044 270 N C34 cap0402 ;0=1,1=0.3500
+PRP LatestRevisionDate '17-Jul-2002'
+PRP LatestRevisionNote 'Re-released for DXP Platform.'
+PRP PackageDescription 'Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing'
+PRP PackageReference 'RAD-0.3'
+PRP Published '8-Jun-2000'
+PRP Publisher 'Altium Limited'
+PRP Value '10u'
+TOP 0 11.35006366 3.7000688 270 N 94 28 C34-1
+TOP 1 11.35006366 4.75003368 270 N 91 1 C34-2
+#
+# CMP 29
+CMP 12 10.00000032 4.22500044 270 N C33 cap0402 ;0=1,1=0.3500
+PRP LatestRevisionDate '17-Jul-2002'
+PRP LatestRevisionNote 'Re-released for DXP Platform.'
+PRP PackageDescription 'Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing'
+PRP PackageReference 'RAD-0.3'
+PRP Published '8-Jun-2000'
+PRP Publisher 'Altium Limited'
+PRP Value '100n'
+TOP 0 10.00006382 3.7000688 270 N 94 29 C33-1
+TOP 1 10.00006382 4.75003368 270 N 91 2 C33-2
+#
+# CMP 30
+CMP 12 22.60000052 11.87500038 0 N C17 cap0402 ;0=1,1=0.3500
+PRP LatestRevisionDate '17-Jul-2002'
+PRP LatestRevisionNote 'Re-released for DXP Platform.'
+PRP PackageDescription 'Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing'
+PRP PackageReference 'RAD-0.3'
+PRP Published '8-Jun-2000'
+PRP Publisher 'Altium Limited'
+PRP Value '100n'
+TOP 0 23.12493216 11.87506388 180 N 94 30 C17-1
+TOP 1 22.07496728 11.87506388 180 N 88 9 C17-2
+#
+# CMP 31
+CMP 12 24.19996684 16.4250624 180 N C15 cap0402 ;0=1,1=0.3500
+PRP LatestRevisionDate '17-Jul-2002'
+PRP LatestRevisionNote 'Re-released for DXP Platform.'
+PRP PackageDescription 'Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing'
+PRP PackageReference 'RAD-0.3'
+PRP Published '8-Jun-2000'
+PRP Publisher 'Altium Limited'
+PRP Value '100n'
+TOP 0 23.6750352 16.4249989 0 N 88 10 C15-1
+TOP 1 24.72500008 16.4249989 0 N 94 31 C15-2
+#
+# CMP 32
+CMP 12 8.62499926 4.19999922 270 N C11 cap0402 ;0=1,1=0.3500
+PRP LatestRevisionDate '17-Jul-2002'
+PRP LatestRevisionNote 'Re-released for DXP Platform.'
+PRP PackageDescription 'Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing'
+PRP PackageReference 'RAD-0.3'
+PRP Published '8-Jun-2000'
+PRP Publisher 'Altium Limited'
+PRP Value '1u'
+TOP 0 8.62506276 3.67506758 270 N 94 32 C11-1
+TOP 1 8.62506276 4.72503246 270 N 90 1 C11-2
+#
+# CMP 33
+CMP 12 5.850001 8.82499886 270 N C10 cap0402 ;0=1,1=0.3500
+PRP LatestRevisionDate '17-Jul-2002'
+PRP LatestRevisionNote 'Re-released for DXP Platform.'
+PRP PackageDescription 'Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing'
+PRP PackageReference 'RAD-0.3'
+PRP Published '8-Jun-2000'
+PRP Publisher 'Altium Limited'
+PRP Value '100n'
+TOP 0 5.8500645 8.30006722 270 N 94 33 C10-1
+TOP 1 5.8500645 9.3500321 270 N 88 11 C10-2
+#
+# CMP 34
+CMP 12 15.10000028 20.27499882 270 N C9 cap0402 ;0=1,1=0.3500
+PRP LatestRevisionDate '17-Jul-2002'
+PRP LatestRevisionNote 'Re-released for DXP Platform.'
+PRP PackageDescription 'Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing'
+PRP PackageReference 'RAD-0.3'
+PRP Published '8-Jun-2000'
+PRP Publisher 'Altium Limited'
+PRP Value '100n'
+TOP 0 15.10006378 19.75006718 270 N 94 34 C9-1
+TOP 1 15.10006378 20.80003206 270 N 89 0 C9-2
+#
+# CMP 35
+CMP 12 12.17499978 14.84998554 90 N C8 cap0402 ;0=1,1=0.3500
+PRP LatestRevisionDate '17-Jul-2002'
+PRP LatestRevisionNote 'Re-released for DXP Platform.'
+PRP PackageDescription 'Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing'
+PRP PackageReference 'RAD-0.3'
+PRP Published '8-Jun-2000'
+PRP Publisher 'Altium Limited'
+PRP Value '100n'
+TOP 0 12.17493628 15.37491718 90 N 94 35 C8-1
+TOP 1 12.17493628 14.3249523 90 N 92 0 C8-2
+#
+# CMP 36
+CMP 12 10.37474938 20.27499882 270 N C7 cap0402 ;0=1,1=0.3500
+PRP LatestRevisionDate '17-Jul-2002'
+PRP LatestRevisionNote 'Re-released for DXP Platform.'
+PRP PackageDescription 'Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing'
+PRP PackageReference 'RAD-0.3'
+PRP Published '8-Jun-2000'
+PRP Publisher 'Altium Limited'
+PRP Value '100n'
+TOP 0 10.37481288 19.75006718 270 N 94 36 C7-1
+TOP 1 10.37481288 20.80003206 270 N 92 1 C7-2
+#
+# CMP 37
+CMP 12 15.6750004 18.47474588 180 N C6 cap0402 ;0=1,1=0.3500
+PRP LatestRevisionDate '17-Jul-2002'
+PRP LatestRevisionNote 'Re-released for DXP Platform.'
+PRP PackageDescription 'Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing'
+PRP PackageReference 'RAD-0.3'
+PRP Published '8-Jun-2000'
+PRP Publisher 'Altium Limited'
+PRP Value '10u'
+TOP 0 15.15006876 18.47468238 0 N 94 37 C6-1
+TOP 1 16.20003364 18.47468238 0 N 88 12 C6-2
+#
+# CMP 38
+CMP 12 15.6750004 17.15000126 180 N C5 cap0402 ;0=1,1=0.3500
+PRP LatestRevisionDate '17-Jul-2002'
+PRP LatestRevisionNote 'Re-released for DXP Platform.'
+PRP PackageDescription 'Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing'
+PRP PackageReference 'RAD-0.3'
+PRP Published '8-Jun-2000'
+PRP Publisher 'Altium Limited'
+PRP Value '100n'
+TOP 0 15.15006876 17.14993776 0 N 94 38 C5-1
+TOP 1 16.20003364 17.14993776 0 N 88 13 C5-2
+#
+# CMP 39
+CMP 12 10.15000002 15.29999988 90 N C4 cap0402 ;0=1,1=0.3500
+PRP LatestRevisionDate '17-Jul-2002'
+PRP LatestRevisionNote 'Re-released for DXP Platform.'
+PRP PackageDescription 'Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing'
+PRP PackageReference 'RAD-0.3'
+PRP Published '8-Jun-2000'
+PRP Publisher 'Altium Limited'
+PRP Value '10u'
+TOP 0 10.14993652 15.82493152 90 N 94 39 C4-1
+TOP 1 10.14993652 14.77496664 90 N 88 14 C4-2
+#
+# CMP 40
+CMP 12 8.82506236 15.30006846 90 N C3 cap0402 ;0=1,1=0.3500
+PRP LatestRevisionDate '17-Jul-2002'
+PRP LatestRevisionNote 'Re-released for DXP Platform.'
+PRP PackageDescription 'Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing'
+PRP PackageReference 'RAD-0.3'
+PRP Published '8-Jun-2000'
+PRP Publisher 'Altium Limited'
+PRP Value '100n'
+TOP 0 8.82499886 15.8250001 90 N 94 40 C3-1
+TOP 1 8.82499886 14.77503522 90 N 88 15 C3-2
+#
+# CMP 41
+CMP 12 11.67500078 20.27499882 270 N C2 cap0402 ;0=1,1=0.3500
+PRP LatestRevisionDate '17-Jul-2002'
+PRP LatestRevisionNote 'Re-released for DXP Platform.'
+PRP PackageDescription 'Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing'
+PRP PackageReference 'RAD-0.3'
+PRP Published '8-Jun-2000'
+PRP Publisher 'Altium Limited'
+PRP Value '10u'
+TOP 0 11.67506428 19.75006718 270 N 94 41 C2-1
+TOP 1 11.67506428 20.80003206 270 N 88 16 C2-2
+#
+# CMP 42
+CMP 12 12.97500072 20.27499882 270 N C1 cap0402 ;0=1,1=0.3500
+PRP LatestRevisionDate '17-Jul-2002'
+PRP LatestRevisionNote 'Re-released for DXP Platform.'
+PRP PackageDescription 'Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing'
+PRP PackageReference 'RAD-0.3'
+PRP Published '8-Jun-2000'
+PRP Publisher 'Altium Limited'
+PRP Value '100n'
+TOP 0 12.97506422 19.75006718 270 N 94 42 C1-1
+TOP 1 12.97506422 20.80003206 270 N 88 17 C1-2
+#

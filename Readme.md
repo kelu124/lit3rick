@@ -2,6 +2,10 @@
 
 # the up5k lit3rick open hardware ultrasound pulse echo board, 100dB gain
 
+# OSHWA certified ! 
+
+[https://certification.oshwa.org/fr000016.html](https://certification.oshwa.org/fr000016.html)
+
 ## Presentation of the hardware
 
 * Lattice: up5k. Onboard RAM for 64k points saves.

@@ -1,0 +1,13 @@
+UNITS=MM
+#
+#Layer features
+#
+S P 0
+OB 0.40894 0 I
+OS 0 -0.40894
+OS -0.40894 0
+OS 0 0.40894
+OS 0.40894 0
+OE
+SE
+

@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [ice40.PrjPcb]
+   Generated File[ice.TXT]
+   Generated File[ice.LDP]
+   Generated File[ice.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 17:16:58 On 05.04.2021
