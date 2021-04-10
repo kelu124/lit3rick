@@ -1,8 +1,0 @@
-Added Component: Designator=SP1(SolderPad_0.5x0.9)
-Add component (AddParameter): Name = "Value"; Value = "DAC_GAIN"; VariantName = "[No Variations]"
-Added Component: Designator=SP2(SolderPad_0.5x0.9)
-Add component (AddParameter): Name = "Value"; Value = "DAC_GAIN"; VariantName = "[No Variations]"
-Added Pin To Net: NetName=dac_g Pin=SP1-1
-Added Pin To Net: NetName=dac_g Pin=SP2-1
-Added Member To Class: ClassName=ice40 Member=Component SP1 SolderPad_0.5x0.9
-Added Member To Class: ClassName=ice40 Member=Component SP2 SolderPad_0.5x0.9
