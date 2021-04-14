@@ -1,0 +1,29 @@
+------------------------------------------------------------------------------------------
+Gerber File Extension Report For: ice.GBR   14/04/2021  11:56:18 AM
+------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------
+Layer Extension     Layer Description                      
+------------------------------------------------------------------------------------------
+.GTO                Top Overlay                             
+.GTP                Top Paste                               
+.GTS                Top Solder                              
+.GTL                L1 [TOP]                                
+.G1                 L2 [GND]                                
+.G2                 L3[PWR]                                 
+.GBL                L4 [BOTTOM]                             
+.GBS                Bottom Solder                           
+.GBP                Bottom Paste                            
+.GBO                Bottom Overlay                          
+.GM2                M2_BoardOutline                         
+.GM3                Top Courtyard                           
+.GM4                Bottom Courtyard                        
+.GM5                M5_StackDetails                         
+.GM6                M6_FabNotes                             
+.GM11               Top Dimensions                          
+.GM15               Top Assembly                            
+.GM16               Bottom Assembly                         
+.GM17               Top TestPoints                          
+.GM18               Bottom TestPoints                       
+------------------------------------------------------------------------------------------
