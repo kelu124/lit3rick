@@ -1,0 +1,3 @@
+Change Component Comment : Designator=R16 Old Comment=4k7 New Comment=0
+Added Pin To Net: NetName=GND Pin=C4-1
+Added Pin To Net: NetName=GND Pin=C7-1

@@ -1,0 +1,1344 @@
+#
+#Component attribute names
+#
+@0 .comp_mount_type
+@1 .comp_height
+
+# CMP 0
+CMP 16 2.093494 0.2401575 180 N Q1 FMMT495TA ;0=1,1=0.0531
+PRP AEC_Category 'Q101'
+PRP AEC_Qualified 'Y'
+PRP Alternate_Manufacturer ''
+PRP Alternate_PartNumber ''
+PRP ComponentLink1Description 'Datasheet link'
+PRP ComponentLink1URL 'https://www.diodes.com/assets/Datasheets/FMMT495.pdf'
+PRP CompType 'BJT'
+PRP HfeMax '300.0'
+PRP IcRated_A '1A'
+PRP LatestRevisionDate '2017-06-26'
+PRP Manufacturer 'Diodes Inc.'
+PRP MountType 'SMT'
+PRP NPN '1.0'
+PRP PackageReference 'SOT-23'
+PRP PartNumber 'FMMT495TA'
+PRP PNP '0.0'
+PRP Published '2008-07-31'
+PRP Publisher 'Texas Instruments'
+PRP RoHS 'Y'
+PRP SizeArea_mm2 '7.5'
+PRP SizeAreaWB_mm2 '14.0'
+PRP SizeX_mm '2.5'
+PRP SizeY_mm '3.0'
+PRP SizeZ_mm '1.1'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Mouser'
+PRP Supplier_3 ''
+PRP Supplier_Part_Number_1 'FMMT495CT-ND'
+PRP Supplier_Part_Number_2 '522-FMMT495TA'
+PRP Supplier_Part_Number_3 ''
+PRP TaMax_C '150°C'
+PRP TaMin_C '-55°C'
+PRP U/M 'EA'
+PRP Value '150 V'
+PRP Value1 '1 A'
+PRP Value2 '300.0'
+PRP Vceo_V '150V'
+PRP Vcesat1_V '3dV'
+TOP 0 2.1387696 0.2027559 90 N 32 0 Q1-1
+TOP 1 2.1387696 0.277559 90 N 22 1 Q1-2
+TOP 2 2.0482184 0.2401575 90 N 40 4 Q1-3
+#
+# CMP 1
+CMP 11 1.5816928 0.180118 180 N L8 75R@100MHz ;0=1,1=0.0177
+PRP Author 'S. Jafar'
+PRP Case '0805'
+PRP Component_Type 'Standard'
+PRP ComponentHeight '1.05mm'
+PRP CreateDate '12/21/2015'
+PRP LatestRevisionDate '12/21/2015'
+PRP Manufacturer 'MURATA'
+PRP Manufacturer_Part_Number 'BLM21BB750SN1D'
+PRP Mounted 'Yes'
+PRP Part_Description 'SMD EMIFIL Suppression Chip Ferrite Bead'
+PRP Part_Number 'IND0805_MURATA_BLM21BB750SN1D'
+PRP Pin_Count '2'
+PRP Power '700mA'
+PRP Resistance '0.16R'
+PRP SMD 'Yes'
+PRP Socket 'No'
+PRP Status 'None'
+PRP Table 'Inductors SMD'
+PRP Tolerance '±25%'
+PRP Value '75R@100MHz'
+TOP 0 1.6161396 0.1801155 180 N 39 28 L8-1
+TOP 1 1.547242 0.1801155 180 N 55 22 L8-2
+#
+# CMP 2
+CMP 11 2.1181102 0.8307087 0 N L7 75R@100MHz ;0=1,1=0.0177
+PRP Author 'S. Jafar'
+PRP Case '0805'
+PRP Component_Type 'Standard'
+PRP ComponentHeight '1.05mm'
+PRP CreateDate '12/21/2015'
+PRP LatestRevisionDate '12/21/2015'
+PRP Manufacturer 'MURATA'
+PRP Manufacturer_Part_Number 'BLM21BB750SN1D'
+PRP Mounted 'Yes'
+PRP Part_Description 'SMD EMIFIL Suppression Chip Ferrite Bead'
+PRP Part_Number 'IND0805_MURATA_BLM21BB750SN1D'
+PRP Pin_Count '2'
+PRP Power '700mA'
+PRP Resistance '0.16R'
+PRP SMD 'Yes'
+PRP Socket 'No'
+PRP Status 'None'
+PRP Table 'Inductors SMD'
+PRP Tolerance '±25%'
+PRP Value '75R@100MHz'
+TOP 0 2.0836634 0.8307112 0 N 39 6 L7-1
+TOP 1 2.152561 0.8307112 0 N 55 11 L7-2
+#
+# CMP 3
+CMP 11 2.2106299 0.242126 270 N L3 75R@100MHz ;0=1,1=0.0177
+PRP Author 'S. Jafar'
+PRP Case '0805'
+PRP Component_Type 'Standard'
+PRP ComponentHeight '1.05mm'
+PRP CreateDate '12/21/2015'
+PRP LatestRevisionDate '12/21/2015'
+PRP Manufacturer 'MURATA'
+PRP Manufacturer_Part_Number 'BLM21BB750SN1D'
+PRP Mounted 'Yes'
+PRP Part_Description 'SMD EMIFIL Suppression Chip Ferrite Bead'
+PRP Part_Number 'IND0805_MURATA_BLM21BB750SN1D'
+PRP Pin_Count '2'
+PRP Power '700mA'
+PRP Resistance '0.16R'
+PRP SMD 'Yes'
+PRP Socket 'No'
+PRP Status 'None'
+PRP Table 'Inductors SMD'
+PRP Tolerance '±25%'
+PRP Value '75R@100MHz'
+TOP 0 2.2106274 0.2076792 270 N 22 0 L3-1
+TOP 1 2.2106274 0.2765768 270 N 38 2 L3-2
+#
+# CMP 4
+CMP 6 1.1879922 0.5600398 90 N U2 LM3478MMX/NOPB ;0=1,1=0.0394
+PRP Case/Package 'MSOP'
+PRP ComponentLink1Description 'http://www.ti.com/lit/ds/symlink/lm3478.pdf?src-supplier=Digi-Key'
+PRP ComponentLink1URL 'http://www.ti.com/lit/ds/symlink/lm3478.pdf?src-supplier=Digi-Key'
+PRP Contact_Plating 'Tin,Matte'
+PRP Duty_Cycle '100%'
+PRP Lead_Free 'Lead Free'
+PRP Manufacturer 'TI National Semiconductor'
+PRP Manufacturer_Part_Number 'LM3478MMX/NOPB'
+PRP Max_Duty_Cycle '100%'
+PRP Max_Frequency '1MHz'
+PRP Max_Operating_Temperature '125°C'
+PRP Min_Operating_Temperature '-40°C'
+PRP Mount 'Surface Mount'
+PRP Number_of_Outputs '1'
+PRP Number_of_Pins '8'
+PRP Operating_Supply_Voltage '40V'
+PRP Output_Current '1A'
+PRP Output_Voltage '1.26V'
+PRP Packaging 'Tape and Reel'
+PRP Quiescent_Current '2.7mA'
+PRP Radiation_Hardening 'No'
+PRP Stock_1 '0'
+PRP Supplier_1 'Farnell'
+PRP Switching_Frequency '1MHz'
+TOP 0 1.0954724 0.596457 270 N 29 2 U2-1
+TOP 1 1.0954724 0.570866 270 N 28 2 U2-2
+TOP 2 1.0954724 0.545276 270 N 23 2 U2-3
+TOP 3 1.0954724 0.519685 270 N 39 32 U2-4
+TOP 4 1.2805119 0.5196854 270 N 39 31 U2-5
+TOP 5 1.2805119 0.5452764 270 N 58 2 U2-6
+TOP 6 1.2805119 0.5708664 270 N 53 3 U2-7
+TOP 7 1.2805119 0.5964574 270 N 33 1 U2-8
+#
+# CMP 5
+CMP 11 1.3159449 0.4498031 0 N R16 0 ;0=1,1=0.0177
+PRP Author 'CERN DEM JLC'
+PRP Case '1206'
+PRP Component_Type 'Standard'
+PRP CreateDate '12/3/2007'
+PRP HelpURL '\\cern.ch\dfs\Applications\Altium\Datasheets\R1206_NIC_NRC.pdf'
+PRP LatestRevisionDate '3/13/2008'
+PRP Manufacturer 'GENERIC'
+PRP Manufacturer1_ComponentHeight '0.65mm'
+PRP Manufacturer1_Example 'NIC COMPONENT'
+PRP Manufacturer1_Part_Number 'NRC12F4701TRF'
+PRP Manufacturer_Part_Number 'R1206_4K7_1%_0.25W_100PPM'
+PRP Mounted 'Yes'
+PRP Part_Description 'General Purpose Thick Film Chip Resistor'
+PRP Part_Number 'R1206_4K7_1%_0.25W_100PPM'
+PRP Pin_Count '2'
+PRP Power '0.25W'
+PRP SMD 'Yes'
+PRP Socket 'No'
+PRP Status 'Preferred'
+PRP Table 'Resistors SMD'
+PRP TC '±100ppm/°C'
+PRP Tolerance '±1%'
+PRP Value '4k7'
+TOP 0 1.2814981 0.4498056 0 N 58 1 R16-1
+TOP 1 1.3503957 0.4498056 0 N 59 2 R16-2
+#
+# CMP 6
+CMP 11 1.4045276 0.7362205 90 N R15 4k7 ;0=1,1=0.0177
+PRP Author 'CERN DEM JLC'
+PRP Case '1206'
+PRP Component_Type 'Standard'
+PRP CreateDate '12/3/2007'
+PRP HelpURL '\\cern.ch\dfs\Applications\Altium\Datasheets\R1206_NIC_NRC.pdf'
+PRP LatestRevisionDate '3/13/2008'
+PRP Manufacturer 'GENERIC'
+PRP Manufacturer1_ComponentHeight '0.65mm'
+PRP Manufacturer1_Example 'NIC COMPONENT'
+PRP Manufacturer1_Part_Number 'NRC12F4701TRF'
+PRP Manufacturer_Part_Number 'R1206_4K7_1%_0.25W_100PPM'
+PRP Mounted 'Yes'
+PRP Part_Description 'General Purpose Thick Film Chip Resistor'
+PRP Part_Number 'R1206_4K7_1%_0.25W_100PPM'
+PRP Pin_Count '2'
+PRP Power '0.25W'
+PRP SMD 'Yes'
+PRP Socket 'No'
+PRP Status 'Preferred'
+PRP Table 'Resistors SMD'
+PRP TC '±100ppm/°C'
+PRP Tolerance '±1%'
+PRP Value '4k7'
+TOP 0 1.4045301 0.7706673 90 N 29 1 R15-1
+TOP 1 1.4045301 0.7017697 90 N 35 4 R15-2
+#
+# CMP 7
+CMP 11 1.1072835 0.4153543 90 N R13 4k7 ;0=1,1=0.0177
+PRP Author 'CERN DEM JLC'
+PRP Case '1206'
+PRP Component_Type 'Standard'
+PRP CreateDate '12/3/2007'
+PRP HelpURL '\\cern.ch\dfs\Applications\Altium\Datasheets\R1206_NIC_NRC.pdf'
+PRP LatestRevisionDate '3/13/2008'
+PRP Manufacturer 'GENERIC'
+PRP Manufacturer1_ComponentHeight '0.65mm'
+PRP Manufacturer1_Example 'NIC COMPONENT'
+PRP Manufacturer1_Part_Number 'NRC12F4701TRF'
+PRP Manufacturer_Part_Number 'R1206_4K7_1%_0.25W_100PPM'
+PRP Mounted 'Yes'
+PRP Part_Description 'General Purpose Thick Film Chip Resistor'
+PRP Part_Number 'R1206_4K7_1%_0.25W_100PPM'
+PRP Pin_Count '2'
+PRP Power '0.25W'
+PRP SMD 'Yes'
+PRP Socket 'No'
+PRP Status 'Preferred'
+PRP Table 'Resistors SMD'
+PRP TC '±100ppm/°C'
+PRP Tolerance '±1%'
+PRP Value '4k7'
+TOP 0 1.107286 0.4498011 90 N 33 2 R13-1
+TOP 1 1.107286 0.3809035 90 N 49 7 R13-2
+#
+# CMP 8
+CMP 11 2.0925197 0.1240057 0 N R12 4k7 ;0=1,1=0.0177
+PRP Author 'CERN DEM JLC'
+PRP Case '1206'
+PRP Component_Type 'Standard'
+PRP CreateDate '12/3/2007'
+PRP HelpURL '\\cern.ch\dfs\Applications\Altium\Datasheets\R1206_NIC_NRC.pdf'
+PRP LatestRevisionDate '3/13/2008'
+PRP Manufacturer 'GENERIC'
+PRP Manufacturer1_ComponentHeight '0.65mm'
+PRP Manufacturer1_Example 'NIC COMPONENT'
+PRP Manufacturer1_Part_Number 'NRC12F4701TRF'
+PRP Manufacturer_Part_Number 'R1206_4K7_1%_0.25W_100PPM'
+PRP Mounted 'Yes'
+PRP Part_Description 'General Purpose Thick Film Chip Resistor'
+PRP Part_Number 'R1206_4K7_1%_0.25W_100PPM'
+PRP Pin_Count '2'
+PRP Power '0.25W'
+PRP SMD 'Yes'
+PRP Socket 'No'
+PRP Status 'Preferred'
+PRP Table 'Resistors SMD'
+PRP TC '±100ppm/°C'
+PRP Tolerance '±1%'
+PRP Value '4k7'
+TOP 0 2.0580729 0.1240082 0 N 40 2 R12-1
+TOP 1 2.1269705 0.1240082 0 N 32 1 R12-2
+#
+# CMP 9
+CMP 11 1.2047244 0.7362205 90 N R11 4k7 ;0=1,1=0.0177
+PRP Author 'CERN DEM JLC'
+PRP Case '1206'
+PRP Component_Type 'Standard'
+PRP CreateDate '12/3/2007'
+PRP HelpURL '\\cern.ch\dfs\Applications\Altium\Datasheets\R1206_NIC_NRC.pdf'
+PRP LatestRevisionDate '3/13/2008'
+PRP Manufacturer 'GENERIC'
+PRP Manufacturer1_ComponentHeight '0.65mm'
+PRP Manufacturer1_Example 'NIC COMPONENT'
+PRP Manufacturer1_Part_Number 'NRC12F4701TRF'
+PRP Manufacturer_Part_Number 'R1206_4K7_1%_0.25W_100PPM'
+PRP Mounted 'Yes'
+PRP Part_Description 'General Purpose Thick Film Chip Resistor'
+PRP Part_Number 'R1206_4K7_1%_0.25W_100PPM'
+PRP Pin_Count '2'
+PRP Power '0.25W'
+PRP SMD 'Yes'
+PRP Socket 'No'
+PRP Status 'Preferred'
+PRP Table 'Resistors SMD'
+PRP TC '±100ppm/°C'
+PRP Tolerance '±1%'
+PRP Value '4k7'
+TOP 0 1.2047269 0.7706673 90 N 39 24 R11-1
+TOP 1 1.2047269 0.7017697 90 N 53 2 R11-2
+#
+# CMP 10
+CMP 11 1.1377953 0.7362205 90 N R10 4k7 ;0=1,1=0.0177
+PRP Author 'CERN DEM JLC'
+PRP Case '1206'
+PRP Component_Type 'Standard'
+PRP CreateDate '12/3/2007'
+PRP HelpURL '\\cern.ch\dfs\Applications\Altium\Datasheets\R1206_NIC_NRC.pdf'
+PRP LatestRevisionDate '3/13/2008'
+PRP Manufacturer 'GENERIC'
+PRP Manufacturer1_ComponentHeight '0.65mm'
+PRP Manufacturer1_Example 'NIC COMPONENT'
+PRP Manufacturer1_Part_Number 'NRC12F4701TRF'
+PRP Manufacturer_Part_Number 'R1206_4K7_1%_0.25W_100PPM'
+PRP Mounted 'Yes'
+PRP Part_Description 'General Purpose Thick Film Chip Resistor'
+PRP Part_Number 'R1206_4K7_1%_0.25W_100PPM'
+PRP Pin_Count '2'
+PRP Power '0.25W'
+PRP SMD 'Yes'
+PRP Socket 'No'
+PRP Status 'Preferred'
+PRP Table 'Resistors SMD'
+PRP TC '±100ppm/°C'
+PRP Tolerance '±1%'
+PRP Value '4k7'
+TOP 0 1.1377978 0.7706673 90 N 36 0 R10-1
+TOP 1 1.1377978 0.7017697 90 N 53 1 R10-2
+#
+# CMP 11
+CMP 11 0.9665354 0.5639664 180 N R7 4k7 ;0=1,1=0.0177
+PRP Author 'CERN DEM JLC'
+PRP Case '1206'
+PRP Component_Type 'Standard'
+PRP CreateDate '12/3/2007'
+PRP HelpURL '\\cern.ch\dfs\Applications\Altium\Datasheets\R1206_NIC_NRC.pdf'
+PRP LatestRevisionDate '3/13/2008'
+PRP Manufacturer 'GENERIC'
+PRP Manufacturer1_ComponentHeight '0.65mm'
+PRP Manufacturer1_Example 'NIC COMPONENT'
+PRP Manufacturer1_Part_Number 'NRC12F4701TRF'
+PRP Manufacturer_Part_Number 'R1206_4K7_1%_0.25W_100PPM'
+PRP Mounted 'Yes'
+PRP Part_Description 'General Purpose Thick Film Chip Resistor'
+PRP Part_Number 'R1206_4K7_1%_0.25W_100PPM'
+PRP Pin_Count '2'
+PRP Power '0.25W'
+PRP SMD 'Yes'
+PRP Socket 'No'
+PRP Status 'Preferred'
+PRP Table 'Resistors SMD'
+PRP TC '±100ppm/°C'
+PRP Tolerance '±1%'
+PRP Value '4k7'
+TOP 0 1.0009822 0.5639639 180 N 15 0 R7-1
+TOP 1 0.9320846 0.5639639 180 N 8 0 R7-2
+#
+# CMP 12
+CMP 11 0.9655512 0.4989958 0 N R6 4k7 ;0=1,1=0.0177
+PRP Author 'CERN DEM JLC'
+PRP Case '1206'
+PRP Component_Type 'Standard'
+PRP CreateDate '12/3/2007'
+PRP HelpURL '\\cern.ch\dfs\Applications\Altium\Datasheets\R1206_NIC_NRC.pdf'
+PRP LatestRevisionDate '3/13/2008'
+PRP Manufacturer 'GENERIC'
+PRP Manufacturer1_ComponentHeight '0.65mm'
+PRP Manufacturer1_Example 'NIC COMPONENT'
+PRP Manufacturer1_Part_Number 'NRC12F4701TRF'
+PRP Manufacturer_Part_Number 'R1206_4K7_1%_0.25W_100PPM'
+PRP Mounted 'Yes'
+PRP Part_Description 'General Purpose Thick Film Chip Resistor'
+PRP Part_Number 'R1206_4K7_1%_0.25W_100PPM'
+PRP Pin_Count '2'
+PRP Power '0.25W'
+PRP SMD 'Yes'
+PRP Socket 'No'
+PRP Status 'Preferred'
+PRP Table 'Resistors SMD'
+PRP TC '±100ppm/°C'
+PRP Tolerance '±1%'
+PRP Value '4k7'
+TOP 0 0.9311044 0.4989983 0 N 7 0 R6-1
+TOP 1 1.000002 0.4989983 0 N 16 0 R6-2
+#
+# CMP 13
+CMP 11 0.9655492 0.6289345 0 N R5 4k7 ;0=1,1=0.0177
+PRP Author 'CERN DEM JLC'
+PRP Case '1206'
+PRP Component_Type 'Standard'
+PRP CreateDate '12/3/2007'
+PRP HelpURL '\\cern.ch\dfs\Applications\Altium\Datasheets\R1206_NIC_NRC.pdf'
+PRP LatestRevisionDate '3/13/2008'
+PRP Manufacturer 'GENERIC'
+PRP Manufacturer1_ComponentHeight '0.65mm'
+PRP Manufacturer1_Example 'NIC COMPONENT'
+PRP Manufacturer1_Part_Number 'NRC12F4701TRF'
+PRP Manufacturer_Part_Number 'R1206_4K7_1%_0.25W_100PPM'
+PRP Mounted 'Yes'
+PRP Part_Description 'General Purpose Thick Film Chip Resistor'
+PRP Part_Number 'R1206_4K7_1%_0.25W_100PPM'
+PRP Pin_Count '2'
+PRP Power '0.25W'
+PRP SMD 'Yes'
+PRP Socket 'No'
+PRP Status 'Preferred'
+PRP Table 'Resistors SMD'
+PRP TC '±100ppm/°C'
+PRP Tolerance '±1%'
+PRP Value '4k7'
+TOP 0 0.9311024 0.628937 0 N 41 0 R5-1
+TOP 1 1 0.628937 0 N 60 0 R5-2
+#
+# CMP 14
+CMP 11 0.9448839 0.3563017 180 N R3 4k7 ;0=1,1=0.0177
+PRP Author 'CERN DEM JLC'
+PRP Case '1206'
+PRP Component_Type 'Standard'
+PRP CreateDate '12/3/2007'
+PRP HelpURL '\\cern.ch\dfs\Applications\Altium\Datasheets\R1206_NIC_NRC.pdf'
+PRP LatestRevisionDate '3/13/2008'
+PRP Manufacturer 'GENERIC'
+PRP Manufacturer1_ComponentHeight '0.65mm'
+PRP Manufacturer1_Example 'NIC COMPONENT'
+PRP Manufacturer1_Part_Number 'NRC12F4701TRF'
+PRP Manufacturer_Part_Number 'R1206_4K7_1%_0.25W_100PPM'
+PRP Mounted 'Yes'
+PRP Part_Description 'General Purpose Thick Film Chip Resistor'
+PRP Part_Number 'R1206_4K7_1%_0.25W_100PPM'
+PRP Pin_Count '2'
+PRP Power '0.25W'
+PRP SMD 'Yes'
+PRP Socket 'No'
+PRP Status 'Preferred'
+PRP Table 'Resistors SMD'
+PRP TC '±100ppm/°C'
+PRP Tolerance '±1%'
+PRP Value '4k7'
+TOP 0 0.9793307 0.3562992 180 N 18 0 R3-1
+TOP 1 0.9104331 0.3562992 180 N 3 0 R3-2
+#
+# CMP 15
+CMP 11 0.9438976 0.2913311 180 N R2 4k7 ;0=1,1=0.0177
+PRP Author 'CERN DEM JLC'
+PRP Case '1206'
+PRP Component_Type 'Standard'
+PRP CreateDate '12/3/2007'
+PRP HelpURL '\\cern.ch\dfs\Applications\Altium\Datasheets\R1206_NIC_NRC.pdf'
+PRP LatestRevisionDate '3/13/2008'
+PRP Manufacturer 'GENERIC'
+PRP Manufacturer1_ComponentHeight '0.65mm'
+PRP Manufacturer1_Example 'NIC COMPONENT'
+PRP Manufacturer1_Part_Number 'NRC12F4701TRF'
+PRP Manufacturer_Part_Number 'R1206_4K7_1%_0.25W_100PPM'
+PRP Mounted 'Yes'
+PRP Part_Description 'General Purpose Thick Film Chip Resistor'
+PRP Part_Number 'R1206_4K7_1%_0.25W_100PPM'
+PRP Pin_Count '2'
+PRP Power '0.25W'
+PRP SMD 'Yes'
+PRP Socket 'No'
+PRP Status 'Preferred'
+PRP Table 'Resistors SMD'
+PRP TC '±100ppm/°C'
+PRP Tolerance '±1%'
+PRP Value '4k7'
+TOP 0 0.9783444 0.2913286 180 N 19 0 R2-1
+TOP 1 0.9094468 0.2913286 180 N 6 0 R2-2
+#
+# CMP 16
+CMP 11 1.0728247 0.7362205 270 N R1 4k7 ;0=1,1=0.0177
+PRP Author 'CERN DEM JLC'
+PRP Case '1206'
+PRP Component_Type 'Standard'
+PRP CreateDate '12/3/2007'
+PRP HelpURL '\\cern.ch\dfs\Applications\Altium\Datasheets\R1206_NIC_NRC.pdf'
+PRP LatestRevisionDate '3/13/2008'
+PRP Manufacturer 'GENERIC'
+PRP Manufacturer1_ComponentHeight '0.65mm'
+PRP Manufacturer1_Example 'NIC COMPONENT'
+PRP Manufacturer1_Part_Number 'NRC12F4701TRF'
+PRP Manufacturer_Part_Number 'R1206_4K7_1%_0.25W_100PPM'
+PRP Mounted 'Yes'
+PRP Part_Description 'General Purpose Thick Film Chip Resistor'
+PRP Part_Number 'R1206_4K7_1%_0.25W_100PPM'
+PRP Pin_Count '2'
+PRP Power '0.25W'
+PRP SMD 'Yes'
+PRP Socket 'No'
+PRP Status 'Preferred'
+PRP Table 'Resistors SMD'
+PRP TC '±100ppm/°C'
+PRP Tolerance '±1%'
+PRP Value '4k7'
+TOP 0 1.0728222 0.7017737 270 N 36 1 R1-1
+TOP 1 1.0728222 0.7706713 270 N 20 0 R1-2
+#
+# CMP 17
+CMP 1 0.8139764 0.1889764 0 N U3 MCP4811-E/MC ;0=1,1=0.0472
+PRP Case/Package 'DFN'
+PRP ComponentLink1Description 'http://www.farnell.com/datasheets/630375.pdf?src-supplier=Element14'
+PRP ComponentLink1URL 'http://www.farnell.com/datasheets/630375.pdf?src-supplier=Element14'
+PRP ComponentLink2Description 'http://uk.rs-online.com/webdocs/1381/0900766b813810b8.pdf?src-supplier=RSComponents'
+PRP ComponentLink2URL 'http://uk.rs-online.com/webdocs/1381/0900766b813810b8.pdf?src-supplier=RSComponents'
+PRP ComponentLink3Description 'http://ww1.microchip.com/downloads/en/DeviceDoc/22244B.pdf?src-supplier=Avnet'
+PRP ComponentLink3URL 'http://ww1.microchip.com/downloads/en/DeviceDoc/22244B.pdf?src-supplier=Avnet'
+PRP ComponentLink4Description 'http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en547908&src-supplier=Future+Electronics'
+PRP ComponentLink4URL 'http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en547908&src-supplier=Future+Electronics'
+PRP ComponentLink5Description 'https://www.verical.com/server-webapp/html/getDatasheet?partID=765518&src-supplier=Verical'
+PRP ComponentLink5URL 'https://www.verical.com/server-webapp/html/getDatasheet?partID=765518&src-supplier=Verical'
+PRP ComponentLink6Description 'http://ww1.microchip.com/downloads/en/DeviceDoc/22244B.pdf?src-supplier=Avnet+Europe'
+PRP ComponentLink6URL 'http://ww1.microchip.com/downloads/en/DeviceDoc/22244B.pdf?src-supplier=Avnet+Europe'
+PRP ComponentLink7Description 'http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en023833&src-supplier=Digi-Key'
+PRP ComponentLink7URL 'http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en023833&src-supplier=Digi-Key'
+PRP ComponentLink8Description 'http://www.produktinfo.conrad.com/datenblaetter/1000000-1099999/001083268-da-01-en-DAC_10B_SPI_VREF_MCP4811_E_MC_DFN_8_MCP.pdf?src-supplier=Conrad'
+PRP ComponentLink8URL 'http://www.produktinfo.conrad.com/datenblaetter/1000000-1099999/001083268-da-01-en-DAC_10B_SPI_VREF_MCP4811_E_MC_DFN_8_MCP.pdf?src-supplier=Conrad'
+PRP Full_Scale_Error '3.5LSB'
+PRP Height '0.95mm'
+PRP Input_Offset_Voltage_(Vos) '820uV'
+PRP Integral_Nonlinearity_(INL) '3.5LSB'
+PRP Interface 'SPI,Serial,3-WIRE'
+PRP Lead_Free 'Lead Free'
+PRP Length '2mm'
+PRP Manufacturer 'Microchip'
+PRP Manufacturer_Part_Number 'MCP4811-E/MC'
+PRP Max_Operating_Temperature '125°C'
+PRP Max_Supply_Voltage '5.5V'
+PRP Min_Operating_Temperature '-40°C'
+PRP Min_Supply_Voltage '2.7V'
+PRP Mount 'Surface Mount'
+PRP Nominal_Supply_Current '330uA'
+PRP Number_of_Bits '10'
+PRP Number_of_Channels '1'
+PRP Number_of_Converters '1'
+PRP Number_of_DAC_Channels '1'
+PRP Number_of_Pins '8'
+PRP Operating_Supply_Voltage '5V'
+PRP Output_Polarity 'Bipolar'
+PRP Output_Type 'Voltage'
+PRP Package_Quantity '150'
+PRP Packaging 'Rail/Tube'
+PRP Polarity 'Bipolar'
+PRP Radiation_Hardening 'No'
+PRP REACH_SVHC 'No SVHC'
+PRP Resolution '10b'
+PRP Settling_Time '4.5us'
+PRP Stock_1 '0'
+PRP Supplier_1 'Farnell'
+PRP Supply_Current '330uA'
+PRP Width '3mm'
+TOP 0 0.7574803 0.218504 0 N 49 6 U3-1
+TOP 1 0.7574803 0.1988189 0 N 44 0 U3-2
+TOP 2 0.7574803 0.1791339 0 N 9 1 U3-3
+TOP 3 0.7574803 0.1594488 0 N 42 2 U3-4
+TOP 4 0.8704725 0.1594488 0 N 55 23 U3-5
+TOP 5 0.8704725 0.1791339 0 N 49 5 U3-6
+TOP 6 0.8704725 0.1988189 0 N 55 21 U3-7
+TOP 7 0.8704725 0.218504 0 N 14 1 U3-8
+TOP 8 0.8139764 0.1889764 270 N 55 29 U3-9
+#
+# CMP 18
+CMP 17 0.4793307 0.1673228 0 N U1 ldo ;0=1,1=0.0630
+TOP 0 0.4084646 0.2263779 270 N 55 51 U1-1
+TOP 1 0.4163386 0.1673228 270 N 54 3 U1-2
+TOP 2 0.4084646 0.1082677 270 N 56 7 U1-3
+#
+# CMP 19
+CMP 9 1.503937 0.6811024 90 N R20 50mR ;0=1,1=0.0236
+PRP Case_Code_(Imperial) '2010'
+PRP Case_Code_(Metric) '5025'
+PRP Case/Package '2010'
+PRP ComponentLink1Description 'http://www.farnell.com/datasheets/1790602.pdf?src-supplier=Element14'
+PRP ComponentLink1URL 'http://www.farnell.com/datasheets/1790602.pdf?src-supplier=Element14'
+PRP ComponentLink2Description 'https://industrial.panasonic.com/cdbs/www-data/pdf/RDN0000/AOA0000C313.pdf?src-supplier=Digi-Key'
+PRP ComponentLink2URL 'https://industrial.panasonic.com/cdbs/www-data/pdf/RDN0000/AOA0000C313.pdf?src-supplier=Digi-Key'
+PRP ComponentLink3Description 'http://industrial.panasonic.com/lecs/www-data/pdf/AOA0000/AOA0000CE3.pdf?src-supplier=Digi-Key'
+PRP ComponentLink3URL 'http://industrial.panasonic.com/lecs/www-data/pdf/AOA0000/AOA0000CE3.pdf?src-supplier=Digi-Key'
+PRP Construction 'Rectangular'
+PRP Contact_Plating 'Tin'
+PRP Depth '2.5mm'
+PRP Features 'Automotive AEC-Q200'
+PRP Height '0.028inch'
+PRP Lead_Free 'Lead Free'
+PRP Length '5mm'
+PRP Manufacturer 'Panasonic'
+PRP Manufacturer_Part_Number 'ERJ-L1DKF50MU'
+PRP Max_Operating_Temperature '125°C'
+PRP Max_Power_Dissipation '500mW'
+PRP Military_Standard 'Not'
+PRP Min_Operating_Temperature '-55°C'
+PRP Mount 'Surface Mount'
+PRP Number_of_Terminations '2'
+PRP Package_Quantity '1'
+PRP Packaging 'Tape and Reel'
+PRP Power_Rating '500mW'
+PRP Radiation_Hardening 'No'
+PRP REACH_SVHC 'No SVHC'
+PRP Resistance '50mR'
+PRP Resistance_Tolerance '1%'
+PRP Resistor_Type 'Thick Film'
+PRP RoHS_Compliant 'Yes'
+PRP Series 'ERJ'
+PRP Stock_1 '0'
+PRP Supplier_1 'Farnell'
+PRP Technology 'THICK FILM'
+PRP Temperature_Coefficient '100ppm/°C'
+PRP Termination 'SMD/SMT'
+PRP Tolerance '1%'
+PRP Width '2.5mm'
+TOP 0 1.503937 0.7716536 0 N 39 20 R20-1
+TOP 1 1.503937 0.5905512 0 N 35 3 R20-2
+#
+# CMP 20
+CMP 2 1.4785433 0.4448819 0 N Q2 CSD19538Q3A ;0=1,1=0.0472
+PRP AEC_Category 'Q101'
+PRP AEC_Qualified 'N'
+PRP Alternate_Manufacturer 'None'
+PRP Alternate_PartNumber ''
+PRP ChMode 'Enhancement'
+PRP ChType 'N'
+PRP ComponentLink1Description 'Datasheet link'
+PRP ComponentLink1URL 'http://www.ti.com/lit/ds/symlink/csd19538q3a.pdf'
+PRP CompType 'MOSFET'
+PRP Green_EU_RoHS ''
+PRP Green_EU_RoHS-2 ''
+PRP Green_Lifecycle ''
+PRP Green_REACh ''
+PRP IdsMax_A '5A'
+PRP Manufacturer 'Texas Instruments'
+PRP MountType 'SMT'
+PRP PackageReference 'DNH0008A'
+PRP PartNumber 'CSD19538Q3A'
+PRP QgTyp_nC '7.2'
+PRP Rdson45_ohm ''
+PRP RoHS 'Y'
+PRP SizeArea_mm2 '10.89'
+PRP SizeAreaWB_mm2 '18.49'
+PRP SizeX_mm '3.3'
+PRP SizeY_mm '3.3'
+PRP SizeZ_mm '0.9'
+PRP Supplier_1 ''
+PRP Supplier_2 ''
+PRP Supplier_3 ''
+PRP Supplier_Part_Number_1 ''
+PRP Supplier_Part_Number_2 ''
+PRP Supplier_Part_Number_3 ''
+PRP Value '100V'
+PRP Value1 ''
+PRP Value2 '7.2 nC'
+PRP VdsMax_V '100V'
+PRP Vgs_V '20V'
+TOP 0 1.4175197 0.4832678 90 N 35 0 Q2-1
+TOP 1 1.4175197 0.4576772 90 N 35 1 Q2-2
+TOP 2 1.4175197 0.4320867 90 N 35 2 Q2-3
+TOP 3 1.4175197 0.4064961 90 N 59 1 Q2-4
+TOP 4 1.5395669 0.4064961 90 N 34 2 Q2-5
+TOP 5 1.5395669 0.4320866 90 N 34 3 Q2-6
+TOP 6 1.5395669 0.4576772 90 N 34 4 Q2-7
+TOP 7 1.5395669 0.4832677 90 N 34 5 Q2-8
+TOP 8 1.503937 0.4448819 0 N 34 6 Q2-9
+#
+# CMP 21
+CMP 7 1.2814961 1.0425198 0 N P1 2x20_2.54mm_vertical ;0=2,1=0.0472
+PRP LatestRevisionDate '17-Jul-2002'
+PRP LatestRevisionNote 'Re-released for DXP Platform.'
+PRP Publisher 'Altium Limited'
+TOP 0 0.3314961 0.9925198 0 N 52 1 P1-1
+TOP 1 0.3314961 1.0925198 0 N 50 1 P1-2
+TOP 2 0.4314961 0.9925198 0 N 0 25 P1-3
+TOP 3 0.4314961 1.0925198 0 N 50 2 P1-4
+TOP 4 0.5314961 0.9925198 0 N 0 23 P1-5
+TOP 5 0.5314961 1.0925198 0 N 55 32 P1-6
+TOP 6 0.6314961 0.9925198 0 N 20 1 P1-7
+TOP 7 0.6314961 1.0925198 0 N 19 1 P1-8
+TOP 8 0.7314961 0.9925198 0 N 55 15 P1-9
+TOP 9 0.7314961 1.0925198 0 N 18 1 P1-10
+TOP 10 0.8314961 0.9925198 0 N 0 26 P1-11
+TOP 11 0.8314961 1.0925198 0 N 0 16 P1-12
+TOP 12 0.9314961 0.9925198 0 N 0 24 P1-13
+TOP 13 0.9314961 1.0925198 0 N 0 17 P1-14
+TOP 14 1.0314961 0.9925198 0 N 0 22 P1-15
+TOP 15 1.0314961 1.0925198 0 N 0 18 P1-16
+TOP 16 1.1314961 0.9925198 0 N 0 21 P1-17
+TOP 17 1.1314961 1.0925198 0 N 0 19 P1-18
+TOP 18 1.2314961 0.9925198 0 N 42 0 P1-19
+TOP 19 1.2314961 1.0925198 0 N 55 7 P1-20
+TOP 20 1.3314961 0.9925198 0 N 43 0 P1-21
+TOP 21 1.3314961 1.0925198 0 N 0 20 P1-22
+TOP 22 1.4314961 0.9925198 0 N 9 0 P1-23
+TOP 23 1.4314961 1.0925198 0 N 46 0 P1-24
+TOP 24 1.5314961 0.9925198 0 N 55 8 P1-25
+TOP 25 1.5314961 1.0925198 0 N 17 0 P1-26
+TOP 26 1.6314961 0.9925198 0 N 0 27 P1-27
+TOP 27 1.6314961 1.0925198 0 N 0 34 P1-28
+TOP 28 1.7314961 0.9925198 0 N 60 1 P1-29
+TOP 29 1.7314961 1.0925198 0 N 55 4 P1-30
+TOP 30 1.8314961 0.9925198 0 N 0 28 P1-31
+TOP 31 1.8314961 1.0925198 0 N 0 33 P1-32
+TOP 32 1.9314961 0.9925198 0 N 0 29 P1-33
+TOP 33 1.9314961 1.0925198 0 N 55 5 P1-34
+TOP 34 2.0314961 0.9925198 0 N 0 30 P1-35
+TOP 35 2.0314961 1.0925198 0 N 0 31 P1-36
+TOP 36 2.1314961 0.9925198 0 N 16 1 P1-37
+TOP 37 2.1314961 1.0925198 0 N 0 32 P1-38
+TOP 38 2.2314961 0.9925198 0 N 55 3 P1-39
+TOP 39 2.2314961 1.0925198 0 N 15 1 P1-40
+#
+# CMP 22
+CMP 20 1.7992126 0.7283465 90 N L9 1mH ;0=1,1=0.0472
+PRP Inductance '1mH'
+PRP Manufacturer 'Wurth Electronics'
+PRP Manufacturer_Part_Number '744043102'
+PRP Pricing_1 '500=0.747 (EUR)'
+PRP RoHS_Compliant 'Yes'
+PRP Stock_1 '0'
+PRP Supplier_1 'RSComponents'
+TOP 0 1.7992126 0.8208661 90 N 25 3 L9-1
+TOP 1 1.7992126 0.6368108 90 N 30 3 L9-2
+#
+# CMP 23
+CMP 20 1.7952756 0.4901576 90 N L6 1mH ;0=1,1=0.0472
+PRP Inductance '1mH'
+PRP Manufacturer 'Wurth Electronics'
+PRP Manufacturer_Part_Number '744043102'
+PRP Pricing_1 '500=0.747 (EUR)'
+PRP RoHS_Compliant 'Yes'
+PRP Stock_1 '0'
+PRP Supplier_1 'RSComponents'
+TOP 0 1.7952756 0.5826772 90 N 39 16 L6-1
+TOP 1 1.7952756 0.3986219 90 N 57 3 L6-2
+#
+# CMP 24
+CMP 19 1.2519685 0.1771654 0 N L4 100uH ;0=1,1=0.0472
+PRP Case/Package 'Nonstandard'
+PRP ComponentLink1Description 'http://www.farnell.com/datasheets/1832943.pdf?src-supplier=Element14'
+PRP ComponentLink1URL 'http://www.farnell.com/datasheets/1832943.pdf?src-supplier=Element14'
+PRP Core_Material 'Ferrite'
+PRP Current_Rating '1.2A'
+PRP DC_Resistance_(DCR) '290mR'
+PRP Height '4.2mm'
+PRP Height_-_Seated_(Max) '0.165inch'
+PRP Inductance '100uH'
+PRP Inductance_Tolerance '20%'
+PRP Length '0.315inch'
+PRP Manufacturer 'Wurth Electronics'
+PRP Manufacturer_Part_Number '74404084101'
+PRP Max_DC_Current '1A'
+PRP Max_Operating_Temperature '125°C'
+PRP Min_Operating_Temperature '-40°C'
+PRP Mount 'Surface Mount'
+PRP Package_Quantity '1000'
+PRP Packaging 'Tape and Reel'
+PRP Pricing_1 '10=1.38, 50=0.922, 100=0.891, 250=0.859, 500=0.746, 1000=0.633, 5000=0.62 (EUR)'
+PRP REACH_SVHC 'Unknown'
+PRP Resistor_Type 'Wirewound'
+PRP RMS_Current_(Irms) '1A'
+PRP RoHS_Compliant 'Yes'
+PRP Saturation_Current '1.5A'
+PRP Self_Resonant_Frequency '6.4MHz'
+PRP Shielding 'Shielded'
+PRP Stock_1 '0'
+PRP Supplier_1 'Farnell'
+PRP Termination 'SMD/SMT'
+PRP Test_Frequency '100kHz'
+PRP Tolerance '20%'
+PRP Width '0.315inch'
+TOP 0 1.1299213 0.1771654 0 N 49 8 L4-1
+TOP 1 1.3740157 0.1771654 0 N 34 7 L4-2
+#
+# CMP 25
+CMP 3 2.4759836 0.4448823 90 N K2 1x2PLS ;0=2,1=0.0472
+PRP Value ''
+TOP 0 2.4759836 0.4448823 90 N 0 15 K2-1
+TOP 1 2.3759836 0.4448823 90 N 37 1 K2-2
+#
+# CMP 26
+CMP 3 2.4759843 0.3129925 90 N K1 1x2PLS ;0=2,1=0.0472
+PRP Value ''
+TOP 0 2.4759843 0.3129925 90 N 0 14 K1-1
+TOP 1 2.3759843 0.3129925 90 N 38 0 K1-2
+#
+# CMP 27
+CMP 4 0.1003937 0.4921259 90 N J1 KMMX-BSMT35S-B30TR ;0=1,1=0.0472
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'http://www.kycon.com/Pub_Eng_Draw/KMMX-BSMT35S-BTR.pdf'
+PRP Height '2.18mm'
+PRP Manufacturer_Name 'Kycon'
+PRP Manufacturer_Part_Number 'KMMX-BSMT35S-B30TR'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 0.2057087 0.543307 0 N 56 6 J1-1
+TOP 1 0.2057087 0.5177165 0 N 5 0 J1-2
+TOP 2 0.2057087 0.4921259 0 N 4 0 J1-3
+TOP 3 0.2057087 0.4665353 0 N 0 2 J1-4
+TOP 4 0.2057087 0.4409448 0 N 55 54 J1-5
+TOP 5 0.1003937 0.6338582 90 N 55 39 J1-MH1
+TOP 6 0.1003937 0.3503936 90 N 55 57 J1-MH2
+TOP 7 0.2106299 0.6220472 90 N 55 42 J1-MH3
+TOP 8 0.2106299 0.3622046 90 N 55 56 J1-MH4
+TOP 9 0.1751968 0.5688976 90 N 0 13 J1-MH5
+TOP 10 0.1751968 0.4153542 90 N 0 12 J1-MH6
+#
+# CMP 28
+CMP 8 0.6299213 0.5511082 0 N IC1 FT232HL-REEL ;0=1,1=0.0472
+PRP Arrow_Part_Number 'FT232HL-REEL'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/ft232hl-reel/ftdi-chip'
+PRP Datasheet_Link 'http://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT232H.pdf'
+PRP Height '1.6mm'
+PRP Manufacturer_Name 'FTDI Chip'
+PRP Manufacturer_Part_Number 'FT232HL-REEL'
+PRP Mouser_Part_Number '895-FT232HL-REEL'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/FTDI/FT232HL-REEL/?qs=rzPzygjq8vIanTFlYsBQCw%3D%3D'
+TOP 0 0.4630709 0.6593759 0 N 2 2 IC1-1
+TOP 1 0.4630709 0.6396909 0 N 1 2 IC1-2
+TOP 2 0.4630709 0.6200058 0 N 13 3 IC1-3
+TOP 3 0.4630709 0.6003208 0 N 55 41 IC1-4
+TOP 4 0.4630709 0.5806358 0 N 11 1 IC1-5
+TOP 5 0.4630709 0.5609507 0 N 5 1 IC1-6
+TOP 6 0.4630709 0.5412657 0 N 4 1 IC1-7
+TOP 7 0.4630709 0.5215806 0 N 12 3 IC1-8
+TOP 8 0.4630709 0.5018956 0 N 55 45 IC1-9
+TOP 9 0.4630709 0.4822106 0 N 55 46 IC1-10
+TOP 10 0.4630709 0.4625255 0 N 55 49 IC1-11
+TOP 11 0.4630709 0.4428405 0 N 51 11 IC1-12
+TOP 12 0.5216536 0.3842578 270 N 9 2 IC1-13
+TOP 13 0.5413386 0.3842578 270 N 42 1 IC1-14
+TOP 14 0.5610237 0.3842578 270 N 43 1 IC1-15
+TOP 15 0.5807087 0.3842578 270 N 46 1 IC1-16
+TOP 16 0.6003937 0.3842578 270 N 45 1 IC1-17
+TOP 17 0.6200788 0.3842578 270 N 44 1 IC1-18
+TOP 18 0.6397638 0.3842578 270 N 36 2 IC1-19
+TOP 19 0.6594489 0.3842578 270 N 6 1 IC1-20
+TOP 20 0.6791339 0.3842578 270 N 3 1 IC1-21
+TOP 21 0.6988189 0.3842578 270 N 55 28 IC1-22
+TOP 22 0.718504 0.3842578 270 N 55 27 IC1-23
+TOP 23 0.738189 0.3842578 270 N 51 10 IC1-24
+TOP 24 0.7967717 0.4428405 0 N 0 11 IC1-25
+TOP 25 0.7967717 0.4625255 0 N 0 10 IC1-26
+TOP 26 0.7967717 0.4822106 0 N 0 9 IC1-27
+TOP 27 0.7967717 0.5018956 0 N 0 8 IC1-28
+TOP 28 0.7967717 0.5215806 0 N 0 7 IC1-29
+TOP 29 0.7967717 0.5412657 0 N 0 6 IC1-30
+TOP 30 0.7967717 0.5609507 0 N 7 1 IC1-31
+TOP 31 0.7967717 0.5806358 0 N 8 1 IC1-32
+TOP 32 0.7967717 0.6003208 0 N 41 1 IC1-33
+TOP 33 0.7967717 0.6200058 0 N 10 2 IC1-34
+TOP 34 0.7967717 0.6396909 0 N 55 13 IC1-35
+TOP 35 0.7967717 0.6593759 0 N 55 14 IC1-36
+TOP 36 0.738189 0.7179586 270 N 48 1 IC1-37
+TOP 37 0.718504 0.7179586 270 N 47 1 IC1-38
+TOP 38 0.6988189 0.7179586 270 N 51 9 IC1-39
+TOP 39 0.6791339 0.7179586 270 N 56 8 IC1-40
+TOP 40 0.6594489 0.7179586 270 N 55 30 IC1-41
+TOP 41 0.6397638 0.7179586 270 N 55 33 IC1-42
+TOP 42 0.6200788 0.7179586 270 N 0 5 IC1-43
+TOP 43 0.6003937 0.7179586 270 N 0 4 IC1-44
+TOP 44 0.5807087 0.7179586 270 N 0 3 IC1-45
+TOP 45 0.5610237 0.7179586 270 N 51 8 IC1-46
+TOP 46 0.5413386 0.7179586 270 N 55 36 IC1-47
+TOP 47 0.5216536 0.7179586 270 N 55 35 IC1-48
+#
+# CMP 29
+CMP 5 0.8238189 0.0688976 0 N F3 Fuse_0805 ;0=1,1=0.0472
+PRP Automotive_Qualification_Standard '-'
+PRP Carrying_Current_Max '40'
+PRP ComponentLink1Description 'http://www.bourns.com/engineering/mfpsmf/mf-psmf050x.stp'
+PRP ComponentLink1URL 'http://www.bourns.com/engineering/mfpsmf/mf-psmf050x.stp'
+PRP ComponentLink2Description 'http://www.youtube.com/embed/MCSq9aHzU7o'
+PRP ComponentLink2URL 'http://www.youtube.com/embed/MCSq9aHzU7o'
+PRP ComponentLink3Description 'http://www.farnell.com/datasheets/2041417.pdf'
+PRP ComponentLink3URL 'http://www.farnell.com/datasheets/2041417.pdf'
+PRP Current_Max '40'
+PRP Current_Temperature '20'
+PRP External_Depth '1.35'
+PRP External_Length_/_Height '0.65'
+PRP External_Width '2.15'
+PRP Holding_Current '500'
+PRP Holding_Current_Max_Ih '0.5'
+PRP Initial_Resistance_Max '0.9'
+PRP Initial_Resistance_Min '0.15'
+PRP Manufacturer 'BOURNS'
+PRP Manufacturer_Part_Number 'MF-PSMF050X-2'
+PRP Operating_Temperature_Max '85'
+PRP Operating_Temperature_Min '-40'
+PRP Operating_Voltage '6'
+PRP Packaging 'Cut Tape'
+PRP Pricing_1 '5=0.229, 50=0.205, 250=0.173, 500=0.137, 1500=0.136, 3000=0.134, 15000=0.133 (GBP)'
+PRP Product_Range 'MF-PSMF Series'
+PRP PTC_Fuse_Case_Style '0805 [2012 Metric]'
+PRP Resistance_@_Temperature '0.15'
+PRP Resistance_Temperature '20'
+PRP RoHS 'YES'
+PRP Stock_1 '28'
+PRP Supplier_1 'Farnell'
+PRP SVHC 'No SVHC (20-Jun-2016)'
+PRP Termination_Type 'Surface Mount Device'
+PRP Thermistor_Mounting 'SMD'
+PRP Thermistor_Type 'PTC Resettable Fuse'
+PRP Trip_Time '0.1'
+PRP Tripping_Current '1'
+PRP Voltage_Rating '6'
+TOP 0 0.7805118 0.0688976 0 N 56 5 F3-1
+TOP 1 0.867126 0.0688976 0 N 49 4 F3-2
+#
+# CMP 30
+CMP 5 0.3316929 0.8356299 270 N F2 Fuse_0805 ;0=1,1=0.0472
+PRP Automotive_Qualification_Standard '-'
+PRP Carrying_Current_Max '40'
+PRP ComponentLink1Description 'http://www.bourns.com/engineering/mfpsmf/mf-psmf050x.stp'
+PRP ComponentLink1URL 'http://www.bourns.com/engineering/mfpsmf/mf-psmf050x.stp'
+PRP ComponentLink2Description 'http://www.youtube.com/embed/MCSq9aHzU7o'
+PRP ComponentLink2URL 'http://www.youtube.com/embed/MCSq9aHzU7o'
+PRP ComponentLink3Description 'http://www.farnell.com/datasheets/2041417.pdf'
+PRP ComponentLink3URL 'http://www.farnell.com/datasheets/2041417.pdf'
+PRP Current_Max '40'
+PRP Current_Temperature '20'
+PRP External_Depth '1.35'
+PRP External_Length_/_Height '0.65'
+PRP External_Width '2.15'
+PRP Holding_Current '500'
+PRP Holding_Current_Max_Ih '0.5'
+PRP Initial_Resistance_Max '0.9'
+PRP Initial_Resistance_Min '0.15'
+PRP Manufacturer 'BOURNS'
+PRP Manufacturer_Part_Number 'MF-PSMF050X-2'
+PRP Operating_Temperature_Max '85'
+PRP Operating_Temperature_Min '-40'
+PRP Operating_Voltage '6'
+PRP Packaging 'Cut Tape'
+PRP Pricing_1 '5=0.229, 50=0.205, 250=0.173, 500=0.137, 1500=0.136, 3000=0.134, 15000=0.133 (GBP)'
+PRP Product_Range 'MF-PSMF Series'
+PRP PTC_Fuse_Case_Style '0805 [2012 Metric]'
+PRP Resistance_@_Temperature '0.15'
+PRP Resistance_Temperature '20'
+PRP RoHS 'YES'
+PRP Stock_1 '28'
+PRP Supplier_1 'Farnell'
+PRP SVHC 'No SVHC (20-Jun-2016)'
+PRP Termination_Type 'Surface Mount Device'
+PRP Thermistor_Mounting 'SMD'
+PRP Thermistor_Type 'PTC Resettable Fuse'
+PRP Trip_Time '0.1'
+PRP Tripping_Current '1'
+PRP Voltage_Rating '6'
+TOP 0 0.3316929 0.7923228 270 N 54 2 F2-1
+TOP 1 0.3316929 0.878937 270 N 52 0 F2-2
+#
+# CMP 31
+CMP 5 0.2352362 0.8346457 270 N F1 Fuse_0805 ;0=1,1=0.0472
+PRP Automotive_Qualification_Standard '-'
+PRP Carrying_Current_Max '40'
+PRP ComponentLink1Description 'http://www.bourns.com/engineering/mfpsmf/mf-psmf050x.stp'
+PRP ComponentLink1URL 'http://www.bourns.com/engineering/mfpsmf/mf-psmf050x.stp'
+PRP ComponentLink2Description 'http://www.youtube.com/embed/MCSq9aHzU7o'
+PRP ComponentLink2URL 'http://www.youtube.com/embed/MCSq9aHzU7o'
+PRP ComponentLink3Description 'http://www.farnell.com/datasheets/2041417.pdf'
+PRP ComponentLink3URL 'http://www.farnell.com/datasheets/2041417.pdf'
+PRP Current_Max '40'
+PRP Current_Temperature '20'
+PRP External_Depth '1.35'
+PRP External_Length_/_Height '0.65'
+PRP External_Width '2.15'
+PRP Holding_Current '500'
+PRP Holding_Current_Max_Ih '0.5'
+PRP Initial_Resistance_Max '0.9'
+PRP Initial_Resistance_Min '0.15'
+PRP Manufacturer 'BOURNS'
+PRP Manufacturer_Part_Number 'MF-PSMF050X-2'
+PRP Operating_Temperature_Max '85'
+PRP Operating_Temperature_Min '-40'
+PRP Operating_Voltage '6'
+PRP Packaging 'Cut Tape'
+PRP Pricing_1 '5=0.229, 50=0.205, 250=0.173, 500=0.137, 1500=0.136, 3000=0.134, 15000=0.133 (GBP)'
+PRP Product_Range 'MF-PSMF Series'
+PRP PTC_Fuse_Case_Style '0805 [2012 Metric]'
+PRP Resistance_@_Temperature '0.15'
+PRP Resistance_Temperature '20'
+PRP RoHS 'YES'
+PRP Stock_1 '28'
+PRP Supplier_1 'Farnell'
+PRP SVHC 'No SVHC (20-Jun-2016)'
+PRP Termination_Type 'Surface Mount Device'
+PRP Thermistor_Mounting 'SMD'
+PRP Thermistor_Type 'PTC Resettable Fuse'
+PRP Trip_Time '0.1'
+PRP Tripping_Current '1'
+PRP Voltage_Rating '6'
+TOP 0 0.2352362 0.7913386 270 N 56 4 F1-1
+TOP 1 0.2352362 0.8779528 270 N 50 0 F1-2
+#
+# CMP 32
+CMP 15 1.3218504 0.386811 0 N D3 1N4148X-TP ;0=1,1=0.0472
+PRP AEC_Category 'Q101'
+PRP AEC_Qualified '?'
+PRP Alternate_Manufacturer ''
+PRP Alternate_PartNumber ''
+PRP ComponentLink1Description 'Datasheet link'
+PRP ComponentLink1URL 'http://www.mccsemi.com/up_pdf/1N4148X(SOD-523).PDF'
+PRP CompType 'Diode'
+PRP Green_EU_RoHS 'Incomplete'
+PRP Green_EU_RoHS-2 'Incomplete'
+PRP Green_Lifecycle 'Not Set'
+PRP Green_REACh 'Incomplete'
+PRP Io_A '0.3'
+PRP LatestRevisionDate '2017-06-26'
+PRP Manufacturer 'Micro Commercial Components'
+PRP MountType 'SMT'
+PRP PackageReference 'SOD-523'
+PRP PartNumber '1N4148X-TP'
+PRP Published '2008-06-26'
+PRP Publisher 'Texas Instruments'
+PRP RJC_CperW ''
+PRP RoHS 'Y'
+PRP SizeArea_mm2 '1.53'
+PRP SizeAreaWB_mm2 '5.13'
+PRP SizeX_mm '1.7'
+PRP SizeY_mm '0.9'
+PRP SizeZ_mm '0.65'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Newark'
+PRP Supplier_3 'Mouser'
+PRP Supplier_Part_Number_1 '1N4148XTPMSCT-ND'
+PRP Supplier_Part_Number_2 '69R6666'
+PRP Supplier_Part_Number_3 '833-1N4148X-TP'
+PRP SymbolVersion '2008-12-08'
+PRP TJmax_C '150'
+PRP Type 'Switching'
+PRP U/M 'EA'
+PRP Value '75V'
+PRP Value1 '0.3A'
+PRP Value2 '1.25V'
+PRP Vf_V '1.25'
+PRP Vr_V '75'
+TOP 0 1.3001969 0.386811 270 N 58 0 D3-1
+TOP 1 1.3435039 0.386811 270 N 59 0 D3-2
+#
+# CMP 33
+CMP 14 2.0787402 0.6850394 180 N D2 STPS1150A ;0=1,1=0.0472
+PRP AEC_Category 'Q101'
+PRP AEC_Qualified 'N'
+PRP Alternate_Manufacturer ''
+PRP Alternate_PartNumber ''
+PRP ComponentLink1Description 'Datasheet link'
+PRP ComponentLink1URL 'http://www.st.com/web/en/resource/technical/document/datasheet/CD00003321.pdf'
+PRP CompType 'Diode'
+PRP Green_EU_RoHS 'Incomplete'
+PRP Green_EU_RoHS-2 'Incomplete'
+PRP Green_Lifecycle 'Not Set'
+PRP Green_REACh 'Incomplete'
+PRP Io_A '1'
+PRP LatestRevisionDate '2017-06-26'
+PRP Manufacturer 'STMicroelectronics'
+PRP MountType 'SMT'
+PRP PackageReference 'SMA'
+PRP PartNumber 'STPS1150A'
+PRP Published '2008-06-26'
+PRP Publisher 'Texas Instruments'
+PRP RJC_CperW '30'
+PRP RoHS 'Y'
+PRP SizeArea_mm2 '16.3228'
+PRP SizeAreaWB_mm2 '37.3428'
+PRP SizeX_mm '5.59'
+PRP SizeY_mm '2.92'
+PRP SizeZ_mm '2.87'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Newark'
+PRP Supplier_3 'Mouser'
+PRP Supplier_Part_Number_1 '497-7545-1-ND'
+PRP Supplier_Part_Number_2 '57P1608'
+PRP Supplier_Part_Number_3 '511-STPS1150A'
+PRP SymbolVersion '2008-12-08'
+PRP TJmax_C '175'
+PRP Type 'Schottky'
+PRP U/M 'EA'
+PRP Value '150V'
+PRP Value1 '1A'
+PRP Value2 '0.78V'
+PRP Vf_V '0.78'
+PRP Vr_V '150'
+TOP 0 2.1574803 0.6850394 270 N 39 3 D2-1
+TOP 1 2 0.6850394 270 N 30 2 D2-2
+#
+# CMP 34
+CMP 14 2.0787402 0.5275591 180 N D1 STPS1150A ;0=1,1=0.0472
+PRP AEC_Category 'Q101'
+PRP AEC_Qualified 'N'
+PRP Alternate_Manufacturer ''
+PRP Alternate_PartNumber ''
+PRP ComponentLink1Description 'Datasheet link'
+PRP ComponentLink1URL 'http://www.st.com/web/en/resource/technical/document/datasheet/CD00003321.pdf'
+PRP CompType 'Diode'
+PRP Green_EU_RoHS 'Incomplete'
+PRP Green_EU_RoHS-2 'Incomplete'
+PRP Green_Lifecycle 'Not Set'
+PRP Green_REACh 'Incomplete'
+PRP Io_A '1'
+PRP LatestRevisionDate '2017-06-26'
+PRP Manufacturer 'STMicroelectronics'
+PRP MountType 'SMT'
+PRP PackageReference 'SMA'
+PRP PartNumber 'STPS1150A'
+PRP Published '2008-06-26'
+PRP Publisher 'Texas Instruments'
+PRP RJC_CperW '30'
+PRP RoHS 'Y'
+PRP SizeArea_mm2 '16.3228'
+PRP SizeAreaWB_mm2 '37.3428'
+PRP SizeX_mm '5.59'
+PRP SizeY_mm '2.92'
+PRP SizeZ_mm '2.87'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Newark'
+PRP Supplier_3 'Mouser'
+PRP Supplier_Part_Number_1 '497-7545-1-ND'
+PRP Supplier_Part_Number_2 '57P1608'
+PRP Supplier_Part_Number_3 '511-STPS1150A'
+PRP SymbolVersion '2008-12-08'
+PRP TJmax_C '175'
+PRP Type 'Schottky'
+PRP U/M 'EA'
+PRP Value '150V'
+PRP Value1 '1A'
+PRP Value2 '0.78V'
+PRP Vf_V '0.78'
+PRP Vr_V '150'
+TOP 0 2.1574803 0.5275591 270 N 31 0 D1-1
+TOP 1 2 0.5275591 270 N 57 2 D1-2
+#
+# CMP 35
+CMP 10 0.9458661 0.1742126 90 N C49 cap0603 ;0=1,1=0.0177
+PRP LatestRevisionDate '17-Jul-2002'
+PRP LatestRevisionNote 'Re-released for DXP Platform.'
+PRP PackageDescription 'Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing'
+PRP PackageReference 'RAD-0.3'
+PRP Published '8-Jun-2000'
+PRP Publisher 'Altium Limited'
+PRP Value '0.1'
+TOP 0 0.9458693 0.2086597 90 N 49 3 C49-1
+TOP 1 0.9458693 0.1397621 90 N 55 25 C49-2
+#
+# CMP 36
+CMP 10 2.2303167 0.4192945 180 N C47 cap0603 ;0=1,1=0.0177
+PRP LatestRevisionDate '17-Jul-2002'
+PRP LatestRevisionNote 'Re-released for DXP Platform.'
+PRP PackageDescription 'Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing'
+PRP PackageReference 'RAD-0.3'
+PRP Published '8-Jun-2000'
+PRP Publisher 'Altium Limited'
+PRP Value '0.1 x100v'
+TOP 0 2.2647638 0.4192913 180 N 37 2 C47-1
+TOP 1 2.1958662 0.4192913 180 N 55 19 C47-2
+#
+# CMP 37
+CMP 10 2.1181102 0.8956693 0 N C39 cap0603 ;0=1,1=0.0177
+PRP LatestRevisionDate '17-Jul-2002'
+PRP LatestRevisionNote 'Re-released for DXP Platform.'
+PRP PackageDescription 'Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing'
+PRP PackageReference 'RAD-0.3'
+PRP Published '8-Jun-2000'
+PRP Publisher 'Altium Limited'
+PRP Value '0.1'
+TOP 0 2.0836631 0.8956725 0 N 39 7 C39-1
+TOP 1 2.1525607 0.8956725 0 N 55 6 C39-2
+#
+# CMP 38
+CMP 10 1.3385827 0.7362205 270 N C36 cap0603 ;0=1,1=0.0177
+PRP LatestRevisionDate '17-Jul-2002'
+PRP LatestRevisionNote 'Re-released for DXP Platform.'
+PRP PackageDescription 'Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing'
+PRP PackageReference 'RAD-0.3'
+PRP Published '8-Jun-2000'
+PRP Publisher 'Altium Limited'
+PRP Value '2n2'
+TOP 0 1.3385795 0.7017734 270 N 29 0 C36-1
+TOP 1 1.3385795 0.770671 270 N 39 21 C36-2
+#
+# CMP 39
+CMP 10 1.5807086 0.1141731 180 N C35 cap0603 ;0=1,1=0.0177
+PRP LatestRevisionDate '17-Jul-2002'
+PRP LatestRevisionNote 'Re-released for DXP Platform.'
+PRP PackageDescription 'Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing'
+PRP PackageReference 'RAD-0.3'
+PRP Published '8-Jun-2000'
+PRP Publisher 'Altium Limited'
+PRP Value '0.1'
+TOP 0 1.6151557 0.1141699 180 N 39 30 C35-1
+TOP 1 1.5462581 0.1141699 180 N 55 24 C35-2
+#
+# CMP 40
+CMP 10 1.6122079 0.6958644 270 N C34 cap0603 ;0=1,1=0.0177
+PRP LatestRevisionDate '17-Jul-2002'
+PRP LatestRevisionNote 'Re-released for DXP Platform.'
+PRP PackageDescription 'Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing'
+PRP PackageReference 'RAD-0.3'
+PRP Published '8-Jun-2000'
+PRP Publisher 'Altium Limited'
+PRP Value '2u2'
+TOP 0 1.6122047 0.6614173 270 N 34 1 C34-1
+TOP 1 1.6122047 0.7303149 270 N 30 1 C34-2
+#
+# CMP 41
+CMP 10 2.2303133 0.3543275 0 N C27 cap0603 ;0=1,1=0.0177
+PRP LatestRevisionDate '17-Jul-2002'
+PRP LatestRevisionNote 'Re-released for DXP Platform.'
+PRP PackageDescription 'Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing'
+PRP PackageReference 'RAD-0.3'
+PRP Published '8-Jun-2000'
+PRP Publisher 'Altium Limited'
+PRP Value '0.1 x100v'
+TOP 0 2.1958662 0.3543307 0 N 55 20 C27-1
+TOP 1 2.2647638 0.3543307 0 N 38 1 C27-2
+#
+# CMP 42
+CMP 10 2.0915354 0.0561024 0 N C26 cap0603 ;0=1,1=0.0177
+PRP LatestRevisionDate '17-Jul-2002'
+PRP LatestRevisionNote 'Re-released for DXP Platform.'
+PRP PackageDescription 'Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing'
+PRP PackageReference 'RAD-0.3'
+PRP Published '8-Jun-2000'
+PRP Publisher 'Altium Limited'
+PRP Value '1u x100v'
+TOP 0 2.0570883 0.0561056 0 N 39 15 C26-1
+TOP 1 2.1259859 0.0561056 0 N 32 2 C26-2
+#
+# CMP 43
+CMP 10 1.3503937 0.5570866 270 N C25 cap0603 ;0=1,1=0.0177
+PRP LatestRevisionDate '17-Jul-2002'
+PRP LatestRevisionNote 'Re-released for DXP Platform.'
+PRP PackageDescription 'Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing'
+PRP PackageReference 'RAD-0.3'
+PRP Published '8-Jun-2000'
+PRP Publisher 'Altium Limited'
+PRP Value '4u7'
+TOP 0 1.3503905 0.5226395 270 N 39 29 C25-1
+TOP 1 1.3503905 0.5915371 270 N 33 0 C25-2
+#
+# CMP 44
+CMP 10 1.6141732 0.4527559 90 N C21 cap0603 ;0=1,1=0.0177
+PRP LatestRevisionDate '17-Jul-2002'
+PRP LatestRevisionNote 'Re-released for DXP Platform.'
+PRP PackageDescription 'Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing'
+PRP PackageReference 'RAD-0.3'
+PRP Published '8-Jun-2000'
+PRP Publisher 'Altium Limited'
+PRP Value '2u2'
+TOP 0 1.6141764 0.487203 90 N 34 0 C21-1
+TOP 1 1.6141764 0.4183054 90 N 57 1 C21-2
+#
+# CMP 45
+CMP 10 1.2716535 0.7362205 270 N C20 cap0603 ;0=1,1=0.0177
+PRP LatestRevisionDate '17-Jul-2002'
+PRP LatestRevisionNote 'Re-released for DXP Platform.'
+PRP PackageDescription 'Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing'
+PRP PackageReference 'RAD-0.3'
+PRP Published '8-Jun-2000'
+PRP Publisher 'Altium Limited'
+PRP Value '270pf'
+TOP 0 1.2716503 0.7017734 270 N 53 0 C20-1
+TOP 1 1.2716503 0.770671 270 N 39 23 C20-2
+#
+# CMP 46
+CMP 10 0.6338583 0.1929134 90 N C18 cap0603 ;0=1,1=0.0177
+PRP LatestRevisionDate '17-Jul-2002'
+PRP LatestRevisionNote 'Re-released for DXP Platform.'
+PRP PackageDescription 'Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing'
+PRP PackageReference 'RAD-0.3'
+PRP Published '8-Jun-2000'
+PRP Publisher 'Altium Limited'
+PRP Value '2.2'
+TOP 0 0.6338615 0.2273605 90 N 55 48 C18-1
+TOP 1 0.6338615 0.1584629 90 N 54 1 C18-2
+#
+# CMP 47
+CMP 10 0.3247999 0.1921947 90 N C17 cap0603 ;0=1,1=0.0177
+PRP LatestRevisionDate '17-Jul-2002'
+PRP LatestRevisionNote 'Re-released for DXP Platform.'
+PRP PackageDescription 'Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing'
+PRP PackageReference 'RAD-0.3'
+PRP Published '8-Jun-2000'
+PRP Publisher 'Altium Limited'
+PRP Value '2.2'
+TOP 0 0.3248031 0.2266418 90 N 55 50 C17-1
+TOP 1 0.3248031 0.1577442 90 N 56 3 C17-2
+#
+# CMP 48
+CMP 10 0.8897606 0.8720489 90 N C10 cap0603 ;0=1,1=0.0177
+PRP LatestRevisionDate '17-Jul-2002'
+PRP LatestRevisionNote 'Re-released for DXP Platform.'
+PRP PackageDescription 'Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing'
+PRP PackageReference 'RAD-0.3'
+PRP Published '8-Jun-2000'
+PRP Publisher 'Altium Limited'
+PRP Value '0.1'
+TOP 0 0.8897638 0.906496 90 N 55 9 C10-1
+TOP 1 0.8897638 0.8375984 90 N 48 0 C10-2
+#
+# CMP 49
+CMP 10 0.8218504 0.8720472 90 N C9 cap0603 ;0=1,1=0.0177
+PRP LatestRevisionDate '17-Jul-2002'
+PRP LatestRevisionNote 'Re-released for DXP Platform.'
+PRP PackageDescription 'Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing'
+PRP PackageReference 'RAD-0.3'
+PRP Published '8-Jun-2000'
+PRP Publisher 'Altium Limited'
+PRP Value '0.1'
+TOP 0 0.8218536 0.9064943 90 N 55 10 C9-1
+TOP 1 0.8218536 0.8375967 90 N 47 0 C9-2
+#
+# CMP 50
+CMP 10 0.5610236 0.8720472 90 N C3 cap0603 ;0=1,1=0.0177
+PRP LatestRevisionDate '17-Jul-2002'
+PRP LatestRevisionNote 'Re-released for DXP Platform.'
+PRP PackageDescription 'Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing'
+PRP PackageReference 'RAD-0.3'
+PRP Published '8-Jun-2000'
+PRP Publisher 'Altium Limited'
+PRP Value '0.1'
+TOP 0 0.5610268 0.9064943 90 N 55 31 C3-1
+TOP 1 0.5610268 0.8375967 90 N 51 7 C3-2
+#
+# CMP 51
+CMP 10 0.7559055 0.872628 90 N C2 cap0603 ;0=1,1=0.0177
+PRP LatestRevisionDate '17-Jul-2002'
+PRP LatestRevisionNote 'Re-released for DXP Platform.'
+PRP PackageDescription 'Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing'
+PRP PackageReference 'RAD-0.3'
+PRP Published '8-Jun-2000'
+PRP Publisher 'Altium Limited'
+PRP Value '0.1'
+TOP 0 0.7559087 0.9070751 90 N 55 16 C2-1
+TOP 1 0.7559087 0.8381775 90 N 51 6 C2-2
+#
+# CMP 52
+CMP 10 0.6870079 0.8720472 90 N C1 cap0603 ;0=1,1=0.0177
+PRP LatestRevisionDate '17-Jul-2002'
+PRP LatestRevisionNote 'Re-released for DXP Platform.'
+PRP PackageDescription 'Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing'
+PRP PackageReference 'RAD-0.3'
+PRP Published '8-Jun-2000'
+PRP Publisher 'Altium Limited'
+PRP Value '2.2'
+TOP 0 0.6870111 0.9064943 90 N 55 17 C1-1
+TOP 1 0.6870111 0.8375967 90 N 51 5 C1-2
+#
