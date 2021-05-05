@@ -17,9 +17,9 @@
 
 # Pics
 
-![](/ice_bot.png)
+![](/bot.png)
 
-![](/ice_top.png)
+![](/top.png)
 
 # License
 

@@ -1,0 +1,10 @@
+Output: Electrical Rules Check
+Type  : ERC
+From  : Project [ice40.PrjPcb]
+   Generated File[ice40.html]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 8:20:22 AM On 20/04/2021

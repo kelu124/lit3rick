@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : PCB Document [ice.PcbDoc]
+   Generated File[ice.TXT]
+   Generated File[ice.LDP]
+   Generated File[ice.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 8:20:08 AM On 20/04/2021

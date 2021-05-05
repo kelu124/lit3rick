@@ -1,0 +1,14 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 8:20:39 AM On 20/04/2021
+
+Output: Generates pick and place files
+Type  : Pick Place
+From  : Variant [HighVoltageCap_0805] of PCB Document [ice.PcbDoc]
+   Generated File[Pick Place for ice(HighVoltageCap_0805).txt]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 8:20:40 AM On 20/04/2021

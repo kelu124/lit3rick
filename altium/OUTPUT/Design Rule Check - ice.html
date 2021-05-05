@@ -1,0 +1,421 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 8em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD20\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">19/04/2021</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">9:58:47 AM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:03</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///E:\Projets\LoCoLoPow\lit3Rick\lit3rick-lit3-32\altium\SOURCE\ice.PcbDoc" class="file"><acronym title="E:\Projets\LoCoLoPow\lit3Rick\lit3rick-lit3-32\altium\SOURCE\ice.PcbDoc">E:\Projets\LoCoLoPow\lit3Rick\lit3rick-lit3-32\altium\SOURCE\ice.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Waived Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">16</td></tr>
+</table>
+</td>
+</table><a name="IDWLKFXGYCYPUEB5YPCEDOG4IGVI433LPZHISG2ZGGR402MLCB00NC"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDAKZC4R122Q5MB3YXPH1HXCGIZH2XVM2LF0SGMKG0QBGGJMFSGG5K">Clearance Constraint (Gap=0mm) (InPolygon),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDLTHSPCY3HAAQCW2BIGLTTEJRBM3T05TYUCOZCBK4JEJ3QXXSA1UO">Clearance Constraint (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDDWAS53HB5BRCFCGZFRFW35BMDBNWLFYOQNIVR2PHJKG4LXH4QQRP">Clearance Constraint (Gap=0.6mm) (InNet('+HV', '-HV')),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDMFZTWH0OYLVBLDVH4GQIXRIU4MKZFBUWUOYXT1JDADS0M2S505FO">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDSCGIMNZRPRY0DX1HWEXVFC5FPJ2MQRE4SHPCJCKY42P3KDYUBCCL">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID2BDS0V4ZT4NWETVGEWR0U3L30HJNIH1ABCPO54BFZHDM3FJ50N2N">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDQPU4UVWVJFM1JJKOXCN0KJ1BJKAVZMUG4CPGSCKY02JNO2RLBBW">Width Constraint (Min=0.152mm) (Max=10.16mm) (Preferred=0.203mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDUPG2QSPRGULZKATCJ0GL5RTEWCYAYFTTWRIFEBDT1FDISTKAAAGG">Width Constraint (Min=0.131mm) (Max=0.185mm) (Preferred=0.185mm) (Disabled)(InNetClass('50Ohm'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDS0MTNT1G3AKLCER33GHSXGE55GVKTDU1DK24VSMQLJOOBYFOD00P">Width Constraint (Min=0.127mm) (Max=6.35mm) (Preferred=0.508mm) (InNet('GND'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDTDFU10ME21POIPNU4BWY3N5L2C5244MBCEWOMIUUUIBKUR0XN2C">Power Plane Connect Rule(Relief Connect )(Expansion=0.102mm) (Conductor Width=0.152mm) (Air Gap=0.152mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID2O3EBZ2MHVPOHDYZLXZ4DCCXUCELPTR31MHCGCLWNDNV0Y1OHLYE">Minimum Annular Ring (Minimum=0.3mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDH1WZ1GD3UKWDDKASGPG25REPBPCD3DGHMK3CYQNZDFONZSNX11WF">Minimum Annular Ring (Minimum=0.15mm) (IsVia)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDEYIHAQML3QA1GEC3VRS5EQXAAIBQLDJLOUSK1RLS5FGHB1J0SN4">Hole Size Constraint (Min=0.2mm) (Max=6.3mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID2LGIIPJRHHROMA4AE3HK1S5I0BKAGEXO2OWQZ1EBJF1GU2LAZVQP">Hole To Hole Clearance (Gap=0.54mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDTCMPWZQ5PZZVGUHPG4N3GC4HVGWV5B5LXEHRXK23ABS12V1B5PN">Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDRCLIET3AMIBHL5OHPGF0Q42CICMIUOJOQB04IMBDZZ3VGMPGIYSL">Silk To Solder Mask (Clearance=0.127mm) (IsPad),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID21XSUBVCEXFWJGDZPSWDYOVJIY23ZKI2ZD0IYBH1QP4DQQDIH2P">Silk to Silk (Clearance=0mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDKTOO0HXFXUXZC2TIWYOTERV3GHDCJOZNM5L2D5CA0ZSZS0DTD0PP">Net Antennae (Tolerance=0mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDSVDOGF2ND1WHMLINT5Z35JANMICSBK00AS0FDGHOUCMLP15TPD">Board Clearance Constraint (Gap=0mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID3ODZUEWEA0DSLGC3U0PAGSVC3O4EMXOYVM5BL2JVVRYOXQFMWMIJ">Height Constraint (Min=0mm) (Max=60mm) (Prefered=12.7mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Waived Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDASNBTRSPKM2KJNZ3O0CGIJSXKNY4D5QSXH4XNHRGOGYMKEU5I5B">Clearance Constraint (Gap=0.6mm) (InNet('+HV', '-HV')),(All)</a></td>
+<td class="column2">16</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">16</td>
+</tr>
+</table><br><a name="IDCB5YV4QBSWLLDCWRH34TXKAARKXK5GTXQE5E3TGE3X2NOE0ISZJN"><h2>Rule Violations</h2></a><a name="IDIM2GWLLN5KUVINRQ0ERGRSEJWCEXBLRZXRLJB3BK54GJT1UTAFDJ"><h2>Waived Violations</h2></a><a name="IDASNBTRSPKM2KJNZ3O0CGIJSXKNY4D5QSXH4XNHRGOGYMKEU5I5B"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="waived">Clearance Constraint (Gap=0.6mm) (InNet('+HV', '-HV')),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Projets\LoCoLoPow\lit3Rick\lit3rick-lit3-32\altium\SOURCE\ice.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6091.988mil|Location2.X=6116.86mil|Location1.Y=3235.537mil|Location2.Y=3275.267mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Projets\LoCoLoPow\lit3Rick\lit3rick-lit3-32\altium\SOURCE\ice.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6091.988mil|Location2.X=6116.86mil|Location1.Y=3235.537mil|Location2.Y=3275.267mil|Absolute=True">Clearance Constraint: (0.305mm &lt; 0.6mm) Between Pad IC8-P5(54.8mm,12.5mm) on L1 [TOP] And Track (55.297mm,11.479mm)(55.297mm,12.497mm) on L1 [TOP] </acronym></a><br>Waived by Antoine Hamel at 19/04/2021 9:58:36 AM<br>Due to nature of footprint clearance of 0.6mm is not possible near connection points</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Projets\LoCoLoPow\lit3Rick\lit3rick-lit3-32\altium\SOURCE\ice.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6091.988mil|Location2.X=6116.86mil|Location1.Y=3235.537mil|Location2.Y=3275.267mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Projets\LoCoLoPow\lit3Rick\lit3rick-lit3-32\altium\SOURCE\ice.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6091.988mil|Location2.X=6116.86mil|Location1.Y=3235.537mil|Location2.Y=3275.267mil|Absolute=True">Clearance Constraint: (0.305mm &lt; 0.6mm) Between Pad IC8-P5(54.8mm,12.5mm) on L1 [TOP] And Track (55.297mm,12.497mm)(55.3mm,12.5mm) on L1 [TOP] </acronym></a><br>Waived by Antoine Hamel at 19/04/2021 9:58:36 AM<br>Due to nature of footprint clearance of 0.6mm is not possible near connection points</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Projets\LoCoLoPow\lit3Rick\lit3rick-lit3-32\altium\SOURCE\ice.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6091.744mil|Location2.X=6116.616mil|Location1.Y=3220.757mil|Location2.Y=3260.468mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Projets\LoCoLoPow\lit3Rick\lit3rick-lit3-32\altium\SOURCE\ice.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6091.744mil|Location2.X=6116.616mil|Location1.Y=3220.757mil|Location2.Y=3260.468mil|Absolute=True">Clearance Constraint: (0.308mm &lt; 0.6mm) Between Pad IC8-P6(55.3mm,12.5mm) on L1 [TOP] And Track (54.8mm,12.5mm)(54.8mm,13.45mm) on L1 [TOP] </acronym></a><br>Waived by Antoine Hamel at 19/04/2021 9:58:36 AM<br>Due to nature of footprint clearance of 0.6mm is not possible near connection points</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Projets\LoCoLoPow\lit3Rick\lit3rick-lit3-32\altium\SOURCE\ice.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6111.731mil|Location2.X=6136.603mil|Location1.Y=3220.757mil|Location2.Y=3260.468mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Projets\LoCoLoPow\lit3Rick\lit3rick-lit3-32\altium\SOURCE\ice.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6111.731mil|Location2.X=6136.603mil|Location1.Y=3220.757mil|Location2.Y=3260.468mil|Absolute=True">Clearance Constraint: (0.308mm &lt; 0.6mm) Between Pad IC8-P6(55.3mm,12.5mm) on L1 [TOP] And Track (55.8mm,12.5mm)(55.8mm,12.915mm) on L1 [TOP] </acronym></a><br>Waived by Antoine Hamel at 19/04/2021 9:58:36 AM<br>Due to nature of footprint clearance of 0.6mm is not possible near connection points</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Projets\LoCoLoPow\lit3Rick\lit3rick-lit3-32\altium\SOURCE\ice.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6111.696mil|Location2.X=6142.236mil|Location1.Y=3234.579mil|Location2.Y=3268.729mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Projets\LoCoLoPow\lit3Rick\lit3rick-lit3-32\altium\SOURCE\ice.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6111.696mil|Location2.X=6142.236mil|Location1.Y=3234.579mil|Location2.Y=3268.729mil|Absolute=True">Clearance Constraint: (0.457mm &lt; 0.6mm) Between Pad IC8-P6(55.3mm,12.5mm) on L1 [TOP] And Track (55.8mm,12.915mm)(56.185mm,13.3mm) on L1 [TOP] </acronym></a><br>Waived by Antoine Hamel at 19/04/2021 9:58:36 AM<br>Due to nature of footprint clearance of 0.6mm is not possible near connection points</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Projets\LoCoLoPow\lit3Rick\lit3rick-lit3-32\altium\SOURCE\ice.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6111.371mil|Location2.X=6136.243mil|Location1.Y=3220.681mil|Location2.Y=3260.409mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Projets\LoCoLoPow\lit3Rick\lit3rick-lit3-32\altium\SOURCE\ice.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6111.371mil|Location2.X=6136.243mil|Location1.Y=3220.681mil|Location2.Y=3260.409mil|Absolute=True">Clearance Constraint: (0.311mm &lt; 0.6mm) Between Pad IC8-P7(55.8mm,12.5mm) on L1 [TOP] And Track (55.297mm,11.479mm)(55.297mm,12.497mm) on L1 [TOP] </acronym></a><br>Waived by Antoine Hamel at 19/04/2021 9:58:36 AM<br>Due to nature of footprint clearance of 0.6mm is not possible near connection points</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Projets\LoCoLoPow\lit3Rick\lit3rick-lit3-32\altium\SOURCE\ice.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6111.429mil|Location2.X=6136.301mil|Location1.Y=3220.757mil|Location2.Y=3260.468mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Projets\LoCoLoPow\lit3Rick\lit3rick-lit3-32\altium\SOURCE\ice.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6111.429mil|Location2.X=6136.301mil|Location1.Y=3220.757mil|Location2.Y=3260.468mil|Absolute=True">Clearance Constraint: (0.308mm &lt; 0.6mm) Between Pad IC8-P7(55.8mm,12.5mm) on L1 [TOP] And Track (55.297mm,12.497mm)(55.3mm,12.5mm) on L1 [TOP] </acronym></a><br>Waived by Antoine Hamel at 19/04/2021 9:58:36 AM<br>Due to nature of footprint clearance of 0.6mm is not possible near connection points</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Projets\LoCoLoPow\lit3Rick\lit3rick-lit3-32\altium\SOURCE\ice.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6151.101mil|Location2.X=6175.973mil|Location1.Y=3220.757mil|Location2.Y=3260.468mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Projets\LoCoLoPow\lit3Rick\lit3rick-lit3-32\altium\SOURCE\ice.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6151.101mil|Location2.X=6175.973mil|Location1.Y=3220.757mil|Location2.Y=3260.468mil|Absolute=True">Clearance Constraint: (0.308mm &lt; 0.6mm) Between Pad IC8-P8(56.3mm,12.5mm) on L1 [TOP] And Track (56.8mm,12.5mm)(57.182mm,12.118mm) on L1 [TOP] </acronym></a><br>Waived by Antoine Hamel at 19/04/2021 9:58:36 AM<br>Due to nature of footprint clearance of 0.6mm is not possible near connection points</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Projets\LoCoLoPow\lit3Rick\lit3rick-lit3-32\altium\SOURCE\ice.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6150.802mil|Location2.X=6175.674mil|Location1.Y=3220.757mil|Location2.Y=3260.468mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Projets\LoCoLoPow\lit3Rick\lit3rick-lit3-32\altium\SOURCE\ice.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6150.802mil|Location2.X=6175.674mil|Location1.Y=3220.757mil|Location2.Y=3260.468mil|Absolute=True">Clearance Constraint: (0.308mm &lt; 0.6mm) Between Pad IC8-P9(56.8mm,12.5mm) on L1 [TOP] And Track (56.3mm,10.877mm)(56.3mm,12.5mm) on L1 [TOP] </acronym></a><br>Waived by Antoine Hamel at 19/04/2021 9:58:36 AM<br>Due to nature of footprint clearance of 0.6mm is not possible near connection points</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Projets\LoCoLoPow\lit3Rick\lit3rick-lit3-32\altium\SOURCE\ice.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6091.837mil|Location2.X=6116.709mil|Location1.Y=3235.538mil|Location2.Y=3275.267mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Projets\LoCoLoPow\lit3Rick\lit3rick-lit3-32\altium\SOURCE\ice.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6091.837mil|Location2.X=6116.709mil|Location1.Y=3235.538mil|Location2.Y=3275.267mil|Absolute=True">Clearance Constraint: (0.312mm &lt; 0.6mm) Between Track (54.8mm,12.5mm)(54.8mm,13.45mm) on L1 [TOP] And Track (55.297mm,11.479mm)(55.297mm,12.497mm) on L1 [TOP] </acronym></a><br>Waived by Antoine Hamel at 19/04/2021 9:58:36 AM<br>Due to nature of footprint clearance of 0.6mm is not possible near connection points</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Projets\LoCoLoPow\lit3Rick\lit3rick-lit3-32\altium\SOURCE\ice.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6091.837mil|Location2.X=6116.709mil|Location1.Y=3235.538mil|Location2.Y=3275.267mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Projets\LoCoLoPow\lit3Rick\lit3rick-lit3-32\altium\SOURCE\ice.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6091.837mil|Location2.X=6116.709mil|Location1.Y=3235.538mil|Location2.Y=3275.267mil|Absolute=True">Clearance Constraint: (0.312mm &lt; 0.6mm) Between Track (54.8mm,12.5mm)(54.8mm,13.45mm) on L1 [TOP] And Track (55.297mm,12.497mm)(55.3mm,12.5mm) on L1 [TOP] </acronym></a><br>Waived by Antoine Hamel at 19/04/2021 9:58:36 AM<br>Due to nature of footprint clearance of 0.6mm is not possible near connection points</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Projets\LoCoLoPow\lit3Rick\lit3rick-lit3-32\altium\SOURCE\ice.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6111.522mil|Location2.X=6136.394mil|Location1.Y=3220.682mil|Location2.Y=3260.41mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Projets\LoCoLoPow\lit3Rick\lit3rick-lit3-32\altium\SOURCE\ice.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6111.522mil|Location2.X=6136.394mil|Location1.Y=3220.682mil|Location2.Y=3260.41mil|Absolute=True">Clearance Constraint: (0.318mm &lt; 0.6mm) Between Track (55.297mm,11.479mm)(55.297mm,12.497mm) on L1 [TOP] And Track (55.8mm,12.5mm)(55.8mm,12.915mm) on L1 [TOP] </acronym></a><br>Waived by Antoine Hamel at 19/04/2021 9:58:36 AM<br>Due to nature of footprint clearance of 0.6mm is not possible near connection points</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Projets\LoCoLoPow\lit3Rick\lit3rick-lit3-32\altium\SOURCE\ice.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6111.522mil|Location2.X=6142.076mil|Location1.Y=3234.436mil|Location2.Y=3268.575mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Projets\LoCoLoPow\lit3Rick\lit3rick-lit3-32\altium\SOURCE\ice.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6111.522mil|Location2.X=6142.076mil|Location1.Y=3234.436mil|Location2.Y=3268.575mil|Absolute=True">Clearance Constraint: (0.469mm &lt; 0.6mm) Between Track (55.297mm,11.479mm)(55.297mm,12.497mm) on L1 [TOP] And Track (55.8mm,12.915mm)(56.185mm,13.3mm) on L1 [TOP] </acronym></a><br>Waived by Antoine Hamel at 19/04/2021 9:58:36 AM<br>Due to nature of footprint clearance of 0.6mm is not possible near connection points</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Projets\LoCoLoPow\lit3Rick\lit3rick-lit3-32\altium\SOURCE\ice.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6111.58mil|Location2.X=6136.452mil|Location1.Y=3220.757mil|Location2.Y=3260.468mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Projets\LoCoLoPow\lit3Rick\lit3rick-lit3-32\altium\SOURCE\ice.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6111.58mil|Location2.X=6136.452mil|Location1.Y=3220.757mil|Location2.Y=3260.468mil|Absolute=True">Clearance Constraint: (0.315mm &lt; 0.6mm) Between Track (55.297mm,12.497mm)(55.3mm,12.5mm) on L1 [TOP] And Track (55.8mm,12.5mm)(55.8mm,12.915mm) on L1 [TOP] </acronym></a><br>Waived by Antoine Hamel at 19/04/2021 9:58:36 AM<br>Due to nature of footprint clearance of 0.6mm is not possible near connection points</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Projets\LoCoLoPow\lit3Rick\lit3rick-lit3-32\altium\SOURCE\ice.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6111.58mil|Location2.X=6142.12mil|Location1.Y=3234.482mil|Location2.Y=3268.632mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Projets\LoCoLoPow\lit3Rick\lit3rick-lit3-32\altium\SOURCE\ice.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6111.58mil|Location2.X=6142.12mil|Location1.Y=3234.482mil|Location2.Y=3268.632mil|Absolute=True">Clearance Constraint: (0.465mm &lt; 0.6mm) Between Track (55.297mm,12.497mm)(55.3mm,12.5mm) on L1 [TOP] And Track (55.8mm,12.915mm)(56.185mm,13.3mm) on L1 [TOP] </acronym></a><br>Waived by Antoine Hamel at 19/04/2021 9:58:36 AM<br>Due to nature of footprint clearance of 0.6mm is not possible near connection points</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Projets\LoCoLoPow\lit3Rick\lit3rick-lit3-32\altium\SOURCE\ice.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6150.953mil|Location2.X=6175.825mil|Location1.Y=3220.757mil|Location2.Y=3260.468mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Projets\LoCoLoPow\lit3Rick\lit3rick-lit3-32\altium\SOURCE\ice.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6150.953mil|Location2.X=6175.825mil|Location1.Y=3220.757mil|Location2.Y=3260.468mil|Absolute=True">Clearance Constraint: (0.315mm &lt; 0.6mm) Between Track (56.3mm,10.877mm)(56.3mm,12.5mm) on L1 [TOP] And Track (56.8mm,12.5mm)(57.182mm,12.118mm) on L1 [TOP] </acronym></a><br>Waived by Antoine Hamel at 19/04/2021 9:58:36 AM<br>Due to nature of footprint clearance of 0.6mm is not possible near connection points</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

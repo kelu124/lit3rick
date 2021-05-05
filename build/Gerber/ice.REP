@@ -1,0 +1,432 @@
+*************************************************************
+FileName = ice.GBR
+AutoAperture = True
+*************************************************************
+Generating : Bottom TestPoints
+      File : ice.GM18
+
+    Adding Layer      : Bottom TestPoints
+
+
+Used DCodes :
+    D11
+    D111
+*************************************************************
+
+*************************************************************
+Generating : Top TestPoints
+      File : ice.GM17
+
+    Adding Layer      : Top TestPoints
+
+
+Used DCodes :
+    D11
+    D111
+*************************************************************
+
+*************************************************************
+Generating : Bottom Assembly
+      File : ice.GM16
+
+    Adding Layer      : Bottom Assembly
+
+
+Used DCodes :
+    D13
+    D16
+    D106
+    D111
+*************************************************************
+
+*************************************************************
+Generating : Top Assembly
+      File : ice.GM15
+
+    Adding Layer      : Top Assembly
+
+
+Used DCodes :
+    D11
+    D13
+    D16
+    D106
+    D109
+    D110
+    D111
+*************************************************************
+
+*************************************************************
+Generating : Top Dimensions
+      File : ice.GM11
+
+    Adding Layer      : Top Dimensions
+
+
+Used DCodes :
+    D12
+    D108
+*************************************************************
+
+*************************************************************
+Generating : M6_FabNotes
+      File : ice.GM6
+
+    Adding Layer      : M6_FabNotes
+
+
+Used DCodes :
+    D12
+*************************************************************
+
+*************************************************************
+Generating : M5_StackDetails
+      File : ice.GM5
+
+    Adding Layer      : M5_StackDetails
+
+
+Used DCodes :
+    D12
+    D81
+    D107
+*************************************************************
+
+*************************************************************
+Generating : Bottom Courtyard
+      File : ice.GM4
+
+    Adding Layer      : Bottom Courtyard
+
+
+Used DCodes :
+    D13
+    D106
+*************************************************************
+
+*************************************************************
+Generating : M2_BoardOutline
+      File : ice.GM2
+
+    Adding Layer      : M2_BoardOutline
+
+
+Used DCodes :
+    D12
+*************************************************************
+
+*************************************************************
+Generating : Bottom Overlay
+      File : ice.GBO
+
+    Adding Layer      : Bottom Overlay
+
+
+Used DCodes :
+    D11
+    D12
+    D13
+    D14
+    D16
+    D105
+*************************************************************
+
+*************************************************************
+Generating : Bottom Paste
+      File : ice.GBP
+
+    Adding Layer      : Bottom Paste
+
+    Adding Layer      : L4 [BOTTOM]
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D21
+    D27
+    D28
+    D34
+    D38
+    D39
+    D91
+    D92
+    D93
+    D94
+    D95
+    D96
+    D97
+*************************************************************
+
+*************************************************************
+Generating : Top Courtyard
+      File : ice.GM3
+
+    Adding Layer      : Top Courtyard
+
+
+Used DCodes :
+    D11
+    D13
+    D106
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder
+      File : ice.GBS
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : L4 [BOTTOM]
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D46
+    D52
+    D53
+    D60
+    D62
+    D66
+    D67
+    D69
+    D70
+    D71
+    D72
+    D98
+    D99
+    D100
+    D101
+    D102
+    D103
+    D104
+*************************************************************
+
+*************************************************************
+Generating : Top Solder
+      File : ice.GTS
+
+    Adding Layer      : Top Solder
+
+    Adding Layer      : L1 [TOP]
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D41
+    D42
+    D43
+    D44
+    D45
+    D46
+    D47
+    D48
+    D49
+    D50
+    D51
+    D52
+    D53
+    D54
+    D55
+    D56
+    D57
+    D58
+    D59
+    D60
+    D61
+    D62
+    D63
+    D64
+    D65
+    D66
+    D67
+    D68
+    D69
+    D70
+    D71
+    D72
+*************************************************************
+
+*************************************************************
+Generating : Top Paste
+      File : ice.GTP
+
+    Adding Layer      : Top Paste
+
+    Adding Layer      : L1 [TOP]
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+    D39
+    D40
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : ice.GTO
+
+    Adding Layer      : Top Overlay
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+*************************************************************
+
+*************************************************************
+Generating : L4 [BOTTOM]
+      File : ice.GBL
+
+    Adding Layer      : L4 [BOTTOM]
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D12
+    D21
+    D27
+    D28
+    D34
+    D38
+    D39
+    D74
+    D76
+    D78
+    D79
+    D80
+    D81
+    D82
+    D84
+    D85
+    D87
+    D88
+    D89
+    D90
+    D91
+    D92
+    D93
+    D94
+    D95
+    D96
+    D97
+*************************************************************
+
+*************************************************************
+Generating : L3[PWR]
+      File : ice.G2
+
+    Adding Layer      : L3[PWR]
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D76
+    D78
+    D82
+    D87
+    D88
+    D90
+*************************************************************
+
+*************************************************************
+Generating : L2 [GND]
+      File : ice.G1
+
+    Adding Layer      : L2 [GND]
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D87
+    D88
+    D90
+*************************************************************
+
+*************************************************************
+Generating : L1 [TOP]
+      File : ice.GTL
+
+    Adding Layer      : L1 [TOP]
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D12
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+    D39
+    D40
+    D73
+    D74
+    D75
+    D76
+    D77
+    D78
+    D79
+    D80
+    D81
+    D82
+    D83
+    D84
+    D85
+    D86
+    D87
+    D88
+    D89
+    D90
+*************************************************************
+
