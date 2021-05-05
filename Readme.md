@@ -15,6 +15,8 @@
 * ADC: 10bits, reaching 64Msps here
 * DAC: MCP4812-E/MS for 8us gain segments
 
+* [Schematics](/altium/OUTPUT/Schematics/ice40_schematic.PDF)
+
 # Pics
 
 ![](/bot.png)
