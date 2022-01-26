@@ -127,8 +127,8 @@ module adc_dac_pulser_top (
             .mlb(1'b1),
             .ss(ICE_CS),
             .sck(F_SCLK),
-            .sdin(F_MOSI),
-            .sdout(F_MISO),
+            .sdin(F_MISO),
+            .sdout(F_MOSI),
             .tdata(to_spi),
             .done(spi_strb),
             .rdata(from_spi)

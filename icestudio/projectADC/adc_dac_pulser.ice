@@ -436,8 +436,8 @@
             "pins": [
               {
                 "index": "0",
-                "name": "",
-                "value": ""
+                "name": "led_green",
+                "value": "39"
               }
             ],
             "virtual": false
@@ -475,8 +475,8 @@
             "pins": [
               {
                 "index": "0",
-                "name": "",
-                "value": ""
+                "name": "led_blue",
+                "value": "40"
               }
             ],
             "virtual": false

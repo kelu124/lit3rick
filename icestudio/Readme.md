@@ -20,6 +20,6 @@ in the received 16 bits, [15:14]- bits are used as mode selection:(spi_mode)
   * 11 - Stores the [7:0]-bits in DAC_VALUE[15:8]-bits and triggers DAC_SPI setting
 
 # Indicator
-* Red-During ADC Data Capturing.
-* Blue-During SPI Transactions.
-* Green-Ready or IDLE.
+* Red   - During ADC Data Capturing.
+* Blue  - During SPI Transactions.
+* Green - Ready or IDLE.
