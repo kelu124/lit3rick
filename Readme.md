@@ -10,8 +10,6 @@
 [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)
 
 
-[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/G2G81MT0G)
-
 # the up5k lit3rick open hardware ultrasound pulse echo board, 100dB gain
 
 # OSHWA certified ! 
