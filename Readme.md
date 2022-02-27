@@ -20,12 +20,16 @@
 
 ## Presentation of the hardware
 
-* Lattice: up5k. Onboard RAM for 64k points saves.
-* Onboard flash : W25X10CLSNIG
-* Pulser : HV7361GA-G: adaptable to +-100V pulses. Onboard is 5V pulse.
-* AD8332 for gain
-* ADC: 10bits, reaching 64Msps here
-* DAC: MCP4812-E/MS for 8us gain segments
+* Lattice: up5k. Onboard RAM for 64k points saves. (128kB onboard RAM)
+* Onboard flash 
+* Pulser : HV7361GA-G: 
+  * Can manage +-100V pulses. Onboard is 5V pulse.
+  * Integrated circuit protection from HV
+* Time gain compensation : [AD8332](altium/ad8332.md) using both channels, chained
+  * HI setting: -4dB to __92dB__ amp
+  * LO setting: -28dB to 68dB amp
+* ADC: 10bits, up to 64Msps here
+
 
 * [Schematics](/altium/OUTPUT/Schematics/ice40_schematic.PDF)
 
