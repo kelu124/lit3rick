@@ -29,11 +29,34 @@
 
 * [Schematics](/altium/OUTPUT/Schematics/ice40_schematic.PDF)
 
+[![](build/schematics.png)](/altium/OUTPUT/Schematics/ice40_schematic.PDF)
+
 # Pics
+
+## Design 
 
 ![](/bot.png)
 
 ![](/top.png)
+
+## Prod
+
+![](build/imagelit3_32.png)
+
+## Python user code
+
+* Principles are [here](/lit3-32/icestudio/Readme.md)
+* Python code is [here](/icestudio/python/python.py)
+
+## Verilog: using icestudio (work in progress)
+
+![](/icestudio/icestudio_screenshot.png)
+
+# Outputs
+
+Below are echoes from a 5V pulse, gain at 350/1000, HILO being low.
+
+![](icestudio/G350_HL0_5V.jpg)
 
 # License
 
