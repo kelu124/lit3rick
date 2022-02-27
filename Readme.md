@@ -9,10 +9,11 @@
 [![Slack](https://badgen.net/badge/icon/slack?icon=slack&label)](https://join.slack.com/t/usdevkit/shared_invite/zt-2g501obl-z53YHyGOOMZjeCXuXzjZow)
 [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)
 
+[![Previous iteration](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.5792245-blue.svg)](https://zenodo.org/record/5792245#.YhvC_oTMJuQ)
 
 # the up5k lit3rick open hardware ultrasound pulse echo board, 100dB gain
 
-# OSHWA certified ! 
+### OSHWA certified ! 
 
 [https://certification.oshwa.org/fr000016.html](https://certification.oshwa.org/fr000016.html)
 
@@ -28,6 +29,7 @@
   * LO setting: -28dB to 68dB amp
 * ADC: 10bits, up to 64Msps here
 
+* Previous iteration: [documentation released: 10.5281/zenodo.5792245](https://zenodo.org/record/5792245#.YhvClITMJuQ)  
 
 * [Schematics](/altium/OUTPUT/Schematics/ice40_schematic.PDF)
 
