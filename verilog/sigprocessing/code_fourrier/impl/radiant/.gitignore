@@ -1,0 +1,6 @@
+*.ini
+*.html
+*.dir
+*.xml
+impl_1/
+.recovery

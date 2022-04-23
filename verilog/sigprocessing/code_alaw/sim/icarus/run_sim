@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Script to run Icarus Verilog simulation with GTKWave waveform viewer
+# To run testbench ../tb/tb_alaw_coder.v
+#./run_sim tb_alaw_coder
+
+# exit when any command fails
+set -e
+
+# Tools used
+SIMTOOL=vvp
+ELABTOOL=iverilog
+VIEWTOOL=gtkwave
+
+# Compile sources
+${ELABTOOL} -s $1 -o work.vvp -f $1.cmd
+
+# Simulate design
+${SIMTOOL} work.vvp -lxt2
+
+# Show waveforms
+${VIEWTOOL} work.vcd

@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# Script to run Yosys synthesis and nextpnr place'n'route
+
+# exit when any command fails
+set -e
+
+# Tools used
+SYNTOOL=yosys
+PRTOOL=nextpnr-ice40
+STATOOL=icetime
+
+# Properties
+FREQMHZ=65
+DEVICE=up5k
+PACKAGE=sg48
+TOPNAME=alaw_coder
+FILES="../../rtl/alaw_coder.v"
+
+# Synthesis
+${SYNTOOL} -l syn.rpt -p "synth_ice40 -top ${TOPNAME} -json ${TOPNAME}.json" ${FILES}
+
+# Place and route
+${PRTOOL} --seed 42 -l pr.rpt --freq ${FREQMHZ} --${DEVICE} --package ${PACKAGE} --json ${TOPNAME}.json --asc ${TOPNAME}.asc
+
+# Timing analysis
+${STATOOL} -d ${DEVICE} ${TOPNAME}.asc -c ${FREQMHZ} -t -i | tee sta.rpt

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RadiantProject version="4.1" title="dft" device="iCE40UP5K-SG48I" performance_grade="High-Performance_1.2V" default_implementation="impl_1">
+    <Options/>
+    <Implementation title="impl_1" dir="impl_1" description="impl_1" synthesis="lse" default_strategy="Strategy1">
+        <Options top="dft"/>
+        <Source name="../../rtl/dft.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../rtl/dft_twiddle_rom.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../rtl/dft_preproc.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../rtl/dft_postproc.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../rtl/dft_freq_ram.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../rtl/dft_fifo.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../rtl/dft_core.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../rtl/dft_complex_mul.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../rtl/dft_complex_abs.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../rtl/dft_sqrt.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../rtl/dft_sqrsum.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../rtl/dft_mul.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../rtl/dft_add.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../rtl/dft_addsub.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../rtl/dft_dline.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../rtl/dft_sub.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="source/impl_1/impl_1.ldc" type="LSE Design Constraints File" type_short="LDC">
+            <Options/>
+        </Source>
+        <Source name="source/impl_1/impl_1.pdc" type="Physical Constraints File" type_short="PDC">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="dft1.sty"/>
+</RadiantProject>
