@@ -12,7 +12,7 @@
 
 
 
-# the up5k lit3rick open hardware ultrasound pulse echo board, 100dB gain
+# the up5k lit3rick open hardware ultrasound pulse echo board, with -28dB to 92dB gain
 
 ### OSHWA certified ! 
 
@@ -28,7 +28,7 @@
 * Time gain compensation : [AD8332](altium/ad8332.md) using both channels, chained
   * HI setting: -4dB to __92dB__ amp
   * LO setting: -28dB to 68dB amp
-* ADC: 10bits, up to 64Msps here
+* ADC: 10bits, up to 64Msps here. Test in progress for 80MHz acqs. 
 
 * Previous iteration: [documentation released: 10.5281/zenodo.5792245](https://zenodo.org/record/5792245#.YhvClITMJuQ)  
 
@@ -56,6 +56,20 @@
 ## Verilog: using icestudio (work in progress)
 
 ![](/icestudio/icestudio_screenshot.png)
+
+.. and a list of binaries. `823f03fdc4bc9354f3f7d20d9fca6d58` is the latest stable one.
+
+```
+823f03fdc4bc9354f3f7d20d9fca6d58  ./20230114_GainTests/bins/working.bin
+e33742aa40016c3d32f804f4f5a2916f  ./20230114_GainTests/bins/pll_test_impl_1.bin
+823f03fdc4bc9354f3f7d20d9fca6d58  ./20230114_GainTests/bins/hardware.bin
+e3ddac9e455002339cf0d9cd9f03672c  ./program/blink.bin
+823f03fdc4bc9354f3f7d20d9fca6d58  ./icestudio/lit3/ice-build/lit3bin/hardware.bin
+70a0563b9e889dcdd5ab43a0825b8bfc  ./icestudio/old/corePLL/ice-build/corePLL/hardware.bin
+823f03fdc4bc9354f3f7d20d9fca6d58  ./example/bins/working.bin
+e33742aa40016c3d32f804f4f5a2916f  ./example/bins/pll_test_impl_1.bin
+823f03fdc4bc9354f3f7d20d9fca6d58  ./example/bins/hardware.bin
+```
 
 # Outputs
 
