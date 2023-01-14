@@ -1,0 +1,9 @@
+823f03fdc4bc9354f3f7d20d9fca6d58  ./20230114_GainTests/bins/working.bin
+e33742aa40016c3d32f804f4f5a2916f  ./20230114_GainTests/bins/pll_test_impl_1.bin
+823f03fdc4bc9354f3f7d20d9fca6d58  ./20230114_GainTests/bins/hardware.bin
+e3ddac9e455002339cf0d9cd9f03672c  ./program/blink.bin
+823f03fdc4bc9354f3f7d20d9fca6d58  ./icestudio/lit3/ice-build/lit3bin/hardware.bin
+70a0563b9e889dcdd5ab43a0825b8bfc  ./icestudio/old/corePLL/ice-build/corePLL/hardware.bin
+823f03fdc4bc9354f3f7d20d9fca6d58  ./example/bins/working.bin
+e33742aa40016c3d32f804f4f5a2916f  ./example/bins/pll_test_impl_1.bin
+823f03fdc4bc9354f3f7d20d9fca6d58  ./example/bins/hardware.bin
