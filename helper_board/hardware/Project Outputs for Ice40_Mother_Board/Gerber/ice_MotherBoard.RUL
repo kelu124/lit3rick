@@ -1,0 +1,12 @@
+DRC Rules Export File for PCB: E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\ice_MotherBoard.PcbDoc
+RuleKind=Clearance|RuleName=Clearance_HV|Scope=Board|Minimum=23.62
+RuleKind=Width|RuleName=50Ohm|Scope=Board|Minimum=7.27
+RuleKind=MinimumAnnularRing|RuleName=MinimumAnnularRing|Scope=Board|Minimum=3.94
+RuleKind=MinimumAnnularRing|RuleName=MinimumAnnularRing_Via|Scope=Board|Minimum=3.94
+RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=1.97
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion_Via|Scope=Board|Minimum=1.97
+RuleKind=Width|RuleName=Width|Scope=Board|Minimum=6.00
+RuleKind=Width|RuleName=GND|Scope=Board|Minimum=5.00
+RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=10.00
+RuleKind=Clearance|RuleName=Clearance Polygons|Scope=Board|Minimum=0.00

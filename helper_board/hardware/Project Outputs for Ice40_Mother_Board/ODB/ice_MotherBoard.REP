@@ -1,0 +1,140 @@
+*************************************************************
+FileName = ice_MotherBoard.PcbDoc
+ODB++ directory structure
+*************************************************************
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\matrix\matrix
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\profile
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\stephdr
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\attrlist
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\top_paste\features
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\top_paste\attrlist
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\top_solder\features
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\top_solder\attrlist
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\bottom_overlay\features
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\bottom_overlay\attrlist
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\bottom_solder\features
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\bottom_solder\attrlist
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\keep-out_layer\features
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\keep-out_layer\attrlist
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\m1_3dmodel\features
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\m1_3dmodel\attrlist
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\m2_boardoutline\features
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\m2_boardoutline\attrlist
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\top_courtyard\features
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\top_courtyard\attrlist
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\bottom_courtyard\features
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\bottom_courtyard\attrlist
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\m5_stackdetails\features
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\m5_stackdetails\attrlist
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\m6_fabnotes\features
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\m6_fabnotes\attrlist
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\fab_notes\features
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\fab_notes\attrlist
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\mechanical_8\features
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\mechanical_8\attrlist
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\top_dimensions\features
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\top_dimensions\attrlist
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\bottom_dimensions\features
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\bottom_dimensions\attrlist
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\top_assembly\features
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\top_assembly\attrlist
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\bottom_assembly\features
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\bottom_assembly\attrlist
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\top_testpoints\features
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\top_testpoints\attrlist
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\bottom_testpoints\features
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\bottom_testpoints\attrlist
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\values-bot\features
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\values-bot\attrlist
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\values-top\features
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\values-top\attrlist
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\mechanical_21\features
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\mechanical_21\attrlist
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\bottom_paste\features
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\bottom_paste\attrlist
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\top_overlay\features
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\top_overlay\attrlist
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\bottom_3d_body\features
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\bottom_3d_body\attrlist
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\top_3d_body\features
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\top_3d_body\attrlist
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\bottom_layer\features
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\bottom_layer\attrlist
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\drill\features
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\drill\attrlist
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\drill\tools
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\top_layer\features
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\top_layer\attrlist
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\comp_+_top\features
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\comp_+_top\components
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\comp_+_bot\features
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\layers\comp_+_bot\components
+
+Generated File : E:\FREEL\Luc\Ice40_Mother_Board_14-03-2023\Project Outputs for Ice40_Mother_Board\ODB\odb\steps\pcb\eda\data
+
